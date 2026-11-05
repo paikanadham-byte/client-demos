@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwiftMove Removals — House Moves, Packing & Storage in Cardiff</title>
+<meta name="description" content="SwiftMove Removals in Cardiff. Studio moves from £299, full house moves, packing service, man & van and storage. Free home survey and a fixed written price.">
+<meta property="og:title" content="SwiftMove Removals — Cardiff">
+<meta property="og:description" content="Your move, mapped A to B. House removals, packing and storage across Cardiff and the Vale.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MovingCompany","name":"SwiftMove Removals","telephone":"+44 29 2018 0455","email":"book@swiftmoveremovals.example","address":{"@type":"PostalAddress","streetAddress":"Unit 12, Cardiff Trade Park, Newport Road","addressLocality":"Cardiff","postalCode":"CF24 1RN","addressCountry":"GB"},"openingHours":"Mo-Sa 07:30-18:30","priceRange":"££"}
+</script>
+<style>
+:root{
+  --ground:#F6F1E7; --ground2:#EDE4D0; --ink:#22252B; --ink2:#33373F;
+  --muted:#6D675C; --line:#DDD2BA; --accent:#E8490F; --accent-d:#C23A08;
+  --card:#C89B6C; --card-d:#A87F52; --panel:#22252B; --paper:#FCF9F1;
+  --r:2px; --max:1180px;
+  --font-d:"Archivo",Helvetica,Arial,sans-serif; --font-m:"Space Mono",monospace; --font-b:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--font-m);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+h1,h2{font-family:var(--font-d);font-weight:900;line-height:.98;text-transform:uppercase;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--accent);color:#fff;font-weight:700;font-size:.95rem;padding:1rem 1.8rem;text-decoration:none;border:2px solid var(--accent);border-radius:var(--r);transition:background .25s,transform .25s}
+.btn:hover{background:var(--accent-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(246,241,231,.96);border-bottom:3px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-weight:900;font-size:1.3rem;text-transform:uppercase;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo .pin{width:16px;height:16px;background:var(--accent);border-radius:50% 50% 50% 0;transform:rotate(-45deg);flex:none;border:2px solid var(--ink)}
+.nav nav{display:flex;gap:2rem}
+.nav nav a{text-decoration:none;font-weight:700;font-size:.92rem;font-family:var(--font-m);text-transform:uppercase;letter-spacing:.06em}
+.nav nav a:hover{color:var(--accent)}
+.nav .btn{padding:.6rem 1.2rem}
+@media(max-width:840px){.nav nav{display:none}}
+
+/* hero — left-aligned, route draws beneath */
+.hero{border-bottom:3px solid var(--ink);padding:4.4rem 0 3.2rem;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(3rem,8vw,6.2rem);max-width:9ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lede{margin:1.4rem 0 2rem;font-size:1.16rem;color:var(--ink2);max-width:42ch}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.route{margin-top:3rem}
+.route svg{width:100%;height:110px}
+.route .path{stroke-dasharray:7 9;stroke-dashoffset:640;animation:draw 2.6s ease forwards .3s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.route-labels{display:flex;justify-content:space-between;font-family:var(--font-m);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+.route-labels b{color:var(--ink)}
+
+/* trust strip — waybill style */
+.trust{background:var(--ink);color:var(--ground)}
+.trust .wrap{display:flex;gap:2.2rem;flex-wrap:wrap;padding-top:1.05rem;padding-bottom:1.05rem;font-family:var(--font-m);font-size:.83rem;letter-spacing:.05em}
+.trust div{display:flex;gap:.55rem;align-items:center}
+.trust .dot{width:9px;height:9px;background:var(--accent);border-radius:50%;flex:none}
+
+/* sections */
+section{padding:5rem 0}
+.sec-head{margin-bottom:2.5rem}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-top:.5rem}
+.sec-head p{color:var(--muted);margin-top:.8rem;max-width:52ch}
+
+/* services — consignment rows */
+.cons{border-top:3px solid var(--ink)}
+.cons a.row{display:grid;grid-template-columns:110px 1fr auto;gap:1.5rem;align-items:center;padding:1.4rem .4rem;border-bottom:1px solid var(--line);text-decoration:none;transition:background .25s,padding-left .25s}
+.cons a.row:hover{background:var(--ground2);padding-left:1.1rem}
+.cons .ref{font-family:var(--font-m);font-size:.78rem;font-weight:700;color:var(--accent);letter-spacing:.08em}
+.cons .name{font-weight:900;text-transform:uppercase;font-size:1.3rem;letter-spacing:.01em;display:block}
+.cons .desc{color:var(--muted);font-size:.94rem}
+.cons .price{font-weight:900;font-size:1.45rem;text-align:right}
+.cons .price small{display:block;font-family:var(--font-m);font-size:.7rem;font-weight:400;color:var(--muted);letter-spacing:.08em}
+@media(max-width:640px){.cons a.row{grid-template-columns:1fr auto}.cons .ref{display:none}}
+
+/* the move — route stops */
+.stops{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}
+.stop{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);padding:1.5rem;position:relative}
+.stop::before{content:attr(data-stop);position:absolute;top:-15px;left:16px;background:var(--accent);color:#fff;font-family:var(--font-m);font-weight:700;font-size:.75rem;padding:.2rem .6rem;letter-spacing:.1em}
+.stop h3{font-weight:900;text-transform:uppercase;font-size:1.1rem;margin:.4rem 0 .5rem}
+.stop p{color:var(--muted);font-size:.94rem}
+@media(max-width:900px){.stops{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.stops{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--ground2);border-block:3px solid var(--ink)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.rev{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--card);border-radius:var(--r);padding:1.6rem}
+.rev .stars{color:var(--accent);letter-spacing:.25em;font-size:.88rem}
+.rev p{font-size:1.05rem;margin:.7rem 0 .9rem;line-height:1.5}
+.rev footer{font-family:var(--font-m);font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+.sample-note{margin-top:1.1rem;font-size:.82rem;color:var(--muted)}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+
+/* quote */
+.book{background:var(--panel);color:var(--ground)}
+.book .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:3.4rem;align-items:start}
+.book h2{font-size:clamp(2rem,4.6vw,3.3rem)}
+.book h2 em{font-style:normal;color:var(--accent)}
+.book .side p{color:#B9B2A2;margin-top:1rem;max-width:40ch}
+.book .tel{font-weight:900;font-size:1.8rem;color:var(--ground);text-decoration:none;display:inline-block;margin-top:1.2rem}
+.book .tel:hover{color:var(--accent)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+form .full{grid-column:1/-1}
+label{font-family:var(--font-m);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#B9B2A2}
+input,select,textarea{width:100%;margin-top:.35rem;background:#2E323A;border:1px solid #4A4F59;color:var(--ground);padding:.85rem 1rem;border-radius:var(--r);font:inherit;font-size:.98rem}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none}
+form .btn{grid-column:1/-1;justify-content:center}
+.success{display:none;grid-column:1/-1;background:#2C3A24;border:1px solid #7FA653;color:#EAF2DC;padding:1rem 1.2rem;border-radius:var(--r);font-weight:700}
+@media(max-width:900px){.book .wrap{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+/* visit */
+.visit .cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.visit address{font-style:normal;font-size:1.12rem;line-height:1.7}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.7rem 0;border-bottom:1px solid var(--line);font-weight:600}
+.hours td:last-child{text-align:right;font-family:var(--font-m);font-weight:700;font-size:.95rem}
+@media(max-width:820px){.visit .cols{grid-template-columns:1fr}}
+
+/* footer — route resolved */
+.site-foot{background:var(--ink);color:var(--ground);padding:3.4rem 0 2.2rem}
+.site-foot .delivered{font-family:var(--font-m);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}
+.site-foot .delivered::after{content:"";flex:1;border-top:2px dashed #4A4F59}
+.site-foot .name{font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,7vw,4.8rem);line-height:.95}
+.site-foot .name em{font-style:normal;color:var(--accent)}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;margin-top:1.8rem;padding-top:1.3rem;border-top:1px solid #3A3E46;color:#A39C8C;font-size:.9rem}
+
+.rv{opacity:0;transform:translateX(-18px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}.rv{opacity:1;transform:none}.route .path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="pin" aria-hidden="true"></span>SwiftMove Removals</a>
+    <nav aria-label="Main">
+      <a href="#services">Moves</a><a href="#process">How It Works</a><a href="#reviews">Reviews</a><a href="#visit">Find Us</a>
+    </nav>
+    <a class="btn" href="#quote">Get a Fixed Price</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Ref: CF — Cardiff &amp; the Vale</p>
+      <h1>Your move, <em>mapped.</em></h1>
+      <p class="lede">House moves, packing and storage with a fixed written price before moving day — surveyed in person, carried by our own two-man crews, insured door to door.</p>
+      <div class="cta">
+        <a class="btn" href="#quote">Get a Fixed Price</a>
+        <a class="btn ghost" href="#services">Moves &amp; Prices</a>
+      </div>
+      <div class="route" aria-hidden="true">
+        <svg viewBox="0 0 1000 110" preserveAspectRatio="none" role="presentation">
+          <path class="path" d="M10 88 C 220 88, 260 22, 470 22 S 760 88, 990 30" fill="none" stroke="#E8490F" stroke-width="3.5"/>
+          <circle cx="10" cy="88" r="9" fill="#22252B"/>
+          <circle cx="990" cy="30" r="9" fill="#E8490F"/>
+        </svg>
+        <div class="route-labels"><span><b>A</b> — Your old place</span><span>Survey → Pack → Move → Unpack</span><span><b>B</b> — Your new front door</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust">
+    <div class="wrap" aria-label="Why SwiftMove">
+      <div><span class="dot"></span>FIXED WRITTEN PRICE — NO HOURLY CREEP</div>
+      <div><span class="dot"></span>GOODS IN TRANSIT INSURED TO £50K</div>
+      <div><span class="dot"></span>FREE HOME SURVEY</div>
+      <div><span class="dot"></span>OWN CREWS — NO AGENCY STAFF</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Moves &amp; Prices</p>
+        <h2>Every size of move</h2>
+        <p>Guide prices for Cardiff moves within 10 miles. Your fixed price comes from a free survey — it never goes up on the day.</p>
+      </div>
+      <div class="cons rv">
+        <a class="row" href="#quote"><span class="ref">SM—01</span><span><span class="name">Studio Flat Move</span><br><span class="desc">One van, two movers, furniture protected and room-placed at the other end.</span></span><span class="price">£299<small>FROM · FIXED ON SURVEY</small></span></a>
+        <a class="row" href="#quote"><span class="ref">SM—02</span><span><span class="name">2-Bed House Move</span><br><span class="desc">Our most common move. Boxes available free on loan, beds and sofas dismantled and rebuilt.</span></span><span class="price">£549<small>FROM · FIXED ON SURVEY</small></span></a>
+        <a class="row" href="#quote"><span class="ref">SM—03</span><span><span class="name">3+ Bed House Move</span><br><span class="desc">Two vans and a three-man crew for family homes, garages and garden kit included.</span></span><span class="price">£849<small>FROM · FIXED ON SURVEY</small></span></a>
+        <a class="row" href="#quote"><span class="ref">SM—04</span><span><span class="name">Packing Service</span><br><span class="desc">Full or fragile-only packing the day before, with proper materials. Unpacking service on request.</span></span><span class="price">£25<small>PER HOUR · PER PACKER</small></span></a>
+        <a class="row" href="#quote"><span class="ref">SM—05</span><span><span class="name">Man &amp; Van</span><br><span class="desc">Single items, student moves, marketplace pickups. Same-day slots across Cardiff when we can.</span></span><span class="price">£45<small>PER HOUR · MIN 2 HRS</small></span></a>
+        <a class="row" href="#quote"><span class="ref">SM—06</span><span><span class="name">Storage</span><br><span class="desc">Clean, alarmed units on Newport Road for the gap between homes. No minimum stay.</span></span><span class="price">£25<small>PER WEEK · PER UNIT</small></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="process" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">The Work</p>
+        <h2>Four stops to moved in</h2>
+        <p>One crew leader owns your move from survey to the last box — you always know who to call.</p>
+      </div>
+      <div class="stops rv">
+        <article class="stop" data-stop="STOP 01"><h3>Survey</h3><p>A 20-minute home visit or video call. We count, measure and note the awkward stuff — pianos, narrow stairs, the lot.</p></article>
+        <article class="stop" data-stop="STOP 02"><h3>Pack</h3><p>We pack the day before if you've booked it, label every box by room, and wrap furniture for the van.</p></article>
+        <article class="stop" data-stop="STOP 03"><h3>Move</h3><p>Moving day: floor and door protection down first, van loaded in room order, keys handed over when you're ready.</p></article>
+        <article class="stop" data-stop="STOP 04"><h3>Settle</h3><p>Boxes in the right rooms, beds rebuilt, and we take our loan boxes and packaging away on the next round.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Reviews</p>
+        <h2>Delivered, on time</h2>
+      </div>
+      <div class="rev-grid rv">
+        <article class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Quoted £549 after the survey and charged £549 on the day. The crew had the piano out in twenty minutes — still not sure how."</p><footer>Sample review — Hannah &amp; Josh, Pontcanna</footer></article>
+        <article class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Completion slipped by a week and they held our stuff in storage without a fuss or a rebooking fee. Properly decent firm."</p><footer>Sample review — Mr Evans, Penarth</footer></article>
+        <article class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Booked the packing too. Worth every penny — walked out of the old house, walked into the new one with beds already made up."</p><footer>Sample review — Louise T., Llandaff</footer></article>
+      </div>
+      <p class="sample-note">*Demo site: reviews shown are samples, to be replaced with the business's real ones before launch.</p>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote" class="book">
+    <div class="wrap">
+      <div class="side rv">
+        <p class="eyebrow">Free Survey &amp; Fixed Price</p>
+        <h2>Start at <em>point A.</em></h2>
+        <p>Tell us where you're moving from and to. We'll book your free survey and give you one fixed written price — the price on the quote is the price on the day.</p>
+        <a class="tel" href="tel:+442920180455">029 2018 0455</a>
+        <p>Mon–Sat, 7:30am–6:30pm. Moving across Cardiff, Penarth, Barry, Caerphilly &amp; Newport — and long-distance on request.</p>
+      </div>
+      <form id="bookForm" class="rv" novalidate>
+        <div class="success" id="bookOk" role="status">Thanks — we've got your route. We'll call to book your free survey and confirm your fixed price.</div>
+        <div><label for="fName">Your name</label><input id="fName" name="name" type="text" autocomplete="name" required placeholder="e.g. Sam Rees"></div>
+        <div><label for="fPhone">Mobile number</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" required placeholder="07…"></div>
+        <div><label for="fFrom">Moving from (postcode)</label><input id="fFrom" name="from" type="text" placeholder="e.g. CF11"></div>
+        <div><label for="fTo">Moving to (postcode)</label><input id="fTo" name="to" type="text" placeholder="e.g. CF64"></div>
+        <div><label for="fSvc">Move size / service</label>
+          <select id="fSvc" name="service" required>
+            <option value="">Choose a move…</option><option>Studio Flat Move — from £299</option><option>2-Bed House Move — from £549</option><option>3+ Bed House Move — from £849</option><option>Packing Service — £25/hr</option><option>Man &amp; Van — £45/hr</option><option>Storage — £25/week</option>
+          </select></div>
+        <div><label for="fDate">Moving date (if known)</label><input id="fDate" name="date" type="text" placeholder="e.g. End of the month"></div>
+        <div class="full"><label for="fNotes">Anything awkward?</label><textarea id="fNotes" name="notes" rows="3" placeholder="e.g. Piano, top-floor flat, no lift, tight parking on our street"></textarea></div>
+        <button class="btn" type="submit">Book My Free Survey</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Find Us</p>
+        <h2>Depot &amp; storage</h2>
+        <p>Visitors welcome for storage viewings — call ahead so we can have a unit open for you.</p>
+      </div>
+      <div class="cols rv">
+        <div>
+          <address>Unit 12, Cardiff Trade Park<br>Newport Road, Cardiff CF24 1RN</address>
+          <p style="margin-top:1rem"><a href="mailto:book@swiftmoveremovals.example" style="font-weight:700">book@swiftmoveremovals.example</a></p>
+          <p style="margin-top:1.4rem"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Newport+Road+Cardiff" target="_blank" rel="noopener">Get Directions</a></p>
+        </div>
+        <table class="hours" aria-label="Opening hours">
+          <tr><td>Monday – Saturday</td><td>7:30 – 18:30</td></tr>
+          <tr><td>Sunday</td><td>Moves by appointment</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="delivered">Route complete — Delivered</p>
+    <p class="name">SwiftMove <em>Removals</em></p>
+    <div class="row">
+      <span>© <span id="yr">2026</span> SwiftMove Removals, Cardiff</span>
+      <span>Insured · Fixed prices · Free surveys</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+document.getElementById('bookForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('fName'),p=document.getElementById('fPhone'),s=document.getElementById('fSvc');
+  if(!n.value.trim()||!p.value.trim()||!s.value){(!n.value.trim()?n:!p.value.trim()?p:s).focus();return;}
+  document.getElementById('bookOk').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
