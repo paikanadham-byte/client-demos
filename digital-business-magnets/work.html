@@ -13,59 +13,88 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#FAF6EC;--ink:#101410;--green:#0E5A3C;--yellow:#F2B705;--sage:#DCE8DD;--line:#D9D0B8;--radius:10px;--max:1180px}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.6;font-size:17px}
-h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.05;margin:0}
-:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-header.site{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--ink)}
-.hbar{display:flex;align-items:center;gap:14px;padding:10px 0;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Space Grotesk';font-weight:700;font-size:1.05rem;line-height:1.1}
-.brand img{width:46px;height:46px;border-radius:var(--radius);border:2px solid var(--ink)}
-nav.main{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
-nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;padding:8px 10px;border-radius:var(--radius)}
+:root{--green:#0B4A2C;--gold:#F0A800;--ink:#12140F;--white:#FFFFFF;--mint:#EAF4EC;--line:#DCE5DC;--radius:20px;--max:1200px;--shadow:0 12px 32px rgba(11,74,44,.09)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.04;margin:0;letter-spacing:-.01em}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+header.site{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:18px;padding:10px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:0}
+.brand img{width:120px;height:auto;display:block;mix-blend-mode:multiply}
+@media(min-width:820px){.brand img{width:162px}}
+nav.main{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;padding:9px 13px;border-radius:999px}
+nav.main a:hover{background:var(--mint);color:var(--green)}
 nav.main a[aria-current="page"]{background:var(--green);color:#fff}
-.hcall{font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap}
-.btn{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:700;text-decoration:none;padding:13px 22px;border:2px solid var(--ink);border-radius:var(--radius);box-shadow:4px 4px 0 var(--ink)}
-.btn.green{background:var(--green);color:#fff}.btn.small{padding:9px 16px;box-shadow:3px 3px 0 var(--ink)}
-.kicker{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;color:var(--green)}
-.kicker::before{content:"";width:34px;height:3px;background:var(--yellow)}
-.page-head{padding:48px 0 34px;border-bottom:2px solid var(--ink)}
-.page-head h1{font-size:clamp(2.4rem,7vw,4rem);max-width:15ch}
+.hcall{font-weight:700;text-decoration:none;color:var(--green);white-space:nowrap}
+.hcall:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 28px;border:none;border-radius:999px;cursor:pointer;font-family:'Archivo',sans-serif;font-size:1rem}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.small{padding:10px 20px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;color:var(--green);margin:0 0 16px}
+.kicker::before{content:"";width:34px;height:3px;border-radius:2px;background:var(--gold)}
+.page-head{padding:64px 0 44px}
+.page-head h1{font-size:clamp(2.6rem,6vw,4.4rem);letter-spacing:-.02em;max-width:14ch}
 .page-head p{font-size:1.15rem;max-width:58ch}
-/* Cases — editorial, arcs framing each */
-.case{position:relative;padding:44px 0;border-bottom:1px solid var(--line)}
-.case .arc{position:absolute;top:18px;right:0;width:220px;height:110px;opacity:.55;pointer-events:none}
-.case-tag{display:inline-block;background:var(--green);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;padding:5px 12px;border-radius:var(--radius);border:2px solid var(--ink)}
-.case h2{font-size:clamp(1.9rem,5vw,2.7rem);margin:14px 0 6px;max-width:20ch}
-.case .sector{font-weight:600;color:var(--green);margin:0 0 22px}
+/* Cases — editorial cards, giant gold quote marks, static arc crops */
+.cases{display:grid;gap:26px;padding-bottom:8px}
+.case{background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+@media(min-width:860px){.case{padding:48px}}
+.case .arc{position:absolute;top:-46px;right:-36px;width:230px;height:auto;opacity:.5}
+.case-tag{display:inline-block;background:var(--mint);color:var(--green);font-weight:700;font-size:.83rem;letter-spacing:.05em;text-transform:uppercase;padding:7px 15px;border-radius:999px}
+.case h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin:16px 0 8px;max-width:20ch}
+.case .sector{font-weight:600;color:var(--green);margin:0 0 26px}
 .steps{display:grid;gap:16px;grid-template-columns:1fr}
 @media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
-.step{background:#fff;border:2px solid var(--ink);border-radius:var(--radius);padding:20px}
-.step.result{background:var(--sage);box-shadow:5px 5px 0 var(--ink)}
-.step h3{font-size:.95rem;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:8px}
+.step{border:1px solid var(--line);border-radius:16px;padding:22px}
+.step.result{background:var(--mint);border-color:var(--mint)}
+.step h3{font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:9px}
 .step p{margin:0}
-.step ul{margin:0;padding-left:18px}.step li{margin:5px 0}
-blockquote{margin:26px 0 0;border-left:6px solid var(--yellow);padding:6px 0 6px 18px;font-size:1.12rem;max-width:68ch}
-blockquote footer{font-weight:700;font-family:'Space Grotesk';margin-top:8px;font-size:.95rem}
-.also{padding:40px 0}
-.also-box{background:var(--ink);color:var(--paper);border-radius:var(--radius);padding:26px}
-.also-box h2{font-size:1.5rem;margin-bottom:8px}
-.also-box a{color:var(--yellow);font-weight:700}
-.closing{padding:52px 0}
-.closing h2{font-size:clamp(1.9rem,5vw,2.8rem);max-width:20ch}
-footer.site{border-top:2px solid var(--ink);padding:38px 0 26px}
-.fgrid{display:grid;gap:24px;grid-template-columns:1fr}
+.step ul{margin:0;padding-left:18px}
+.step li{margin:5px 0}
+blockquote{margin:30px 0 0;padding:0 0 0 58px;position:relative;font-size:1.14rem;max-width:70ch}
+blockquote::before{content:"“";position:absolute;left:-6px;top:-38px;font-family:'Space Grotesk';font-weight:700;font-size:6.2rem;line-height:1;color:var(--gold)}
+blockquote footer{font-weight:700;font-family:'Space Grotesk';margin-top:10px;font-size:.95rem;color:var(--green)}
+/* Also on the record — green panel */
+.also{padding:34px 0 8px}
+.also-box{background:var(--green);color:#fff;border-radius:24px;padding:38px 32px;position:relative;overflow:hidden}
+@media(min-width:860px){.also-box{padding:48px}}
+.also-box h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:10px;max-width:26ch}
+.also-box p{margin:0;max-width:64ch;color:var(--mint)}
+.also-box a{color:var(--gold);font-weight:700}
+.also-box svg{position:absolute;right:-26px;bottom:-40px;width:250px;height:auto;opacity:.5}
+/* Closing */
+.closing{padding:64px 0 72px}
+.closing h2{font-size:clamp(1.9rem,4.5vw,2.9rem);max-width:20ch;margin-bottom:12px}
+.closing p.lede{max-width:56ch;margin:0}
+.cta-row{margin-top:24px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.cta-row a.more{font-weight:700}
+footer.site{background:var(--green);color:#fff}
+.fband{background:#fff;border-top:1px solid var(--line);padding:16px 0}
+.fband .wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.fband img{width:150px;height:auto;display:block;mix-blend-mode:multiply}
+.fband .ftag{color:var(--green);font-weight:600;font-size:.95rem}
+.fbody{padding:44px 0 28px}
+.fgrid{display:grid;gap:28px;grid-template-columns:1fr}
 @media(min-width:820px){.fgrid{grid-template-columns:1.4fr 1fr 1fr}}
-footer.site img{width:56px;height:56px;border-radius:var(--radius);border:2px solid var(--ink)}
-footer.site nav a{display:block;color:var(--ink);text-decoration:none;padding:3px 0;font-weight:600}
-.farc{width:100%;height:44px;display:block;margin-top:10px}.small{font-size:.9rem;opacity:.85}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.fword{font-family:'Space Grotesk';font-weight:700;font-size:1.3rem;line-height:1.15}
+.fword span{color:var(--gold)}
+footer.site p{margin:10px 0}
+footer.site nav a{display:block;color:#fff;text-decoration:none;padding:3px 0;font-weight:600}
+footer.site nav a:hover{color:var(--gold)}
+footer.site a{color:#fff}
+footer.site a:hover{color:var(--gold)}
+.fhead{font-family:'Space Grotesk';font-weight:700;margin:0 0 6px}
+.small{font-size:.9rem;color:var(--mint)}
+.fbase{border-top:1px solid rgba(255,255,255,.25);padding:18px 0 24px;margin-top:8px}
 </style>
 </head>
 <body>
 <header class="site"><div class="wrap hbar">
-<a class="brand" href="index.html"><img src="logo.jpg" alt="Digital Business Magnets logo">Digital Business<br>Magnets</a>
+<a class="brand" href="index.html"><img src="logo.jpg" alt="Digital Business Magnets logo" width="166" height="96"></a>
 <nav class="main" aria-label="Main">
 <a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html" aria-current="page">Our Work</a><a href="about.html">About &amp; Reviews</a><a href="contact.html">Contact</a>
 </nav>
@@ -80,9 +109,9 @@ footer.site nav a{display:block;color:var(--ink);text-decoration:none;padding:3p
 <p>These are client stories based on their Google reviews — the problems, what we built, and the results in the clients' own words. No stock portfolios, no invented numbers: this is the proof we can honestly show.</p>
 </div>
 
-<div class="wrap">
+<div class="wrap cases">
 <article class="case">
-<svg class="arc" viewBox="0 0 220 110" aria-hidden="true"><path d="M10,105 A100,100 0 0 1 210,105" fill="none" stroke="#0E5A3C" stroke-width="3"/><path d="M40,105 A70,70 0 0 1 180,105" fill="none" stroke="#F2B705" stroke-width="3"/><path d="M70,105 A40,40 0 0 1 150,105" fill="none" stroke="#0E5A3C" stroke-width="3" opacity=".5"/></svg>
+<svg class="arc" viewBox="0 0 260 150" aria-hidden="true"><g fill="none" stroke-linecap="round"><path d="M16,144 A150,150 0 0 1 244,144" stroke="#0B4A2C" stroke-width="4"/><path d="M52,144 A114,114 0 0 1 208,144" stroke="#F0A800" stroke-width="4"/><path d="M88,144 A78,78 0 0 1 172,144" stroke="#0B4A2C" stroke-width="4" opacity=".55"/></g></svg>
 <span class="case-tag">Client story · Clothing</span>
 <h2>EASY Buy — great products, invisible brand</h2>
 <p class="sector">Clothing brand · Website, social content &amp; marketing</p>
@@ -95,7 +124,7 @@ footer.site nav a{display:block;color:var(--ink);text-decoration:none;padding:3p
 </article>
 
 <article class="case">
-<svg class="arc" viewBox="0 0 220 110" aria-hidden="true"><path d="M10,105 A100,100 0 0 1 210,105" fill="none" stroke="#F2B705" stroke-width="3"/><path d="M40,105 A70,70 0 0 1 180,105" fill="none" stroke="#0E5A3C" stroke-width="3"/><path d="M70,105 A40,40 0 0 1 150,105" fill="none" stroke="#F2B705" stroke-width="3" opacity=".6"/></svg>
+<svg class="arc" viewBox="0 0 260 150" aria-hidden="true"><g fill="none" stroke-linecap="round"><path d="M16,144 A150,150 0 0 1 244,144" stroke="#F0A800" stroke-width="4"/><path d="M52,144 A114,114 0 0 1 208,144" stroke="#0B4A2C" stroke-width="4"/><path d="M88,144 A78,78 0 0 1 172,144" stroke="#F0A800" stroke-width="4" opacity=".6"/></g></svg>
 <span class="case-tag">Client story · Cosmetics</span>
 <h2>Orgavia — outgrowing Instagram</h2>
 <p class="sector">Cosmetics brand · eCommerce website, branding, social designs &amp; creatives</p>
@@ -106,31 +135,34 @@ footer.site nav a{display:block;color:var(--ink);text-decoration:none;padding:3p
 </div>
 <blockquote>“They didn't just provide services — they helped us build a brand that customers trust. Highly recommended for anyone serious about growing their business online.”<footer>— Orgavia products, Google review</footer></blockquote>
 </article>
+</div>
 
-<section class="also">
+<section class="also"><div class="wrap">
 <div class="also-box">
+<svg viewBox="0 0 300 200" aria-hidden="true"><g fill="none" stroke="#F0A800" stroke-width="4" stroke-linecap="round"><path d="M20,196 A190,190 0 0 1 290,196" opacity=".7"/><path d="M65,196 A140,140 0 0 1 245,196" opacity=".5"/><path d="M110,196 A90,90 0 0 1 200,196" opacity=".35"/></g><circle cx="155" cy="196" r="9" fill="#F0A800"/></svg>
 <h2>Also on the record: WK Essential Hub LLC</h2>
 <p>Not every magnet is a store. WK Essential Hub LLC worked with us on brand building and business growth strategy, and praised our “clear direction, practical planning, and consistent support throughout the process.” Read their full review on the <a href="about.html">About &amp; Reviews page</a>.</p>
 </div>
-</section>
+</div></section>
 
-<section class="closing">
+<section class="closing"><div class="wrap">
 <p class="kicker">Your story next</p>
 <h2>Your products could be the next story here.</h2>
-<p style="max-width:56ch">If your brand sounds like EASY Buy at the start, or Orgavia on Instagram, you already know the problem. The fix starts with one conversation.</p>
-<p style="margin-top:20px"><a class="btn" href="contact.html">Start Your Project</a> &nbsp; <a href="services.html" style="font-weight:700">See the services →</a></p>
-</section>
-</div>
+<p class="lede">If your brand sounds like EASY Buy at the start, or Orgavia on Instagram, you already know the problem. The fix starts with one conversation.</p>
+<div class="cta-row"><a class="btn" href="contact.html">Start Your Project</a><a class="more" href="services.html">See the services →</a></div>
+</div></section>
 </main>
 
-<footer class="site"><div class="wrap">
-<svg class="farc" viewBox="0 0 1200 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C300,36 600,20 1200,4" fill="none" stroke="#0E5A3C" stroke-width="2" opacity=".4"/><path d="M0,44 C340,38 700,26 1200,12" fill="none" stroke="#F2B705" stroke-width="3" opacity=".6"/></svg>
+<footer class="site">
+<div class="fband"><div class="wrap"><img src="logo.jpg" alt="Digital Business Magnets logo" width="166" height="96"><span class="ftag">eCommerce agency for product brands — Islamabad</span></div></div>
+<div class="fbody"><div class="wrap">
 <div class="fgrid">
-<div><img src="logo.jpg" alt="Digital Business Magnets logo"><p><strong>Digital Business Magnets</strong><br>eCommerce agency for product brands.<br>Bahria Expressway, Bahria Town Phase 4,<br>Islamabad, 44000, Pakistan</p></div>
-<div><p><strong>Explore</strong></p><nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About &amp; Reviews</a><a href="contact.html">Contact</a></nav></div>
-<div><p><strong>Talk to us</strong></p><p>Phone: <a href="tel:+923355455112">+92 335 5455112</a><br>Open 24 hours, every day<br>4.9 on Google · 14 reviews</p><p><a class="btn small" href="contact.html">Start Your Project</a></p></div>
+<div><p class="fword">Digital Business<br><span>Magnets</span></p><p>eCommerce agency for product brands.<br>Bahria Expressway, Bahria Town Phase 4,<br>Islamabad, 44000, Pakistan</p></div>
+<div><p class="fhead">Explore</p><nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About &amp; Reviews</a><a href="contact.html">Contact</a></nav></div>
+<div><p class="fhead">Talk to us</p><p>Phone: <a href="tel:+923355455112">+92 335 5455112</a><br>Open 24 hours, every day<br>4.9 on Google · 14 reviews</p><p><a class="btn small" href="contact.html">Start Your Project</a></p></div>
 </div>
-<p class="small">© 2026 Digital Business Magnets. All rights reserved.</p>
-</div></footer>
+</div></div>
+<div class="fbase"><div class="wrap"><span class="small">© 2026 Digital Business Magnets. All rights reserved.</span></div></div>
+</footer>
 </body>
 </html>

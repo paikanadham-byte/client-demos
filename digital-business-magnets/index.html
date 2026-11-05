@@ -16,80 +16,124 @@
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Digital Business Magnets","image":"logo.jpg","telephone":"+923355455112","address":{"@type":"PostalAddress","streetAddress":"Bahria Expressway, Bahria Town Phase 4","addressLocality":"Islamabad","postalCode":"44000","addressCountry":"PK"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Digital+Business+Magnets+Bahria+Town+Phase+4+Islamabad","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},"openingHours":"Mo-Su 00:00-24:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"14"}}
 </script>
 <style>
-:root{--paper:#FAF6EC;--ink:#101410;--green:#0E5A3C;--green-dark:#083D28;--yellow:#F2B705;--sage:#DCE8DD;--sage-mid:#8AA899;--line:#D9D0B8;--radius:10px;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.6;font-size:17px}
-h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.05;margin:0}
-a{color:var(--green)}:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-header.site{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--ink)}
-.hbar{display:flex;align-items:center;gap:14px;padding:10px 0;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Space Grotesk';font-weight:700;font-size:1.05rem;line-height:1.1}
-.brand img{width:46px;height:46px;border-radius:var(--radius);border:2px solid var(--ink)}
-nav.main{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
-nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;padding:8px 10px;border-radius:var(--radius)}
+:root{--green:#0B4A2C;--gold:#F0A800;--ink:#12140F;--white:#FFFFFF;--mint:#EAF4EC;--line:#DCE5DC;--radius:20px;--max:1200px;--shadow:0 12px 32px rgba(11,74,44,.09)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.04;margin:0;letter-spacing:-.01em}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+/* Header — white, logo blended in with multiply so its white background vanishes */
+header.site{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:18px;padding:10px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:0}
+.brand img{width:120px;height:auto;display:block;mix-blend-mode:multiply}
+@media(min-width:820px){.brand img{width:162px}}
+nav.main{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;padding:9px 13px;border-radius:999px}
+nav.main a:hover{background:var(--mint);color:var(--green)}
 nav.main a[aria-current="page"]{background:var(--green);color:#fff}
-.hcall{font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap}
-.btn{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:700;text-decoration:none;padding:13px 22px;border:2px solid var(--ink);border-radius:var(--radius);box-shadow:4px 4px 0 var(--ink)}
-.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.hcall{font-weight:700;text-decoration:none;color:var(--green);white-space:nowrap}
+.hcall:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 28px;border:none;border-radius:999px;cursor:pointer;font-family:'Archivo',sans-serif;font-size:1rem}
+.btn:hover{background:var(--ink);color:#fff}
 .btn.green{background:var(--green);color:#fff}
-.btn.small{padding:9px 16px;box-shadow:3px 3px 0 var(--ink)}
-/* HERO — attraction field */
-.hero{position:relative;overflow:hidden;border-bottom:2px solid var(--ink);background:var(--paper)}
-.hero-grid{display:grid;grid-template-columns:1fr;gap:10px;padding:52px 0 46px;position:relative;z-index:2}
-.kicker{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;color:var(--green)}
-.kicker::before{content:"";width:34px;height:3px;background:var(--yellow)}
-.hero h1{font-size:clamp(2.6rem,8vw,4.8rem);max-width:12ch}
-.hero h1 .mag{color:var(--green);position:relative;white-space:nowrap}
-.hero h1 .mag::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.22em;background:var(--yellow);z-index:-1}
-.hero p.lede{font-size:1.2rem;max-width:52ch;margin:18px 0 26px}
+.btn.green:hover{background:var(--gold);color:var(--ink)}
+.btn.outlinew{background:var(--white);color:var(--green)}
+.btn.outlinew:hover{background:var(--gold);color:var(--ink)}
+.btn.small{padding:10px 20px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;color:var(--green);margin:0 0 16px}
+.kicker::before{content:"";width:34px;height:3px;border-radius:2px;background:var(--gold)}
+/* Hero — flat deep green, static magnet-field artwork */
+.hero{background:var(--green);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:36px;padding:64px 0 72px;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.18fr .82fr;gap:48px}}
+.hero .kicker{color:var(--gold)}
+.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);letter-spacing:-.02em;max-width:13ch}
+.hero h1 .gold{color:var(--gold)}
+.hero p.lede{font-size:1.18rem;color:var(--mint);max-width:52ch;margin:22px 0 30px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-.proofline{margin-top:22px;font-weight:600;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.stars{color:var(--green);letter-spacing:2px;font-size:1.1rem}
-.field{position:absolute;inset:0;z-index:1;pointer-events:none}
-.dot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--yellow);border:2px solid var(--ink);animation:pull 3.2s ease-in-out infinite alternate}
-.dot.g{background:var(--green)}.dot.s{width:8px;height:8px;background:#fff}
-@keyframes pull{from{transform:translate(0,0)}to{transform:translate(var(--tx),var(--ty))}}
-.tile{position:absolute;background:#fff;border:2px solid var(--ink);border-radius:var(--radius);padding:6px 12px;font-family:'Space Grotesk';font-weight:600;font-size:.85rem;box-shadow:3px 3px 0 var(--ink);animation:pull 3.8s ease-in-out infinite alternate}
-/* strip */
-.strip{background:var(--green);color:#fff;border-bottom:2px solid var(--ink)}
-.strip .wrap{display:flex;gap:10px 34px;flex-wrap:wrap;padding:14px 20px;font-family:'Space Grotesk';font-weight:600}
-.strip span::before{content:"◎ ";color:var(--yellow)}
-/* services overview — offset rows */
-section{padding:56px 0}
-.sec-head{max-width:640px;margin-bottom:30px}
-.sec-head h2{font-size:clamp(1.9rem,5vw,2.8rem);margin-bottom:10px}
-.svc-rows{border-top:2px solid var(--ink)}
-.svc-row{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:22px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);align-items:start}
-.svc-row:hover{background:#fff}
-.svc-row .n{font-family:'Space Grotesk';font-weight:700;font-size:1.4rem;color:var(--green)}
-.svc-row h3{font-size:1.3rem;margin-bottom:4px}
-.svc-row p{margin:0;max-width:60ch}
-.svc-row .go{font-weight:700;color:var(--green)}
-/* reviews */
-.reviews{background:var(--sage);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.rating-chip{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--ink);font-weight:700;font-size:.95rem;padding:9px 18px;border-radius:999px;margin-top:26px}
+.rating-chip .stars{color:var(--gold);letter-spacing:2px}
+.rating-chip .sep{color:var(--line);font-weight:400}
+.client-tiles{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.client-tiles span{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.45);color:#fff;font-weight:600;font-size:.9rem;padding:7px 15px;border-radius:999px}
+.client-tiles span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hero-art{display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:420px;height:auto;display:block}
+/* Intro */
+.intro{padding:64px 0 8px}
+.intro-grid{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:860px){.intro-grid{grid-template-columns:.9fr 1.1fr;gap:48px}}
+.intro h2{font-size:clamp(1.9rem,4.5vw,2.7rem)}
+.intro p{margin:0 0 14px;max-width:58ch;font-size:1.08rem}
+.intro a.more{font-weight:700}
+/* Services overview — numbered grid */
+section.block{padding:56px 0 72px}
+.sec-head{max-width:660px;margin-bottom:34px}
+.sec-head h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:12px}
+.sec-head p{margin:0}
+.svc-grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:760px){.svc-grid{grid-template-columns:repeat(6,1fr)}.svc-card{grid-column:span 2}.svc-card.wide{grid-column:span 3}}
+.svc-card{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow)}
+.svc-card:hover{border-color:var(--green)}
+.svc-card .n{font-family:'Space Grotesk';font-weight:700;font-size:2rem;color:var(--green);display:block;margin-bottom:14px}
+.svc-card .n em{font-style:normal;color:var(--gold)}
+.svc-card h3{font-size:1.28rem;margin-bottom:8px}
+.svc-card p{margin:0 0 14px}
+.svc-card .go{font-weight:700;color:var(--green)}
+.svc-card:hover .go{color:var(--gold)}
+/* Proof — mint band */
+.proof{background:var(--mint);padding:72px 0}
+.proof-top{display:grid;gap:26px;grid-template-columns:1fr;align-items:end;margin-bottom:36px}
+@media(min-width:860px){.proof-top{grid-template-columns:auto 1fr;gap:56px}}
+.bignum{font-family:'Space Grotesk';font-weight:700;font-size:clamp(5.2rem,13vw,8.6rem);line-height:.9;color:var(--green);letter-spacing:-.03em}
+.bignum .stars{display:block;font-size:1.7rem;color:var(--gold);letter-spacing:6px;margin-top:12px}
+.proof-top h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:10px}
+.proof-top p{margin:0;max-width:52ch}
 .rev-grid{display:grid;gap:18px;grid-template-columns:1fr}
-.rev{background:var(--paper);border:2px solid var(--ink);border-radius:var(--radius);padding:22px;box-shadow:5px 5px 0 var(--ink)}
-.rev .who{font-family:'Space Grotesk';font-weight:700;margin-top:12px}
-.rev .tag{font-size:.85rem;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
-.rev p{margin:8px 0 0}
-/* closing */
-.closing{background:var(--ink);color:var(--paper)}
-.closing h2{font-size:clamp(2rem,6vw,3.2rem);max-width:16ch}
-.closing p{max-width:52ch}
-.closing .btn{box-shadow:4px 4px 0 var(--yellow)}
-footer.site{background:var(--paper);border-top:2px solid var(--ink);padding:38px 0 26px}
-.fgrid{display:grid;gap:24px;grid-template-columns:1fr}
-footer.site img{width:56px;height:56px;border-radius:var(--radius);border:2px solid var(--ink)}
-footer.site nav a{display:block;color:var(--ink);text-decoration:none;padding:3px 0;font-weight:600}
-.farc{width:100%;height:44px;display:block;margin-top:10px}
-.small{font-size:.9rem;opacity:.85}
-@media(min-width:820px){.hero-grid{grid-template-columns:1.25fr .75fr;align-items:end}.rev-grid{grid-template-columns:repeat(3,1fr)}.fgrid{grid-template-columns:1.4fr 1fr 1fr}.svc-row{grid-template-columns:70px 1fr auto}}
-@media(prefers-reduced-motion:reduce){.dot,.tile{animation:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+@media(min-width:860px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.rev .stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+.rev p{margin:10px 0 0}
+.rev .who{font-family:'Space Grotesk';font-weight:700;margin-top:16px}
+.rev .tag{font-size:.82rem;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.proof-links{margin-top:26px;font-weight:700}
+/* Closing — green panel */
+.closing{padding:72px 0}
+.panel{background:var(--green);color:#fff;border-radius:28px;padding:44px 32px;position:relative;overflow:hidden}
+@media(min-width:860px){.panel{padding:56px}}
+.panel .kicker{color:var(--gold)}
+.panel h2{font-size:clamp(2rem,5vw,3.1rem);max-width:18ch}
+.panel p{max-width:52ch;color:var(--mint)}
+.panel .cta-row{margin-top:26px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.panel .call{color:#fff;font-weight:700}
+.panel .call:hover{color:var(--gold)}
+.panel svg{position:absolute;right:-30px;bottom:-46px;width:300px;height:auto;opacity:.5}
+/* Footer — white logo band, then deep green */
+footer.site{background:var(--green);color:#fff;margin-top:0}
+.fband{background:#fff;border-top:1px solid var(--line);padding:16px 0}
+.fband .wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.fband img{width:150px;height:auto;display:block;mix-blend-mode:multiply}
+.fband .ftag{color:var(--green);font-weight:600;font-size:.95rem}
+.fbody{padding:44px 0 28px}
+.fgrid{display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:820px){.fgrid{grid-template-columns:1.4fr 1fr 1fr}}
+.fword{font-family:'Space Grotesk';font-weight:700;font-size:1.3rem;line-height:1.15}
+.fword span{color:var(--gold)}
+footer.site p{margin:10px 0}
+footer.site nav a{display:block;color:#fff;text-decoration:none;padding:3px 0;font-weight:600}
+footer.site nav a:hover{color:var(--gold)}
+footer.site a{color:#fff}
+footer.site a:hover{color:var(--gold)}
+.fhead{font-family:'Space Grotesk';font-weight:700;margin:0 0 6px}
+.small{font-size:.9rem;color:var(--mint)}
+.fbase{border-top:1px solid rgba(255,255,255,.25);padding:18px 0 24px;margin-top:8px}
 </style>
 </head>
 <body>
 <header class="site"><div class="wrap hbar">
-<a class="brand" href="index.html"><img src="logo.jpg" alt="Digital Business Magnets logo">Digital Business<br>Magnets</a>
+<a class="brand" href="index.html"><img src="logo.jpg" alt="Digital Business Magnets logo" width="166" height="96"></a>
 <nav class="main" aria-label="Main">
 <a href="index.html" aria-current="page">Home</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About &amp; Reviews</a><a href="contact.html">Contact</a>
 </nav>
@@ -98,73 +142,88 @@ footer.site nav a{display:block;color:var(--ink);text-decoration:none;padding:3p
 </div></header>
 
 <main>
-<section class="hero">
-<svg class="field" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true" style="width:100%;height:100%">
-<path d="M-40,470 C300,430 620,300 1240,60" fill="none" stroke="#0E5A3C" stroke-width="2" opacity=".28"/>
-<path d="M-40,400 C320,380 640,240 1240,10" fill="none" stroke="#0E5A3C" stroke-width="2" opacity=".18"/>
-<path d="M-40,540 C340,470 700,360 1240,140" fill="none" stroke="#F2B705" stroke-width="3" opacity=".5"/>
-<path d="M-40,330 C300,330 560,190 1240,-40" fill="none" stroke="#0E5A3C" stroke-width="2" opacity=".12"/>
-</svg>
-<span class="dot" style="top:16%;left:6%;--tx:60px;--ty:26px"></span>
-<span class="dot g" style="top:64%;left:4%;--tx:74px;--ty:-20px"></span>
-<span class="dot s" style="top:26%;left:44%;--tx:50px;--ty:14px"></span>
-<span class="tile" style="top:14%;right:8%;--tx:-46px;--ty:22px">Clothing brand</span>
-<span class="tile" style="top:58%;right:14%;--tx:-56px;--ty:-16px">Cosmetics brand</span>
-<div class="wrap hero-grid">
+<section class="hero"><div class="wrap hero-grid">
 <div>
 <p class="kicker">eCommerce agency · Islamabad</p>
-<h1>We turn product brands into <span class="mag">magnets</span> for customers.</h1>
+<h1>We turn product brands into <span class="gold">magnets</span> for customers.</h1>
 <p class="lede">You have the products. We build the store, the brand and the marketing that pull buyers in — eCommerce websites, branding, growth strategy, social content and creatives, all under one roof in Bahria Town Phase 4.</p>
-<div class="hero-cta"><a class="btn" href="contact.html">Start Your Project</a><a class="btn green" href="work.html">See client stories</a></div>
-<p class="proofline"><span class="stars" aria-hidden="true">★★★★★</span> 4.9 on Google · 14 reviews <span aria-hidden="true">·</span> Open 24 hours</p>
+<div class="hero-cta"><a class="btn" href="contact.html">Start Your Project</a><a class="btn outlinew" href="work.html">See client stories</a></div>
+<div><span class="rating-chip"><span class="stars" aria-hidden="true">★★★★★</span> 4.9 on Google <span class="sep">·</span> 14 reviews <span class="sep">·</span> Open 24 hours</span></div>
+<div class="client-tiles" aria-label="Client types"><span>Clothing brand</span><span>Cosmetics brand</span></div>
 </div>
-<div>
-<p style="font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;margin:0 0 8px">Selling on Instagram or word of mouth alone?</p>
-<p style="margin:0">That is exactly where our clients started — a clothing brand with great products and a weak online presence, and a cosmetics brand that needed more than Instagram to scale. Both now sell through a brand customers trust. Yours can be next.</p>
-<p><a href="services.html" style="font-weight:700">What we can build for you →</a></p>
-</div>
-</div>
-</section>
-
-<div class="strip" aria-hidden="true"><div class="wrap"><span>Online stores that sell</span><span>Brands customers trust</span><span>Content that gets noticed</span><span>A plan, not guesswork</span></div></div>
-
-<section><div class="wrap">
-<div class="sec-head"><p class="kicker">What we do</p><h2>Everything a product brand needs to grow online</h2><p>Five services, one team. Pick one, or let us build the whole magnet. No prices on a page — every brand is different, so we quote after we understand what you sell.</p></div>
-<div class="svc-rows">
-<a class="svc-row" href="services.html"><span class="n">01</span><span><h3>eCommerce Website Design &amp; Build</h3><p>Professional online stores that turn visitors into orders.</p></span><span class="go">Details →</span></a>
-<a class="svc-row" href="services.html"><span class="n">02</span><span><h3>Brand Building &amp; Branding</h3><p>An identity and image that customers recognise — and trust.</p></span><span class="go">Details →</span></a>
-<a class="svc-row" href="services.html"><span class="n">03</span><span><h3>Business Growth Strategy</h3><p>Clear direction, practical planning and consistent support.</p></span><span class="go">Details →</span></a>
-<a class="svc-row" href="services.html"><span class="n">04</span><span><h3>Social Media Content &amp; Design</h3><p>Engaging posts and designs for your brand's channels.</p></span><span class="go">Details →</span></a>
-<a class="svc-row" href="services.html"><span class="n">05</span><span><h3>Marketing Creatives</h3><p>Ad and campaign creatives that make your products stand out.</p></span><span class="go">Details →</span></a>
+<div class="hero-art">
+<svg viewBox="0 0 420 420" role="img" aria-label="Magnet field arcs artwork">
+<g fill="none" stroke-linecap="round">
+<path d="M36,384 A248,248 0 0 1 384,384" stroke="#F0A800" stroke-width="5"/>
+<path d="M76,384 A208,208 0 0 1 344,384" stroke="#FFFFFF" stroke-width="3" opacity=".55"/>
+<path d="M116,384 A168,168 0 0 1 304,384" stroke="#F0A800" stroke-width="4" opacity=".8"/>
+<path d="M156,384 A128,128 0 0 1 264,384" stroke="#FFFFFF" stroke-width="3" opacity=".4"/>
+<path d="M196,384 A88,88 0 0 1 224,384" stroke="#F0A800" stroke-width="4" opacity=".6"/>
+</g>
+<circle cx="210" cy="384" r="13" fill="#F0A800"/>
+<circle cx="36" cy="384" r="8" fill="#FFFFFF"/>
+<circle cx="384" cy="384" r="8" fill="#FFFFFF"/>
+<circle cx="96" cy="196" r="7" fill="#F0A800"/>
+<circle cx="330" cy="208" r="7" fill="#FFFFFF" opacity=".85"/>
+<circle cx="210" cy="118" r="6" fill="#F0A800" opacity=".85"/>
+<path d="M196,384 L210,330 L224,384 Z" fill="#F0A800"/>
+</svg>
 </div>
 </div></section>
 
-<section class="reviews"><div class="wrap">
-<div class="sec-head"><p class="kicker">Proof, in their words</p><h2>4.9 on Google, from 14 reviews</h2><p>These are real reviews from our Google listing — shortened only where the original ran long.</p></div>
+<section class="intro"><div class="wrap intro-grid">
+<div><p class="kicker">Where most brands start</p><h2>Selling on Instagram or word of mouth alone?</h2></div>
+<div>
+<p>That is exactly where our clients started — a clothing brand with great products and a weak online presence, and a cosmetics brand that needed more than Instagram to scale. Both now sell through a brand customers trust. Yours can be next.</p>
+<p><a class="more" href="services.html">What we can build for you →</a></p>
+</div>
+</div></section>
+
+<section class="block"><div class="wrap">
+<div class="sec-head"><p class="kicker">What we do</p><h2>Everything a product brand needs to grow online</h2><p>Five services, one team. Pick one, or let us build the whole magnet. No prices on a page — every brand is different, so we quote after we understand what you sell.</p></div>
+<div class="svc-grid">
+<a class="svc-card" href="services.html#stores"><span class="n">01<em>.</em></span><h3>eCommerce Website Design &amp; Build</h3><p>Professional online stores that turn visitors into orders.</p><span class="go">Details →</span></a>
+<a class="svc-card" href="services.html#branding"><span class="n">02<em>.</em></span><h3>Brand Building &amp; Branding</h3><p>An identity and image that customers recognise — and trust.</p><span class="go">Details →</span></a>
+<a class="svc-card" href="services.html#strategy"><span class="n">03<em>.</em></span><h3>Business Growth Strategy</h3><p>Clear direction, practical planning and consistent support.</p><span class="go">Details →</span></a>
+<a class="svc-card wide" href="services.html#social"><span class="n">04<em>.</em></span><h3>Social Media Content &amp; Design</h3><p>Engaging posts and designs for your brand's channels.</p><span class="go">Details →</span></a>
+<a class="svc-card wide" href="services.html#creatives"><span class="n">05<em>.</em></span><h3>Marketing Creatives</h3><p>Ad and campaign creatives that make your products stand out.</p><span class="go">Details →</span></a>
+</div>
+</div></section>
+
+<section class="proof"><div class="wrap">
+<div class="proof-top">
+<div class="bignum">4.9<span class="stars" aria-hidden="true">★★★★★</span></div>
+<div><p class="kicker">Proof, in their words</p><h2>4.9 on Google, from 14 reviews</h2><p>These are real reviews from our Google listing — shortened only where the original ran long.</p></div>
+</div>
 <div class="rev-grid">
 <article class="rev"><span class="stars" aria-label="Rated 5 out of 5">★★★★★</span><p>“I had a very positive experience working with this team for brand building and business growth strategy services. They provided clear direction, practical planning, and consistent support throughout the process.”</p><p class="who">WK Essential Hub LLC</p><p class="tag">Brand building · Growth strategy</p></article>
 <article class="rev"><span class="stars" aria-label="Rated 5 out of 5">★★★★★</span><p>“When we started our clothing brand, we had great products but struggled to build a strong online presence. The team completely transformed our brand by designing a professional website, creating engaging social media content, and developing [our marketing].”</p><p class="who">EASY Buy</p><p class="tag">Clothing brand</p></article>
 <article class="rev"><span class="stars" aria-label="Rated 5 out of 5">★★★★★</span><p>“The team helped us with a beautiful eCommerce website, professional branding, eye-catching social media designs, and marketing creatives that made our products stand out. Since working with them, our online orders have increased significantly.”</p><p class="who">Orgavia products</p><p class="tag">Cosmetics brand</p></article>
 </div>
-<p style="margin-top:22px"><a href="about.html" style="font-weight:700">Read the full reviews →</a> &nbsp;·&nbsp; <a href="work.html" style="font-weight:700">See their stories →</a></p>
+<p class="proof-links"><a href="about.html">Read the full reviews →</a> &nbsp;·&nbsp; <a href="work.html">See their stories →</a></p>
 </div></section>
 
 <section class="closing"><div class="wrap">
-<p class="kicker" style="color:var(--yellow)">Your move</p>
+<div class="panel">
+<svg viewBox="0 0 300 200" aria-hidden="true"><g fill="none" stroke="#F0A800" stroke-width="4" stroke-linecap="round"><path d="M20,196 A190,190 0 0 1 290,196" opacity=".7"/><path d="M65,196 A140,140 0 0 1 245,196" opacity=".5"/><path d="M110,196 A90,90 0 0 1 200,196" opacity=".35"/></g><circle cx="155" cy="196" r="9" fill="#F0A800"/></svg>
+<p class="kicker">Your move</p>
 <h2>Ready to pull more customers toward your brand?</h2>
 <p>Tell us what you sell and what you need. We are open 24 hours, and the first conversation costs nothing but a few minutes.</p>
-<p style="margin-top:24px"><a class="btn" href="contact.html">Start Your Project</a> &nbsp; <a href="tel:+923355455112" style="color:#fff;font-weight:700">or call +92 335 5455112</a></p>
+<div class="cta-row"><a class="btn" href="contact.html">Start Your Project</a><a class="call" href="tel:+923355455112">or call +92 335 5455112</a></div>
+</div>
 </div></section>
 </main>
 
-<footer class="site"><div class="wrap">
-<svg class="farc" viewBox="0 0 1200 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C300,36 600,20 1200,4" fill="none" stroke="#0E5A3C" stroke-width="2" opacity=".4"/><path d="M0,44 C340,38 700,26 1200,12" fill="none" stroke="#F2B705" stroke-width="3" opacity=".6"/></svg>
+<footer class="site">
+<div class="fband"><div class="wrap"><img src="logo.jpg" alt="Digital Business Magnets logo" width="166" height="96"><span class="ftag">eCommerce agency for product brands — Islamabad</span></div></div>
+<div class="fbody"><div class="wrap">
 <div class="fgrid">
-<div><img src="logo.jpg" alt="Digital Business Magnets logo"><p><strong>Digital Business Magnets</strong><br>eCommerce agency for product brands.<br>Bahria Expressway, Bahria Town Phase 4,<br>Islamabad, 44000, Pakistan</p></div>
-<div><p><strong>Explore</strong></p><nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About &amp; Reviews</a><a href="contact.html">Contact</a></nav></div>
-<div><p><strong>Talk to us</strong></p><p>Phone: <a href="tel:+923355455112">+92 335 5455112</a><br>Open 24 hours, every day<br>4.9 on Google · 14 reviews</p><p><a class="btn small" href="contact.html">Start Your Project</a></p></div>
+<div><p class="fword">Digital Business<br><span>Magnets</span></p><p>eCommerce agency for product brands.<br>Bahria Expressway, Bahria Town Phase 4,<br>Islamabad, 44000, Pakistan</p></div>
+<div><p class="fhead">Explore</p><nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About &amp; Reviews</a><a href="contact.html">Contact</a></nav></div>
+<div><p class="fhead">Talk to us</p><p>Phone: <a href="tel:+923355455112">+92 335 5455112</a><br>Open 24 hours, every day<br>4.9 on Google · 14 reviews</p><p><a class="btn small" href="contact.html">Start Your Project</a></p></div>
 </div>
-<p class="small">© 2026 Digital Business Magnets. All rights reserved.</p>
-</div></footer>
+</div></div>
+<div class="fbase"><div class="wrap"><span class="small">© 2026 Digital Business Magnets. All rights reserved.</span></div></div>
+</footer>
 </body>
 </html>
