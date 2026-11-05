@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work — Fades, Cuts &amp; Shaves | Northgate Barbers, Manchester</title>
+<meta name="description" content="See the work at Northgate Barbers, Manchester: skin fades, classic cuts, beard work and hot towel shaves — what each one is, how long it takes and what it costs.">
+<meta property="og:title" content="Our Work — Northgate Barbers">
+<meta property="og:description" content="Straight off the chair on Oldham Road: fades, cuts, beard work and shaves, captioned with the service, the time and the price.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== shared tokens (identical on every page) ===== */
+:root{
+  --ground:#F5EFE4; --ground2:#EFE6D3; --ink:#1B140E; --ink2:#2A2016;
+  --muted:#6E6257; --line:#D9CCB4; --accent:#B3202A; --accent-d:#8F181F;
+  --brass:#C09335; --panel:#1E1712; --cream:#FBF7EE;
+  --r:3px; --max:1180px;
+  --font-d:"Fraunces",Georgia,serif; --font-b:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:var(--cream)}
+a{color:inherit}
+img,svg{display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:var(--font-d);line-height:1.02;font-weight:900}
+.btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);color:var(--cream);font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:1rem 1.7rem;border-radius:var(--r);text-decoration:none;border:2px solid var(--accent);transition:background .25s,transform .25s}
+.btn:hover{background:var(--accent-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+section{padding:5.2rem 0}
+.polebar{height:16px;border-radius:8px;border:2px solid var(--ink);background:repeating-linear-gradient(48deg,var(--accent) 0 14px,var(--cream) 14px 28px,var(--ink2) 28px 42px,var(--cream) 42px 56px)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+
+/* ===== shared header ===== */
+header.site-head{position:sticky;top:0;z-index:50;background:rgba(245,239,228,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:72px;flex-wrap:wrap;padding:.5rem 0}
+.logo{font-family:var(--font-d);font-weight:900;font-size:1.45rem;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:.65rem}
+.logo .mark{width:14px;height:34px;border-radius:8px;border:2px solid var(--ink);background:repeating-linear-gradient(48deg,var(--accent) 0 6px,var(--cream) 6px 12px,var(--ink2) 12px 18px,var(--cream) 18px 24px);flex:none}
+.nav nav{display:flex;gap:1.7rem;flex-wrap:wrap}
+.nav nav a{text-decoration:none;font-weight:600;font-size:.92rem;position:relative;padding:.3rem 0}
+.nav nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .3s}
+.nav nav a:hover::after{width:100%}
+.nav nav a[aria-current="page"]{color:var(--accent)}
+.nav nav a[aria-current="page"]::after{width:100%}
+.nav-side{display:flex;align-items:center;gap:1.1rem}
+.nav-side .tel{font-weight:700;text-decoration:none;font-size:.95rem;white-space:nowrap}
+.nav-side .tel:hover{color:var(--accent)}
+.nav-side .btn{padding:.65rem 1.2rem}
+@media(max-width:900px){.nav nav{order:3;width:100%;gap:1.2rem}.nav-side .tel{display:none}}
+
+/* ===== shared footer ===== */
+.site-foot{background:var(--ink);color:var(--cream);padding:3.6rem 0 2.2rem}
+.site-foot .name{font-family:var(--font-d);font-weight:900;font-size:clamp(2.6rem,8vw,5.5rem);line-height:.95;letter-spacing:-.01em}
+.site-foot .name em{color:var(--accent);font-style:italic}
+.site-foot .polebar{border-color:var(--cream);margin-top:1.6rem;max-width:520px}
+.site-foot .fnav{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:2rem}
+.site-foot .fnav a{text-decoration:none;font-weight:600;font-size:.92rem;color:var(--cream)}
+.site-foot .fnav a:hover{color:var(--brass)}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid #3A2E22;color:#B7A98F;font-size:.9rem}
+
+/* ===== page: work — staggered captioned gallery ===== */
+.page-hero{padding:4.2rem 0 3rem;border-bottom:1px solid var(--line)}
+.page-hero .cols{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:end}
+.page-hero h1{font-size:clamp(2.6rem,6vw,4.4rem);letter-spacing:-.015em}
+.page-hero h1 em{font-style:italic;font-weight:700;color:var(--accent)}
+.page-hero p{color:var(--ink2);font-size:1.12rem}
+.page-hero .pole{width:74px;height:200px;border-radius:38px;border:3px solid var(--ink);margin-left:auto;position:relative;overflow:hidden}
+.page-hero .pole::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(48deg,var(--accent) 0 20px,var(--cream) 20px 40px,var(--ink2) 40px 60px,var(--cream) 60px 80px);animation:turn 4s linear infinite}
+@keyframes turn{from{background-position:0 0}to{background-position:0 113px}}
+@media(max-width:820px){.page-hero .cols{grid-template-columns:1fr}.page-hero .pole{display:none}}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.piece{border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--cream);transition:transform .3s}
+.piece:hover{transform:translateY(-5px)}
+.piece .face{min-height:250px;padding:1.4rem;display:flex;flex-direction:column;justify-content:space-between}
+.piece .face b{font-family:var(--font-d);font-weight:900;line-height:.95}
+.piece .face span{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.piece figcaption{padding:1.1rem 1.3rem 1.3rem;border-top:2px solid var(--ink)}
+.piece figcaption .stripe{height:10px;border-radius:6px;border:2px solid var(--ink);background:repeating-linear-gradient(48deg,var(--accent) 0 8px,var(--cream) 8px 16px,var(--ink2) 16px 24px,var(--cream) 24px 32px);margin-bottom:.9rem}
+.piece figcaption h3{font-size:1.3rem;font-weight:700}
+.piece figcaption p{color:var(--muted);font-size:.95rem;margin-top:.3rem}
+.piece figcaption .meta{margin-top:.6rem;font-weight:700;font-size:.88rem}
+.piece figcaption .meta a{color:var(--accent);text-decoration:none;border-bottom:2px solid var(--accent)}
+.p1{grid-column:1/8}.p1 .face{background:var(--ink);color:var(--cream)}.p1 .face b{font-size:3.4rem}
+.p2{grid-column:8/13;margin-top:3.2rem}.p2 .face{background:var(--accent);color:var(--cream)}.p2 .face b{font-size:2.3rem;font-style:italic}
+.p3{grid-column:1/6;margin-top:-1rem}.p3 .face{background:var(--ground2)}.p3 .face b{font-size:2.6rem}
+.p4{grid-column:6/13}.p4 .face{background:var(--cream)}.p4 .face b{font-size:2.7rem}
+.p5{grid-column:1/7}.p5 .face{background:var(--brass);color:var(--ink)}.p5 .face b{font-size:2.4rem}
+.p6{grid-column:7/13;margin-top:2.6rem}.p6 .face{background:var(--ink2);color:var(--cream)}.p6 .face b{font-size:2.4rem;font-style:italic}
+@media(max-width:820px){.gallery>*{grid-column:1/13!important;margin-top:0!important}}
+.cta-band{background:var(--panel);color:var(--cream)}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.cta-band h2 em{color:var(--accent);font-style:italic}
+.cta-band p{color:#CFC4AE;margin-top:.6rem}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>Northgate Barbers</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Prices</a>
+      <a href="work.html" aria-current="page">Our Work</a>
+      <a href="about.html">About &amp; Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-side">
+      <a class="tel" href="tel:+441614960000">0161 496 0000</a>
+      <a class="btn" href="contact.html">Book a Chair</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap cols">
+      <div>
+        <p class="eyebrow">Our Work</p>
+        <h1>Straight off <em>the chair.</em></h1>
+        <p style="margin-top:1.1rem">Every piece below is captioned with the service it came from, how long it took and what it costs — so you know exactly what to ask for when you sit down.</p>
+      </div>
+      <div class="pole" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="gallery">
+
+        <figure class="piece p1 rv">
+          <div class="face"><span>Skin Fade</span><b>ZERO<br>BLEND.</b></div>
+          <figcaption>
+            <div class="stripe" aria-hidden="true"></div>
+            <h3>The zero-blend fade</h3>
+            <p>Taken down to skin at the sides and blended up with no visible line — the finish is in the gradient.</p>
+            <p class="meta">Skin Fade · 30 min · £18 · <a href="contact.html">Book this</a></p>
+          </figcaption>
+        </figure>
+
+        <figure class="piece p2 rv">
+          <div class="face"><span>Hot Towel Shave</span><b>old-school<br>ritual,</b></div>
+          <figcaption>
+            <div class="stripe" aria-hidden="true"></div>
+            <h3>The hot towel shave</h3>
+            <p>Hot towels, rich lather and a cut-throat razor. Thirty minutes, zero rush, closest shave there is.</p>
+            <p class="meta">Hot Towel Shave · 30 min · £20 · <a href="contact.html">Book this</a></p>
+          </figcaption>
+        </figure>
+
+        <figure class="piece p3 rv">
+          <div class="face"><span>Beard Work</span><b>SHARP<br>LINES.</b></div>
+          <figcaption>
+            <div class="stripe" aria-hidden="true"></div>
+            <h3>Beard shape &amp; line-up</h3>
+            <p>Shape restored, edges razored clean, finished with oil. The difference between grown and groomed.</p>
+            <p class="meta">Beard Trim · 15 min · £10 · <a href="contact.html">Book this</a></p>
+          </figcaption>
+        </figure>
+
+        <figure class="piece p4 rv">
+          <div class="face"><span>Cut &amp; Beard</span><b>THE FULL<br>WORKS.</b></div>
+          <figcaption>
+            <div class="stripe" aria-hidden="true"></div>
+            <h3>Cut &amp; beard, one sitting</h3>
+            <p>The complete reset: any cut, full beard service and a hot towel, back to back in one chair.</p>
+            <p class="meta">Cut &amp; Beard · 50 min · £25 · <a href="contact.html">Book this</a></p>
+          </figcaption>
+        </figure>
+
+        <figure class="piece p5 rv">
+          <div class="face"><span>Classic Cut</span><b>TIDY FOR<br>WEEKS.</b></div>
+          <figcaption>
+            <div class="stripe" aria-hidden="true"></div>
+            <h3>The classic scissor cut</h3>
+            <p>All scissors, shaped to grow out properly — still looking right three weeks later.</p>
+            <p class="meta">Classic Cut · 30 min · £16 · <a href="contact.html">Book this</a></p>
+          </figcaption>
+        </figure>
+
+        <figure class="piece p6 rv">
+          <div class="face"><span>Kids Cut</span><b>first chair,<br>no tears.</b></div>
+          <figcaption>
+            <div class="stripe" aria-hidden="true"></div>
+            <h3>First cuts, done gently</h3>
+            <p>Under 12s in a patient chair with a parent right alongside. In, tidy, and back out in twenty minutes.</p>
+            <p class="meta">Kids Cut · 20 min · £12 · <a href="contact.html">Book this</a></p>
+          </figcaption>
+        </figure>
+
+      </div>
+      <p style="margin-top:2.4rem;color:var(--muted)">Follow <b style="color:var(--ink)">@northgatebarbers</b> for the day's fades — or come and be the next one. Pieces shown are illustrative posters for this demo site.</p>
+    </div>
+  </section>
+
+  <!-- CLOSING PUSH -->
+  <section class="cta-band">
+    <div class="wrap rv">
+      <div>
+        <h2>Seen something you <em>like?</em></h2>
+        <p>Book the service straight from the caption — or walk in and show us this page.</p>
+      </div>
+      <a class="btn" href="contact.html">Book a Chair</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="name">Northgate <em>Barbers</em></p>
+    <div class="polebar" aria-hidden="true"></div>
+    <nav class="fnav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Prices</a>
+      <a href="work.html">Our Work</a>
+      <a href="about.html">About &amp; Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="row">
+      <span>© <span id="yr">2026</span> Northgate Barbers, Manchester</span>
+      <span>Walk-ins welcome · Card &amp; cash</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
