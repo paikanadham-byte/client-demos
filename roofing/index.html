@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summit Roofing Co — Roof Repairs, Re-Roofs &amp; Flat Roofs in Sheffield</title>
+<meta name="description" content="Summit Roofing Co, Sheffield. Tile and slate repairs from £180, full re-roofs from £4,950, EPDM flat roofs and chimney work — every job photographed and guaranteed for 10 years.">
+<meta property="og:title" content="Summit Roofing Co — Sheffield">
+<meta property="og:description" content="Roofs built to Sheffield weather. Repairs, re-roofs and flat roofs, photographed at every stage and guaranteed 10 years.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RoofingContractor","name":"Summit Roofing Co","telephone":"+44 114 496 0871","email":"quotes@summitroofingco.example","address":{"@type":"PostalAddress","streetAddress":"Unit 4, Foundry Yard, Ecclesall Road","addressLocality":"Sheffield","postalCode":"S11 8PR","addressCountry":"GB"},"openingHours":["Mo-Fr 07:30-17:30","Sa 08:00-12:00"],"priceRange":"££"}
+</script>
+<style>
+:root{
+  --ground:#EFEDE8; --paper:#FAF8F3; --ink:#212429; --ink2:#33373E;
+  --muted:#6B675E; --line:#D8D3C6; --tile:#A63D22; --tile-d:#84301B;
+  --steel:#8C8578; --panel:#1F2126; --cream:#F6F2E9;
+  --r:0px; --max:1180px;
+  --font-d:"Zilla Slab",Georgia,serif; --font-b:"Source Sans 3",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--tile);color:var(--cream)}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--tile)}
+h1,h2,h3{font-family:var(--font-d);line-height:1.05}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--tile);color:#fff;font-weight:700;font-size:.97rem;padding:1rem 1.8rem;text-decoration:none;border:2px solid var(--tile);transition:background .25s,transform .25s;clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 14px) 100%,0 100%)}
+.btn:hover{background:var(--tile-d);transform:translateY(-2px)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--cream)}
+:focus-visible{outline:3px solid var(--tile);outline-offset:3px}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:50;background:rgba(239,237,232,.95);backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{text-decoration:none;font-family:var(--font-d);font-weight:700;font-size:1.4rem;display:flex;align-items:center;gap:.7rem}
+.logo svg{flex:none}
+.nav nav{display:flex;gap:1.9rem}
+.nav nav a{text-decoration:none;font-weight:700;font-size:.92rem;padding:.3rem 0;position:relative}
+.nav nav a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--tile);transition:width .3s}
+.nav nav a:hover::after{width:100%}
+.nav .tel{font-weight:700;text-decoration:none;font-size:.95rem}
+.nav .tel:hover{color:var(--tile)}
+@media(max-width:860px){.nav nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:var(--ink);color:var(--cream)}
+.hero .roofline{position:absolute;inset:auto 0 0 0;width:100%;height:170px;pointer-events:none}
+.hero .wrap{position:relative;padding-top:4.6rem;padding-bottom:11rem;max-width:var(--max)}
+.hero h1{font-size:clamp(3rem,7vw,5.4rem);font-weight:700;max-width:12ch}
+.hero h1 em{font-style:normal;color:#E0805F}
+.hero p.lede{margin:1.4rem 0 2.1rem;font-size:1.18rem;color:#D8D2C4;max-width:38ch}
+.hero .btn.line{color:var(--cream);border-color:var(--cream)}
+.hero .btn.line:hover{background:var(--cream);color:var(--ink)}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.pitch-tag{position:absolute;right:24px;top:4.6rem;text-align:right}
+.pitch-tag b{font-family:var(--font-d);font-size:clamp(3.4rem,7vw,5.6rem);line-height:.9;display:block;color:var(--cream)}
+.pitch-tag span{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#B9B2A2}
+.pitch-line{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.2s ease .4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(max-width:760px){.pitch-tag{display:none}.hero .wrap{padding-bottom:9rem}}
+
+/* ---------- angled divider ---------- */
+.angle{height:54px;background:var(--tile);clip-path:polygon(0 62%,100% 0,100% 38%,0 100%);margin-top:-27px;position:relative;z-index:2}
+
+/* ---------- guarantee band ---------- */
+.band{background:var(--paper);border-bottom:1px solid var(--line)}
+.band .wrap{display:flex;justify-content:space-between;gap:2rem;padding-top:1.6rem;padding-bottom:1.6rem;flex-wrap:wrap}
+.band div{display:flex;gap:.8rem;align-items:baseline}
+.band b{font-family:var(--font-d);font-size:1.3rem}
+.band span{color:var(--muted);font-size:.93rem}
+.band svg{flex:none;align-self:center}
+@media(max-width:760px){.band .wrap{flex-direction:column;gap:.7rem}}
+
+/* ---------- sections ---------- */
+section{padding:5.4rem 0}
+.sec-head{margin-bottom:2.8rem;max-width:720px}
+.sec-head h2{font-size:clamp(2.1rem,4.4vw,3.2rem);margin:.4rem 0 .8rem}
+.sec-head p{color:var(--muted)}
+
+/* services: stacked courses */
+.course{display:grid;grid-template-columns:110px 1fr auto;gap:2rem;align-items:center;padding:1.9rem 0;border-top:1px solid var(--line);position:relative;transition:background .25s}
+.course:last-child{border-bottom:1px solid var(--line)}
+.course:hover{background:var(--paper)}
+.course .deg{font-family:var(--font-d);font-size:2rem;font-weight:700;color:var(--steel)}
+.course h3{font-size:1.6rem;margin-bottom:.25rem}
+.course p{color:var(--muted);max-width:52ch}
+.course .cost{text-align:right}
+.course .cost b{font-family:var(--font-d);font-size:1.7rem;display:block;line-height:1}
+.course .cost span{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:760px){.course{grid-template-columns:1fr;gap:.5rem}.course .cost{text-align:left}}
+
+/* work: pitched tiles */
+.roofs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.roof{padding:1.8rem;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;transition:transform .3s}
+.roof:hover{transform:translateY(-5px)}
+.roof::before{content:"";position:absolute;inset:0;background:currentColor;clip-path:polygon(0 34%,50% 0,100% 34%,100% 100%,0 100%);opacity:1}
+.roof>*{position:relative;z-index:1}
+.roof .where{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#E0805F}
+.roof h3{font-size:1.55rem;margin:.4rem 0 .4rem;color:#fff}
+.roof p{font-size:.94rem;color:rgba(255,255,255,.85)}
+.roof.r1{background:#3A3E45;color:#565D66}
+.roof.r2{background:#7A4A38;color:#96604A}
+.roof.r3{background:#2E3138;color:#4A5058}
+.roof .meta{display:flex;gap:1.2rem;margin-top:.9rem;border-top:1px solid rgba(255,255,255,.3);padding-top:.7rem;color:#fff;font-size:.85rem;font-weight:700}
+@media(max-width:900px){.roofs{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--ink);color:var(--cream)}
+.reviews .sec-head p{color:#B9B2A2}
+.rev-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}
+.rev{background:#26282E;border:1px solid #3A3D44;padding:1.8rem}
+.rev .stars{color:#E0805F;letter-spacing:.18em;font-size:.9rem}
+.rev p{font-family:var(--font-d);font-size:1.22rem;line-height:1.4;margin:.8rem 0 1rem}
+.rev.big p{font-size:1.65rem}
+.rev footer{font-size:.85rem;color:#B9B2A2;font-weight:600}
+.sample-note{margin-top:1rem;font-size:.8rem;color:#8E887A}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+
+/* quote */
+.quote .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.quote h2{font-size:clamp(2.1rem,4.4vw,3.2rem);margin:.4rem 0 .8rem}
+.quote p{color:var(--muted);max-width:40ch}
+.checks{list-style:none;margin-top:1.6rem;display:grid;gap:.7rem}
+.checks li{display:flex;gap:.7rem;font-weight:600;align-items:baseline}
+.checks svg{flex:none;position:relative;top:2px}
+form{background:var(--paper);border:2px solid var(--ink);padding:2rem;display:grid;gap:.95rem;box-shadow:14px 14px 0 rgba(33,36,41,.14)}
+label{font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{width:100%;margin-top:.35rem;background:#fff;border:1px solid var(--line);color:var(--ink);padding:.85rem 1rem;font:inherit;font-size:.97rem;border-radius:0}
+textarea{resize:vertical;min-height:90px}
+input:focus,select:focus,textarea:focus{border-color:var(--tile);outline:none}
+form .btn{justify-content:center;margin-top:.3rem}
+.success{display:none;background:#26392A;border:1px solid #5C7A4A;color:#DDEBCB;padding:1rem 1.2rem;font-weight:600}
+@media(max-width:900px){.quote .wrap{grid-template-columns:1fr}}
+
+/* visit */
+.visit{background:var(--paper);border-top:1px solid var(--line)}
+.visit .cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5rem}
+.visit h3{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--tile);margin-bottom:.9rem;font-family:var(--font-b);font-weight:700}
+.visit address{font-style:normal;font-size:1.12rem;line-height:1.65}
+.visit .big-tel{font-family:var(--font-d);font-size:clamp(1.5rem,3vw,2rem);font-weight:700;text-decoration:none;display:inline-block}
+.visit .big-tel:hover{color:var(--tile)}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.55rem 0;border-bottom:1px solid var(--line);font-weight:600;font-size:.97rem}
+.hours td:last-child{text-align:right;font-family:var(--font-d);font-weight:700}
+.areas{list-style:none;display:flex;flex-wrap:wrap;gap:.45rem}
+.areas li{border:1px solid var(--line);background:var(--ground);padding:.28rem .8rem;font-size:.85rem;font-weight:600}
+@media(max-width:900px){.visit .cols{grid-template-columns:1fr}}
+
+/* footer */
+.site-foot{background:var(--ink);color:var(--cream);padding:3.6rem 0 0}
+.site-foot .name{font-family:var(--font-d);font-weight:700;font-size:clamp(2.4rem,6.6vw,4.4rem);line-height:1}
+.site-foot .name em{font-style:normal;color:#E0805F}
+.site-foot svg.roof-foot{display:block;width:100%;height:60px;margin-top:2rem}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;padding:1.3rem 0 1.8rem;color:#9B9587;font-size:.88rem}
+
+/* reveal — the rise */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+  .pitch-line{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Summit Roofing Co — home">
+      <svg width="36" height="26" viewBox="0 0 36 26" aria-hidden="true"><path d="M2 15 L18 3 L34 15" fill="none" stroke="#A63D22" stroke-width="4"/><path d="M8 15 V23 H28 V15" fill="none" stroke="#212429" stroke-width="3"/></svg>
+      Summit Roofing Co
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a><a href="#work">Recent Roofs</a><a href="#reviews">Reviews</a><a href="#visit">Contact</a>
+    </nav>
+    <a class="tel" href="tel:+441144960871">0114 496 0871</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="pitch-tag" aria-hidden="true"><b>35°</b><span>The working pitch</span></div>
+    <div class="wrap">
+      <p class="eyebrow" style="color:#E0805F">Roofing · Sheffield · Est. 2011</p>
+      <h1>Built for Sheffield <em>weather.</em></h1>
+      <p class="lede">Repairs, re-roofs and flat roofs across Sheffield — surveyed free, photographed at every stage, and guaranteed for ten years. When the rain finds a way in, we find it first.</p>
+      <div class="cta">
+        <a class="btn" href="#quote">Book a Free Roof Survey</a>
+        <a class="btn line" href="#services">Repairs &amp; Prices</a>
+      </div>
+    </div>
+    <svg class="roofline" viewBox="0 0 1180 170" preserveAspectRatio="none" aria-hidden="true">
+      <path class="pitch-line" d="M-20 168 L420 30 L760 168 L1200 20" fill="none" stroke="#A63D22" stroke-width="5"/>
+      <path d="M-20 168 L420 30 L760 168 L1200 20 L1200 170 L-20 170 Z" fill="#26282E"/>
+    </svg>
+  </div>
+  <div class="angle" aria-hidden="true"></div>
+
+  <!-- GUARANTEE BAND -->
+  <div class="band" aria-label="Our guarantees">
+    <div class="wrap">
+      <div><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 L8 15 L17 4" fill="none" stroke="#A63D22" stroke-width="3"/></svg><p><b>10-year guarantee*</b> <span>on every re-roof</span></p></div>
+      <div><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 L8 15 L17 4" fill="none" stroke="#A63D22" stroke-width="3"/></svg><p><b>Photo updates</b> <span>at every stage of the job</span></p></div>
+      <div><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 L8 15 L17 4" fill="none" stroke="#A63D22" stroke-width="3"/></svg><p><b>Free survey</b> <span>written quote, no pressure</span></p></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Services &amp; Prices</p>
+        <h2>Layer by layer, done once</h2>
+        <p>Every price below is a real starting point from recent Sheffield jobs. Your written quote is fixed before we lift a tile.</p>
+      </div>
+      <div class="rv">
+        <article class="course">
+          <span class="deg">05°</span>
+          <div><h3>Tile &amp; slate repairs</h3><p>Slipped tiles, cracked slates and leaks traced to the source — not just patched over. Most repairs done in a single visit.</p></div>
+          <div class="cost"><span>From</span><b>£180</b></div>
+        </article>
+        <article class="course">
+          <span class="deg">15°</span>
+          <div><h3>Flat roofs — EPDM rubber</h3><p>One-piece rubber membrane, no joins to fail. The flat roof that ends flat-roof problems, on extensions, garages and dormers.</p></div>
+          <div class="cost"><span>From</span><b>£1,450</b></div>
+        </article>
+        <article class="course">
+          <span class="deg">25°</span>
+          <div><h3>Chimney repointing &amp; leadwork</h3><p>Stacks repointed, lead flashing replaced and pots re-bedded. The leak source most surveys miss, fixed properly.</p></div>
+          <div class="cost"><span>From</span><b>£420</b></div>
+        </article>
+        <article class="course">
+          <span class="deg">35°</span>
+          <div><h3>Full re-roof</h3><p>Strip, re-felt, batten and re-tile or re-slate, with new ridge and ventilation. Scaffolding, skips and sign-off included.</p></div>
+          <div class="cost"><span>From</span><b>£4,950</b></div>
+        </article>
+        <article class="course">
+          <span class="deg">45°</span>
+          <div><h3>Gutters, fascias &amp; storm repairs</h3><p>Replacement guttering and fascias, plus emergency storm-damage make-safe visits across Sheffield, same day where we can.</p></div>
+          <div class="cost"><span>From</span><b>£150</b></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Recent Roofs</p>
+        <h2>Up there, recently</h2>
+        <p>Sample projects — every real job is photographed from first tile to final ridge, and the photos are yours.</p>
+      </div>
+      <div class="roofs rv">
+        <article class="roof r1">
+          <span class="where">Crookes · S10</span>
+          <h3>Full re-roof, Victorian terrace</h3>
+          <p>Welsh slate stripped and re-laid with reclaimed matching slate, new lead valleys and ridge.</p>
+          <div class="meta"><span>6 days</span><span>10-yr guarantee</span></div>
+        </article>
+        <article class="roof r2">
+          <span class="where">Dore · S17</span>
+          <h3>EPDM flat roof, kitchen extension</h3>
+          <p>Failed felt replaced with a one-piece rubber membrane and new skylight kerb. No joins, no leaks.</p>
+          <div class="meta"><span>2 days</span><span>20-yr membrane life</span></div>
+        </article>
+        <article class="roof r3">
+          <span class="where">Hillsborough · S6</span>
+          <h3>Chimney rebuild &amp; repoint</h3>
+          <p>Stack taken down two courses, rebuilt, repointed and re-flaunched. Damp wall below dried out within weeks.</p>
+          <div class="meta"><span>3 days</span><span>Scaffold included</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow" style="color:#E0805F">Reviews</p>
+        <h2>Dry houses speak up</h2>
+        <p>What Sheffield says once the scaffold comes down.</p>
+      </div>
+      <div class="rev-grid rv">
+        <article class="rev big">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>&ldquo;Three winters of buckets in the loft, sorted in a week. The photo updates meant we could see exactly what we were paying for.&rdquo;</p>
+          <footer>Sample review — Helen M., Crookes</footer>
+        </article>
+        <article class="rev">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>&ldquo;Quote was the quote. Turned up when they said, left the drive cleaner than they found it.&rdquo;</p>
+          <footer>Sample review — Gary P., Hillsborough</footer>
+        </article>
+        <article class="rev">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>&ldquo;Storm took half our ridge off on a Sunday. Made safe the same day, repaired by Wednesday.&rdquo;</p>
+          <footer>Sample review — Aisha R., Dore</footer>
+        </article>
+      </div>
+      <p class="sample-note">*Demo site: the guarantee, projects and reviews shown are samples, to be replaced with the business&apos;s real ones before launch.</p>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote" class="quote">
+    <div class="wrap">
+      <div class="rv">
+        <p class="eyebrow">Get a Quote</p>
+        <h2>Start with a free survey</h2>
+        <p>Tell us where it&apos;s leaking, dripping or lifting. We&apos;ll book a survey, get up there safely, and send a fixed written quote — usually within two working days.</p>
+        <ul class="checks">
+          <li><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 L8 15 L17 4" fill="none" stroke="#A63D22" stroke-width="3"/></svg>No callout charge for surveys</li>
+          <li><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 L8 15 L17 4" fill="none" stroke="#A63D22" stroke-width="3"/></svg>Photos of the problem, before we quote</li>
+          <li><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 L8 15 L17 4" fill="none" stroke="#A63D22" stroke-width="3"/></svg>Quote valid for 30 days, no chasing</li>
+        </ul>
+      </div>
+      <form id="quoteForm" class="rv" novalidate>
+        <div class="success" id="quoteOk" role="status">Thanks — we&apos;ve got it. We&apos;ll ring you within one working day to book your free survey.</div>
+        <div><label for="qName">Your name</label><input id="qName" name="name" type="text" autocomplete="name" required placeholder="e.g. Sam Whitfield"></div>
+        <div><label for="qPhone">Phone number</label><input id="qPhone" name="phone" type="tel" autocomplete="tel" required placeholder="07…"></div>
+        <div><label for="qSvc">What&apos;s the job?</label>
+          <select id="qSvc" name="service" required>
+            <option value="">Choose a service…</option><option>Leak / tile or slate repair</option><option>Full re-roof</option><option>Flat roof (EPDM)</option><option>Chimney or leadwork</option><option>Gutters &amp; fascias</option><option>Storm damage — urgent</option><option>Not sure — please survey</option>
+          </select></div>
+        <div><label for="qPost">Property postcode</label><input id="qPost" name="postcode" type="text" autocomplete="postal-code" placeholder="e.g. S10 1AB"></div>
+        <div><label for="qMsg">Anything we should know?</label><textarea id="qMsg" name="message" placeholder="e.g. Leak above the back bedroom when it rains heavily…"></textarea></div>
+        <button class="btn" type="submit">Book My Free Survey</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Contact</p>
+        <h2>Yard &amp; office</h2>
+        <p>We&apos;re on the tools most days — the phone is the fastest way to reach a roofer, not a call centre.</p>
+      </div>
+      <div class="cols rv">
+        <div>
+          <h3>Address</h3>
+          <address>Unit 4, Foundry Yard<br>Ecclesall Road, Sheffield S11 8PR</address>
+          <a class="big-tel" href="tel:+441144960871">0114 496 0871</a><br>
+          <a href="mailto:quotes@summitroofingco.example">quotes@summitroofingco.example</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <table class="hours">
+            <tr><td>Monday – Friday</td><td>07:30 – 17:30</td></tr>
+            <tr><td>Saturday</td><td>08:00 – 12:00</td></tr>
+            <tr><td>Sunday</td><td>Storm callouts</td></tr>
+          </table>
+        </div>
+        <div>
+          <h3>Areas Covered</h3>
+          <ul class="areas">
+            <li>Crookes</li><li>Dore</li><li>Hillsborough</li><li>Ecclesall</li><li>Fulwood</li><li>Millhouses</li><li>Walkley</li><li>Chapeltown</li><li>Rotherham</li><li>Chesterfield</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="name">Summit <em>Roofing</em> Co</p>
+    <svg class="roof-foot" viewBox="0 0 1180 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-20 58 L300 8 L560 58 L840 4 L1200 58" fill="none" stroke="#A63D22" stroke-width="4"/>
+    </svg>
+    <div class="row">
+      <span>© <span id="yr">2026</span> Summit Roofing Co, Sheffield</span>
+      <span>Repairs · Re-roofs · Flat roofs</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+document.getElementById('quoteForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('qName'),p=document.getElementById('qPhone'),s=document.getElementById('qSvc');
+  if(!n.value.trim()||!p.value.trim()||!s.value){(!n.value.trim()?n:!p.value.trim()?p:s).focus();return;}
+  document.getElementById('quoteOk').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
