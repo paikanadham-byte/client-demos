@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fishery Wharf Cafe — Canal-side Cafe in Boxmoor, Hemel Hempstead</title>
+<meta name="description" content="Fishery Wharf Cafe on Fishery Road, Boxmoor, Hemel Hempstead. Canal-side breakfast and lunch, homemade cakes, teas and coffees, weekend food nights and venue hire.">
+<meta property="og:title" content="Fishery Wharf Cafe — Hemel Hempstead">
+<meta property="og:description" content="Breakfast, lunch and food nights by the Grand Union Canal — heated seating for 50, plus canal-side seating.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Fishery Wharf Cafe","telephone":"+44 7724 224024","email":"Fisherywharfcafe@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Fishery Wharf, Fishery Road","addressLocality":"Hemel Hempstead","postalCode":"HP1 1NA","addressCountry":"GB"},"openingHours":["Mo-Su 10:00-16:00"],"servesCuisine":["Cafe","Breakfast","Lunch"]}
+</script>
+<style>
+:root{
+  --ground:#F6F1E4; --ground2:#EDE5CF; --ink:#22392C; --ink2:#33503F;
+  --muted:#68755F; --line:#D8DCC2; --accent:#BC5837; --accent-d:#9C4527;
+  --butter:#DFA62E; --panel:#22392C; --cream:#FCF9F0;
+  --r:16px; --max:1160px;
+  --font-d:"DM Serif Display",Georgia,serif; --font-b:"Karla",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--butter);color:var(--ink)}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:var(--font-d);font-weight:400;line-height:1.05}
+.btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);color:var(--cream);font-weight:700;font-size:.95rem;padding:1rem 1.8rem;border-radius:999px;text-decoration:none;border:2px solid var(--accent);transition:background .3s,transform .3s}
+.btn:hover{background:var(--accent-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+:focus-visible{outline:3px solid var(--butter);outline-offset:3px}
+
+/* ---------- nav ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(246,241,228,.94);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--font-d);font-size:1.5rem;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo svg{width:26px;height:26px}
+.nav nav{display:flex;gap:2rem}
+.nav nav a{text-decoration:none;font-weight:700;font-size:.92rem;position:relative;padding:.3rem 0}
+.nav nav a::after{content:"";position:absolute;left:0;bottom:0;height:3px;border-radius:2px;width:0;background:var(--butter);transition:width .3s}
+.nav nav a:hover::after{width:100%}
+.nav .btn{padding:.6rem 1.25rem}
+@media(max-width:860px){.nav nav{display:none}}
+
+/* ---------- hero + the oven board ---------- */
+.hero{border-bottom:1px solid var(--line);overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3.2rem;padding-top:4.2rem;padding-bottom:4.6rem;align-items:center}
+.hero h1{font-size:clamp(3rem,6.4vw,5.2rem)}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p.lede{margin:1.4rem 0 2rem;font-size:1.16rem;color:var(--ink2);max-width:37ch}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.proof{display:flex;gap:2rem;margin-top:2.5rem;flex-wrap:wrap}
+.proof div b{font-family:var(--font-d);font-size:1.45rem;display:block;line-height:1.1}
+.proof div span{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.board{background:var(--panel);color:var(--cream);border-radius:var(--r);padding:1.7rem 1.8rem 1.5rem;position:relative;box-shadow:12px 14px 0 rgba(34,57,44,.14)}
+.board h3{font-size:1.35rem;display:flex;justify-content:space-between;align-items:baseline}
+.board h3 span{font-family:var(--font-b);font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--butter)}
+.board ul{list-style:none;margin-top:1rem}
+.board li{display:flex;align-items:baseline;gap:.9rem;padding:.62rem 0;border-bottom:1px dashed rgba(252,249,240,.25);font-weight:500}
+.board li:last-child{border-bottom:none}
+.board .t{font-family:var(--font-d);color:var(--butter);min-width:64px}
+.board li.done{opacity:.45}
+.board li.done .n{text-decoration:line-through}
+.board li.next .n{font-weight:800}
+.board li .badge{margin-left:auto;font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:var(--butter);color:var(--ink);border-radius:999px;padding:.22rem .7rem;display:none}
+.board li.next .badge{display:inline-block}
+.board .nextline{margin-top:1rem;font-size:.92rem;color:#D9DFC8}
+.board .nextline b{color:var(--butter)}
+.fern{position:absolute;right:-8px;top:-34px;width:110px;transform-origin:bottom center;animation:sway 7s ease-in-out infinite alternate;pointer-events:none}
+@keyframes sway{from{transform:rotate(-2.4deg)}to{transform:rotate(2.4deg)}}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr}.fern{display:none}}
+
+/* ---------- menu: tabbed card ---------- */
+section{padding:5.4rem 0}
+.sec-head{margin-bottom:2.6rem;max-width:640px}
+.sec-head h2{font-size:clamp(2.3rem,4.6vw,3.4rem);margin-top:.4rem}
+.sec-head p{color:var(--muted);margin-top:.8rem}
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.tabs button{font:inherit;font-weight:700;font-size:.92rem;padding:.65rem 1.4rem;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .25s,color .25s}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--cream)}
+.tabs button:hover{border-color:var(--accent);color:var(--accent)}
+.tabs button[aria-selected="true"]:hover{color:var(--cream)}
+.menucard{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:2rem 2.2rem;box-shadow:8px 10px 0 rgba(34,57,44,.07)}
+.menugrid{display:grid;grid-template-columns:1fr 1fr;gap:0 3.4rem}
+.mitem{display:flex;align-items:baseline;gap:.7rem;padding:.7rem 0}
+.mitem .nm{font-weight:700;font-size:1.03rem}
+.mitem .ds{display:block;font-weight:400;font-size:.88rem;color:var(--muted)}
+.mitem .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.mitem .pr{font-family:var(--font-d);font-size:1.2rem;white-space:nowrap;color:var(--accent-d)}
+.mitem .time{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--butter);background:var(--ink);border-radius:999px;padding:.14rem .6rem;margin-left:.4rem}
+@media(max-width:820px){.menugrid{grid-template-columns:1fr}.menucard{padding:1.4rem}}
+
+/* ---------- the counter: poster tiles ---------- */
+.counter{background:var(--ground2);border-block:1px solid var(--line)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tile{border-radius:var(--r);min-height:240px;padding:1.4rem;display:flex;flex-direction:column;justify-content:space-between;transition:transform .3s;position:relative;overflow:hidden}
+.tile:hover{transform:translateY(-5px) rotate(-.4deg)}
+.tile b{font-family:var(--font-d);font-weight:400;line-height:1}
+.tile span{font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.tile .when{font-family:var(--font-d);font-size:1.05rem}
+.tile.t1{background:var(--ink);color:var(--cream)} .tile.t1 b{font-size:2.7rem}
+.tile.t2{background:var(--butter);color:var(--ink)} .tile.t2 b{font-size:2.2rem;font-style:italic}
+.tile.t3{background:var(--cream);color:var(--ink);border:2px solid var(--ink)} .tile.t3 b{font-size:2.4rem}
+.tile.t4{background:var(--accent);color:var(--cream)} .tile.t4 b{font-size:2rem}
+@media(max-width:900px){.tiles{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.tiles{grid-template-columns:1fr}}
+
+/* ---------- reviews ---------- */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:1.8rem}
+.rev .qm{font-family:var(--font-d);font-size:2.6rem;line-height:.6;color:var(--butter);display:block;margin-bottom:.9rem}
+.rev .stars{color:var(--accent);letter-spacing:.22em;font-size:.85rem}
+.rev p{font-size:1.08rem;line-height:1.5;margin:.7rem 0 .9rem;font-weight:500}
+.rev footer{font-size:.86rem;color:var(--muted);font-weight:700}
+.sample-note{margin-top:1.1rem;font-size:.8rem;color:var(--muted)}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+
+/* ---------- booking / cake orders ---------- */
+.book{background:var(--panel);color:var(--cream)}
+.book .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:3.5rem;align-items:start}
+.book h2{font-size:clamp(2.3rem,4.6vw,3.4rem)}
+.book h2 em{color:var(--butter);font-style:italic}
+.book p{color:#D9DFC8;margin-top:1rem;max-width:40ch}
+form{display:grid;gap:.95rem}
+label{font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#D9DFC8}
+input,select,textarea{width:100%;margin-top:.35rem;background:#2E4A3A;border:1px solid #4C6A57;color:var(--cream);padding:.85rem 1rem;border-radius:12px;font:inherit;font-size:.98rem}
+input:focus,select:focus,textarea:focus{border-color:var(--butter);outline:none}
+form .btn{justify-content:center;margin-top:.4rem}
+.success{display:none;background:#3E5A26;border:1px solid #7FA04B;color:#EFF6DC;padding:1rem 1.2rem;border-radius:12px;font-weight:700}
+@media(max-width:900px){.book .wrap{grid-template-columns:1fr}}
+
+/* ---------- visit ---------- */
+.visit .cols{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.68rem 0;border-bottom:1px solid var(--line);font-weight:500}
+.hours td:last-child{text-align:right;font-family:var(--font-d);font-size:1.08rem}
+.hours tr.today td{color:var(--accent-d);font-weight:700}
+.visit address{font-style:normal;font-size:1.14rem;line-height:1.7}
+.visit .big-tel{font-family:var(--font-d);font-size:clamp(1.8rem,3.6vw,2.5rem);text-decoration:none;display:inline-block;margin:.6rem 0}
+.visit .big-tel:hover{color:var(--accent)}
+@media(max-width:820px){.visit .cols{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+.site-foot{background:var(--ink);color:var(--cream);padding:3.6rem 0 2.2rem}
+.site-foot .name{font-family:var(--font-d);font-size:clamp(2.6rem,8vw,5.2rem);line-height:1}
+.site-foot .name em{color:var(--butter)}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1.4rem;border-top:1px solid #3A5747;color:#B9C4A6;font-size:.9rem}
+
+/* reveal — the rise: lifts up gently, like dough proving */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="#22392C" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M12 22 C12 15 12 8 12 2"/><path d="M12 8 C9 7 6.5 5.5 5 3 C8 3 10.5 4.5 12 8 Z" fill="#BC5837" stroke="none"/><path d="M12 8 C15 7 17.5 5.5 19 3 C16 3 13.5 4.5 12 8 Z" fill="#DFA62E" stroke="none"/><path d="M12 14 C9.5 13 7 11.8 5.5 9.5 C8.5 9.5 11 11 12 14 Z" fill="#33503F" stroke="none"/><path d="M12 14 C14.5 13 17 11.8 18.5 9.5 C15.5 9.5 13 11 12 14 Z" fill="#68755F" stroke="none"/></svg>Fishery Wharf Cafe</a>
+    <nav aria-label="Main">
+      <a href="#menu">Menu</a><a href="#counter">The Counter</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="#book">Book a Table</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO + OVEN BOARD -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Fishery Road · Boxmoor · Grand Union Canal</p>
+        <h1>Breakfast, lunch<br><em>by the canal.</em></h1>
+        <p class="lede">A canal-side cafe at Fishery Wharf in Boxmoor — breakfast and lunch, homemade cakes, teas and coffees, and weekend food nights with fresh fish and handmade pizzas.</p>
+        <div class="cta">
+          <a class="btn" href="#book">Book a Table</a>
+          <a class="btn ghost" href="#menu">See the Menu</a>
+        </div>
+        <div class="proof" aria-label="Good to know">
+          <div><b>Canal-side</b><span>Heated seating for 50</span></div>
+          <div><b>Licensed bar</b><span>Wines, beers & spirits</span></div>
+          <div><b>Food nights</b><span>Fri & Sat evenings</span></div>
+        </div>
+      </div>
+      <div class="board" role="group" aria-label="Today's bake times">
+        <svg class="fern" viewBox="0 0 120 190" fill="none" stroke="#7FA04B" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M60 185 C58 130 62 70 60 12"/><path d="M60 150 C40 145 24 132 16 112 C38 116 54 128 60 150 Z" fill="#33503F"/><path d="M60 150 C80 145 96 132 104 112 C82 116 66 128 60 150 Z" fill="#33503F"/><path d="M60 108 C44 103 30 92 24 74 C42 78 56 88 60 108 Z" fill="#4C6A57"/><path d="M60 108 C76 103 90 92 96 74 C78 78 64 88 60 108 Z" fill="#4C6A57"/><path d="M60 66 C48 61 38 52 33 37 C47 41 57 49 60 66 Z" fill="#7FA04B"/><path d="M60 66 C72 61 82 52 87 37 C73 41 63 49 60 66 Z" fill="#7FA04B"/></svg>
+        <h3>From the kitchen today <span id="boardDay">Today</span></h3>
+        <ul id="bakeList">
+          <li data-time="10:00"><span class="t">10:00</span><span class="n">Breakfast served</span><span class="badge">Next up</span></li>
+          <li data-time="12:00"><span class="t">12:00</span><span class="n">Lunch</span><span class="badge">Next up</span></li>
+          <li data-time="14:00"><span class="t">14:00</span><span class="n">Homemade cakes & coffee</span><span class="badge">Next up</span></li>
+          <li data-time="15:00"><span class="t">15:00</span><span class="n">Kitchen closes</span><span class="badge">Next up</span></li>
+          <li data-time="19:00"><span class="t">19:00</span><span class="n">Friday & Saturday food nights</span><span class="badge">Next up</span></li>
+        </ul>
+        <p class="nextline" id="nextLine">We open at 10:00 — first serving then.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU: tabbed -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Menu</p>
+        <h2>Eat, drink, hire</h2>
+        <p>Short menu, everything handmade on-site with locally sourced fresh ingredients — and the whole wharf is available for groups and events.</p>
+      </div>
+      <div class="tabs rv" role="tablist" aria-label="Menu sections">
+        <button role="tab" aria-selected="true" data-tab="allday">All Day</button>
+        <button role="tab" aria-selected="false" data-tab="bakery">Cakes & Drinks</button>
+        <button role="tab" aria-selected="false" data-tab="drinks">Drinks</button>
+      </div>
+      <div class="menucard rv">
+        <div class="menugrid" data-panel="allday">
+          <div class="mitem"><span><span class="nm">Breakfast</span><span class="ds">Served from 10am, with teas and coffees</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Lunch</span><span class="ds">Fresh, handmade on-site with local ingredients</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Homemade Cakes</span><span class="ds">A slice with your coffee, baked on-site</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Fresh Fish Menu</span><span class="ds">Fresh fish at our weekend food nights</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Italian Pizzas</span><span class="ds">Handmade, Italian-style, at weekend food nights</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Venue Hire</span><span class="ds">Groups, parties and events by the canal</span></span><span class="dots"></span></div>
+        </div>
+        <div class="menugrid" data-panel="bakery" hidden>
+          <div class="mitem"><span><span class="nm">Cakes of the Day</span><span class="ds">Homemade cakes, baked on-site</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Traybakes</span><span class="ds">Slices and traybakes for the counter</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Scones</span><span class="ds">Served with jam and cream</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Whole Cakes to Order</span><span class="ds">Ask about cakes for your occasion</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Ice Creams</span><span class="ds">Delicious ice creams and snacks</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Biscuits</span><span class="ds">Baked in-house, with your coffee</span></span><span class="dots"></span></div>
+        </div>
+        <div class="menugrid" data-panel="drinks" hidden>
+          <div class="mitem"><span><span class="nm">Tea & Coffee</span><span class="ds">Roasted locally by Smiths of London</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Wines</span><span class="ds">From our licensed bar</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Beers & Ciders</span><span class="ds">Local beers and ciders</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Spirits</span><span class="ds">From our licensed bar</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Soft Drinks</span><span class="ds">A large range of soft drinks</span></span><span class="dots"></span></div>
+          <div class="mitem"><span><span class="nm">Still & Sparkling</span><span class="ds">Bottled waters</span></span><span class="dots"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE COUNTER -->
+  <section id="counter" class="counter">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">The Counter</p>
+        <h2>What to come in for</h2>
+        <p>Four things to come in for — breakfast, lunch, cake, and a food night.</p>
+      </div>
+      <div class="tiles rv">
+        <div class="tile t1"><span>Every day · 10:00</span><b>BREAKFAST<br>&amp; LUNCH.</b><span class="when">By the canal</span></div>
+        <div class="tile t2"><span>Fri & Sat evenings</span><b>FOOD NIGHTS<br>&amp; LIVE MUSIC.</b><span class="when">Until 11pm</span></div>
+        <div class="tile t3"><span>Licensed</span><b>WINES, BEERS<br>&amp; SPIRITS.</b><span class="when">At the bar</span></div>
+        <div class="tile t4"><span>Canal-side</span><b>HEATED SEATING<br>FOR 50.</b><span class="when">Plus outdoor seating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Reviews</p>
+        <h2>Hemel Hempstead has opinions</h2>
+      </div>
+      <div class="rev-grid rv">
+        <article class="rev"><span class="qm">"</span><div class="stars" aria-label="5 stars">★★★★★</div><p>"Breakfast by the canal on a Saturday morning — the coffee is excellent and the cakes are homemade."</p><footer>Sample review — Harriet L., Boxmoor</footer></article>
+        <article class="rev"><span class="qm">"</span><div class="stars" aria-label="5 stars">★★★★★</div><p>"The Friday food night is a proper night out. Fresh fish, handmade pizza and live music by the water."</p><footer>Sample review — Tom W., Hemel Hempstead</footer></article>
+        <article class="rev"><span class="qm">"</span><div class="stars" aria-label="5 stars">★★★★★</div><p>"Hired the wharf for my birthday. Lovely room, lovely food, and the canal outside the window."</p><footer>Sample review — Sample name, Berkhamsted</footer></article>
+      </div>
+      <p class="sample-note">*Demo site: reviews shown are samples, to be replaced with the café's real ones before launch.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING / ORDERS -->
+  <section id="book" class="book">
+    <div class="wrap">
+      <div class="rv">
+        <p class="eyebrow" style="color:var(--butter)">Tables & Venue Hire</p>
+        <h2>Save a seat, or <em>hire the wharf.</em></h2>
+        <p>Tables for breakfast and lunch, or the whole venue for your party or event. Evening food nights run Friday and Saturday — book by phone.</p>
+        <p style="margin-top:1.6rem">In a hurry?<br><a href="tel:+447724224024" style="font-family:var(--font-d);font-size:1.7rem;color:var(--cream);text-decoration:none">07724 224024</a></p>
+      </div>
+      <form id="bookForm" class="rv" novalidate>
+        <div class="success" id="bookOk" role="status">Lovely — your request is in. We'll reply within one working day to confirm.</div>
+        <div><label for="fName">Your name</label><input id="fName" name="name" type="text" autocomplete="name" required placeholder="e.g. Sophie Bennett"></div>
+        <div><label for="fContact">Email or mobile</label><input id="fContact" name="contact" type="text" autocomplete="email" required placeholder="you@example.co.uk"></div>
+        <div><label for="fType">What do you need?</label>
+          <select id="fType" name="type" required>
+            <option value="">Choose one…</option><option>Table for breakfast</option><option>Table for lunch</option><option>Group of 8+ booking</option><option>Venue hire enquiry</option><option>Food night booking</option><option>Something else</option>
+          </select></div>
+        <div><label for="fWhen">Date &amp; time</label><input id="fWhen" name="when" type="text" placeholder="e.g. Saturday 14th, around 10:30"></div>
+        <div><label for="fNotes">Anything we should know?</label><textarea id="fNotes" name="notes" rows="3" placeholder="Allergies, high chair, occasion…"></textarea></div>
+        <button class="btn" type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Find the wharf</h2>
+        <p>On Fishery Road in Boxmoor, Hemel Hempstead — right on the Grand Union Canal.</p>
+      </div>
+      <div class="cols rv">
+        <div>
+          <address>Fishery Wharf, Fishery Road<br>Boxmoor, Hemel Hempstead HP1 1NA</address>
+          <a class="big-tel" href="tel:+447724224024">07724 224024</a><br>
+          <a href="mailto:Fisherywharfcafe@gmail.com">Fisherywharfcafe@gmail.com</a><br><br>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Fishery+Wharf+Fishery+Road+Hemel+Hempstead" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+        <table class="hours" aria-label="Opening hours">
+          <tr><td>Monday – Sunday</td><td>10:00 – 16:00</td></tr><tr><td>Kitchen</td><td>10:00 – 15:00</td></tr><tr><td>Friday & Saturday evenings</td><td>Until 23:00</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="name">Fishery Wharf <em>Cafe</em></p>
+    <div class="row">
+      <span>© <span id="yr">2026</span> Fishery Wharf Cafe, Hemel Hempstead</span>
+      <span>Canal-side · Breakfast & lunch · Food nights</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+/* oven board: mark past bakes, spotlight the next one */
+(function(){
+  var now = new Date(), mins = now.getHours()*60 + now.getMinutes();
+  var items = document.querySelectorAll('#bakeList li'), nextFound = false, nextText = '';
+  items.forEach(function(li){
+    var p = li.getAttribute('data-time').split(':'), t = (+p[0])*60 + (+p[1]);
+    if(t <= mins){ li.classList.add('done'); }
+    else if(!nextFound){ li.classList.add('next'); nextFound = true;
+      nextText = 'Next out of the oven: <b>' + li.querySelector('.n').textContent + '</b> at <b>' + li.getAttribute('data-time') + '</b>.'; }
+  });
+  var line = document.getElementById('nextLine');
+  if(nextText){ line.innerHTML = nextText; }
+  else { line.innerHTML = 'That's the kitchen closed for today — <b>back at 10:00 tomorrow</b>.'; }
+  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  document.getElementById('boardDay').textContent = days[now.getDay()];
+})();
+/* menu tabs */
+document.querySelectorAll('.tabs button').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-selected','false');});
+    btn.setAttribute('aria-selected','true');
+    document.querySelectorAll('[data-panel]').forEach(function(p){
+      p.hidden = p.getAttribute('data-panel') !== btn.getAttribute('data-tab');
+    });
+  });
+});
+/* reveal */
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+/* form */
+document.getElementById('bookForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('fName'),c=document.getElementById('fContact'),s=document.getElementById('fType');
+  if(!n.value.trim()||!c.value.trim()||!s.value){( !n.value.trim()?n:!c.value.trim()?c:s ).focus();return;}
+  document.getElementById('bookOk').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
