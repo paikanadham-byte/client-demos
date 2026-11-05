@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightNest Cleaning — Home, Deep & End of Tenancy Cleaning in London</title>
+<meta name="description" content="BrightNest Cleaning in Herne Hill, London. Regular home cleans from £18/hr, deep cleans, end of tenancy and oven cleaning. Vetted, insured cleaners. Book your clean online.">
+<meta property="og:title" content="BrightNest Cleaning — London">
+<meta property="og:description" content="A home that feels newly moved into. Regular, deep and end of tenancy cleaning across South London.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HouseCleaningService","name":"BrightNest Cleaning","telephone":"+44 20 7946 0810","email":"hello@brightnestcleaning.example","address":{"@type":"PostalAddress","streetAddress":"48 Railton Road","addressLocality":"London","postalCode":"SE24 0LF","addressCountry":"GB"},"openingHours":"Mo-Sa 08:00-18:00","priceRange":"££"}
+</script>
+<style>
+:root{
+  --ground:#FBF9F3; --ground2:#F1EFE3; --ink:#17362C; --ink2:#22473A;
+  --muted:#5F7168; --line:#DFE3D2; --accent:#E4572E; --accent-d:#C7431F;
+  --sage:#9DB89A; --sage-d:#5C7A5E; --panel:#17362C; --paper:#FFFDF7;
+  --r:18px; --max:1160px;
+  --font-d:"DM Serif Display",Georgia,serif; --font-b:"Karla",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+h1,h2{font-family:var(--font-d);font-weight:400;line-height:1.04}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--accent);color:#fff;font-weight:800;font-size:.95rem;padding:1rem 1.8rem;border-radius:999px;text-decoration:none;border:2px solid var(--accent);transition:background .25s,transform .25s}
+.btn:hover{background:var(--accent-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(251,249,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--font-d);font-size:1.5rem;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo .sun{width:30px;height:30px;border-radius:50%;background:var(--accent);position:relative;flex:none}
+.logo .sun::after{content:"";position:absolute;left:4px;right:4px;top:50%;height:3px;background:var(--ground);border-radius:2px;transform:rotate(-24deg)}
+.nav nav{display:flex;gap:2rem}
+.nav nav a{text-decoration:none;font-weight:700;font-size:.93rem;padding:.3rem 0;border-bottom:2px solid transparent}
+.nav nav a:hover{border-color:var(--accent)}
+.nav .btn{padding:.6rem 1.25rem}
+@media(max-width:840px){.nav nav{display:none}}
+
+/* hero — asymmetric, text left, shine panel right */
+.hero{border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3.2rem;padding-top:4.2rem;padding-bottom:4.6rem;align-items:center}
+.hero h1{font-size:clamp(2.9rem,6.4vw,5rem);letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lede{margin:1.3rem 0 2rem;font-size:1.16rem;color:var(--ink2);max-width:36ch}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.shine{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem 1.8rem;position:relative;box-shadow:14px 18px 0 rgba(23,54,44,.07)}
+.shine::before{content:"";position:absolute;top:0;left:26px;right:26px;height:5px;border-radius:0 0 6px 6px;background:var(--sage)}
+.shine h3{font-family:var(--font-d);font-weight:400;font-size:1.45rem;margin-bottom:.9rem}
+.shine ul{list-style:none;display:grid;gap:.55rem}
+.shine li{display:flex;gap:.7rem;align-items:baseline;font-weight:600;color:var(--ink2)}
+.shine li svg{flex:none;transform:translateY(2px)}
+.shine .foot{margin-top:1.2rem;padding-top:1rem;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted)}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr}}
+
+/* trust strip */
+.trust{border-bottom:1px solid var(--line);background:var(--ground2)}
+.trust .wrap{display:flex;gap:2.4rem;flex-wrap:wrap;padding-top:1.15rem;padding-bottom:1.15rem;align-items:center}
+.trust div{display:flex;gap:.6rem;align-items:center;font-weight:700;font-size:.95rem}
+.trust svg{flex:none}
+.trust span{color:var(--muted);font-weight:600}
+
+/* sections */
+section{padding:5rem 0}
+.sec-head{margin-bottom:2.5rem;max-width:640px}
+.sec-head h2{font-size:clamp(2rem,4.2vw,3.1rem);margin-top:.4rem}
+.sec-head p{color:var(--muted);margin-top:.7rem}
+
+/* services — offset panels, alternating widths */
+.plans{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;text-decoration:none;display:flex;flex-direction:column;gap:.5rem;transition:transform .25s,border-color .25s}
+.plan:hover{transform:translateY(-4px);border-color:var(--sage-d)}
+.plan .tag{font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-d)}
+.plan h3{font-family:var(--font-d);font-weight:400;font-size:1.6rem}
+.plan p{color:var(--muted);font-size:.95rem;flex:1}
+.plan .price{font-family:var(--font-d);font-size:1.7rem}
+.plan .price small{font-size:.85rem;color:var(--muted);font-family:var(--font-b)}
+.plan.w7{grid-column:span 7}.plan.w5{grid-column:span 5}.plan.w4{grid-column:span 4}.plan.w6{grid-column:span 6}
+.plan.hot{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.plan.hot p{color:#C9D4C6}.plan.hot .tag{color:var(--sage)}
+@media(max-width:860px){.plan.w7,.plan.w5,.plan.w4,.plan.w6{grid-column:span 12}}
+
+/* the wipe — before/after */
+.wipe-sec{background:var(--ground2);border-block:1px solid var(--line)}
+.wipe{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);height:380px;--split:58%}
+.wipe .layer{position:absolute;inset:0;padding:2rem;display:flex;flex-direction:column;justify-content:space-between}
+.wipe .after{background:#FDF6E3;background-image:radial-gradient(circle at 85% 15%,#F6C453 0 90px,rgba(246,196,83,.35) 91px 190px,transparent 191px)}
+.wipe .before{background:#8B9484;background-image:radial-gradient(circle at 85% 15%,#A7AE9C 0 90px,rgba(167,174,156,.4) 91px 190px,transparent 191px);clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+.wipe .layer b{font-family:var(--font-d);font-weight:400;font-size:clamp(1.9rem,4.6vw,3.2rem);line-height:1.05;max-width:12ch}
+.wipe .after b{color:var(--ink)} .wipe .before b{color:#F0EFE4}
+.wipe .stamp{align-self:flex-start;font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;padding:.45rem .8rem;border-radius:999px;background:var(--ink);color:var(--ground)}
+.wipe .before .stamp{background:#F0EFE4;color:#5C6656}
+.wipe .handle{position:absolute;top:0;bottom:0;left:var(--split);width:3px;background:#fff;box-shadow:0 0 0 1px rgba(23,54,44,.25);transform:translateX(-50%);pointer-events:none}
+.wipe .handle::after{content:"WIPE";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-90deg);background:var(--accent);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.3em;padding:.5rem .9rem;border-radius:999px}
+.wipe input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.wipe-note{margin-top:.9rem;color:var(--muted);font-size:.92rem}
+@media(max-width:640px){.wipe{height:300px}}
+
+/* reviews — stacked editorial quotes */
+.quotes{display:grid;gap:0;border-top:2px solid var(--ink)}
+.quote{display:grid;grid-template-columns:120px 1fr 200px;gap:1.6rem;padding:1.9rem .3rem;border-bottom:1px solid var(--line);align-items:start}
+.quote .stars{color:var(--accent);letter-spacing:.25em}
+.quote p{font-family:var(--font-d);font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.3}
+.quote footer{font-weight:700;font-size:.9rem;color:var(--muted);text-align:right}
+.sample-note{margin-top:1rem;font-size:.82rem;color:var(--muted)}
+@media(max-width:820px){.quote{grid-template-columns:1fr}.quote footer{text-align:left}}
+
+/* booking */
+.book{background:var(--panel);color:var(--ground)}
+.book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.4rem;align-items:start}
+.book h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.book h2 em{font-style:italic;color:var(--sage)}
+.book .side p{color:#C9D4C6;margin-top:1rem;max-width:38ch}
+.book .tel{font-family:var(--font-d);font-size:1.7rem;color:var(--ground);text-decoration:none;display:inline-block;margin-top:1.2rem}
+form{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+form .full{grid-column:1/-1}
+label{font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#C9D4C6}
+input,select,textarea{width:100%;margin-top:.35rem;background:#22473A;border:1px solid #3E5C4F;color:var(--ground);padding:.85rem 1rem;border-radius:12px;font:inherit;font-size:.98rem}
+input:focus,select:focus,textarea:focus{border-color:var(--sage);outline:none}
+form .btn{grid-column:1/-1;justify-content:center}
+.success{display:none;grid-column:1/-1;background:#24402F;border:1px solid var(--sage);color:#E4EFDC;padding:1rem 1.2rem;border-radius:12px;font-weight:700}
+@media(max-width:900px){.book .wrap{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+/* visit */
+.visit .cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.visit address{font-style:normal;font-size:1.15rem;line-height:1.7}
+.visit .mail{font-weight:700}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.7rem 0;border-bottom:1px solid var(--line);font-weight:600}
+.hours td:last-child{text-align:right;font-family:var(--font-d);font-size:1.05rem}
+@media(max-width:820px){.visit .cols{grid-template-columns:1fr}}
+
+/* footer — the line of light, resolved */
+.site-foot{background:var(--ink);color:var(--ground);padding:3.4rem 0 2.2rem;position:relative;overflow:hidden}
+.site-foot::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--sage)}
+.site-foot .name{font-family:var(--font-d);font-size:clamp(2.4rem,7vw,4.6rem);line-height:1}
+.site-foot .name em{font-style:italic;color:var(--accent)}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;margin-top:1.8rem;padding-top:1.3rem;border-top:1px solid #33503F;color:#AFC2AB;font-size:.9rem}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="sun" aria-hidden="true"></span>BrightNest Cleaning</a>
+    <nav aria-label="Main">
+      <a href="#services">Cleans</a><a href="#wipe">Before &amp; After</a><a href="#reviews">Reviews</a><a href="#visit">Find Us</a>
+    </nav>
+    <a class="btn" href="#book">Book a Clean</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Herne Hill · South London</p>
+        <h1>Come home to <em>clean.</em></h1>
+        <p class="lede">Regular, deep and end of tenancy cleaning by vetted local cleaners — booked in two minutes, done to a checklist you can see.</p>
+        <div class="cta">
+          <a class="btn" href="#book">Book a Clean</a>
+          <a class="btn ghost" href="#services">See Cleans &amp; Prices</a>
+        </div>
+      </div>
+      <aside class="shine" aria-label="Every clean includes">
+        <h3>Every clean, every time</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12 14 3.5" fill="none" stroke="#E4572E" stroke-width="2.4" stroke-linecap="round"/></svg>Same cleaner each visit, where possible</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12 14 3.5" fill="none" stroke="#E4572E" stroke-width="2.4" stroke-linecap="round"/></svg>We bring all products &amp; equipment</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12 14 3.5" fill="none" stroke="#E4572E" stroke-width="2.4" stroke-linecap="round"/></svg>Kitchen &amp; bathroom descaled as standard</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12 14 3.5" fill="none" stroke="#E4572E" stroke-width="2.4" stroke-linecap="round"/></svg>Not happy? We re-clean free within 24h</li>
+        </ul>
+        <p class="foot">No contracts. Pause or skip a week whenever you like.</p>
+      </aside>
+    </div>
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust">
+    <div class="wrap" aria-label="Our guarantees">
+      <div><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.8 3.5 4v5c0 4.3 2.8 7.4 6.5 9.2C13.7 16.4 16.5 13.3 16.5 9V4Z" fill="none" stroke="#17362C" stroke-width="1.8"/><path d="m7 10 2.2 2.2L13.4 8" fill="none" stroke="#E4572E" stroke-width="1.8" stroke-linecap="round"/></svg>DBS-checked cleaners</div>
+      <div><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="#17362C" stroke-width="1.8"/><path d="M10 5.4V10l3.2 2" fill="none" stroke="#E4572E" stroke-width="1.8" stroke-linecap="round"/></svg>Fully insured <span>to £2m</span></div>
+      <div><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8.5 16 17 4.5" fill="none" stroke="#E4572E" stroke-width="2.2" stroke-linecap="round"/></svg>Re-clean guarantee <span>within 24 hours</span></div>
+      <div><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="5" width="14" height="12" rx="2" fill="none" stroke="#17362C" stroke-width="1.8"/><path d="M3 9h14M7 3v4M13 3v4" stroke="#E4572E" stroke-width="1.8"/></svg>Key-holding <span>for regular clients</span></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Cleans &amp; Prices</p>
+        <h2>Pick the clean your home needs</h2>
+        <p>Honest per-job pricing, confirmed before we start. Minimum 2 hours for hourly cleans.</p>
+      </div>
+      <div class="plans rv">
+        <a class="plan w7" href="#book"><span class="tag">Most booked</span><h3>Regular Home Clean</h3><p>Weekly or fortnightly. Bathrooms, kitchen, dusting, floors, bins — the whole rhythm of a kept home.</p><span class="price">£18<small> /hour</small></span></a>
+        <a class="plan w5 hot" href="#book"><span class="tag">Reset button</span><h3>Deep Clean</h3><p>Top-to-bottom: inside cupboards, skirting, limescale, grout lines, behind appliances where reachable.</p><span class="price">from £220</span></a>
+        <a class="plan w5" href="#book"><span class="tag">Deposit-safe</span><h3>End of Tenancy</h3><p>To the inventory checklist your letting agent uses, with a 72-hour re-clean promise if anything is flagged.</p><span class="price">from £260</span></a>
+        <a class="plan w4" href="#book"><span class="tag">Add-on favourite</span><h3>Oven Clean</h3><p>Single or double oven, racks and glass, degreased and polished. Safe to cook in the same evening.</p><span class="price">£65</span></a>
+        <a class="plan w4" href="#book"><span class="tag">Fresh floors</span><h3>Carpet Clean</h3><p>Hot-water extraction for stairs, landings and living rooms. Pet-safe products on request.</p><span class="price">from £55</span></a>
+        <a class="plan w4" href="#book"><span class="tag">For hosts</span><h3>Airbnb Turnaround</h3><p>Same-day changeovers: laundry, restock and a photo report sent to you after every guest.</p><span class="price">from £45</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE WIPE -->
+  <section id="wipe" class="wipe-sec">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Before &amp; After</p>
+        <h2>Drag the wipe</h2>
+        <p>One Tuesday morning in Brixton, before and after a BrightNest deep clean. Slide to see the line we leave behind.</p>
+      </div>
+      <div class="wipe rv" id="wipeBox">
+        <div class="layer after"><span class="stamp">After · 11:05am</span><b>A kitchen that smells like morning.</b></div>
+        <div class="layer before"><span class="stamp">Before · 9:00am</span><b>Grease, limescale<br>&amp; Monday.</b></div>
+        <div class="handle" aria-hidden="true"></div>
+        <input type="range" id="wipeRange" min="4" max="96" value="58" aria-label="Reveal the after photo by sliding">
+      </div>
+      <p class="wipe-note">Demo illustration drawn with type and colour — real before/after photos from your cleans would sit here.</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Reviews</p>
+        <h2>Homes that stay bright</h2>
+      </div>
+      <div class="quotes rv">
+        <blockquote class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Fortnightly cleans for a year now. Same cleaner, same sparkle — the bathroom grout genuinely looks new."</p><footer>Sample review<br>Priya S., Dulwich</footer></blockquote>
+        <blockquote class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Booked an end of tenancy clean on the Inventory clerk's recommendation. Full deposit back, no arguments."</p><footer>Sample review<br>Tom W., Brixton</footer></blockquote>
+        <blockquote class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"They text when they're on their way and lock up properly. Small things, done right, every single time."</p><footer>Sample review<br>Angela M., Herne Hill</footer></blockquote>
+      </div>
+      <p class="sample-note">*Demo site: reviews shown are samples, to be replaced with the business's real ones before launch.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="book">
+    <div class="wrap">
+      <div class="side rv">
+        <p class="eyebrow" style="color:var(--sage)">Book a Clean</p>
+        <h2>Tell us about <em>your place.</em></h2>
+        <p>Two minutes now, a brighter home this week. We reply with a fixed price and the first available slots — usually the same day.</p>
+        <a class="tel" href="tel:+442079460810">020 7946 0810</a>
+        <p>Mon–Sat, 8am–6pm. Covering Herne Hill, Dulwich, Brixton, Camberwell, Peckham &amp; Streatham.</p>
+      </div>
+      <form id="bookForm" class="rv" novalidate>
+        <div class="success" id="bookOk" role="status">Thanks — we've got it. We'll reply shortly with your fixed price and the first available slots.</div>
+        <div><label for="fName">Your name</label><input id="fName" name="name" type="text" autocomplete="name" required placeholder="e.g. Alex Morgan"></div>
+        <div><label for="fPhone">Mobile number</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" required placeholder="07…"></div>
+        <div><label for="fSvc">Type of clean</label>
+          <select id="fSvc" name="service" required>
+            <option value="">Choose a clean…</option><option>Regular Home Clean — £18/hr</option><option>Deep Clean — from £220</option><option>End of Tenancy — from £260</option><option>Oven Clean — £65</option><option>Carpet Clean — from £55</option><option>Airbnb Turnaround — from £45</option>
+          </select></div>
+        <div><label for="fBeds">Home size</label>
+          <select id="fBeds" name="size">
+            <option>Studio / 1 bed</option><option>2 bed</option><option>3 bed</option><option>4 bed +</option>
+          </select></div>
+        <div class="full"><label for="fNotes">Anything we should know?</label><textarea id="fNotes" name="notes" rows="3" placeholder="e.g. Two cats, spare key with neighbour, Fridays preferred"></textarea></div>
+        <button class="btn" type="submit">Get My Fixed Price</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Find Us</p>
+        <h2>Based in Herne Hill</h2>
+        <p>We clean across South London — these are our office hours; cleans run from 8am daily.</p>
+      </div>
+      <div class="cols rv">
+        <div>
+          <address>48 Railton Road<br>London SE24 0LF</address>
+          <p style="margin-top:1rem"><a class="mail" href="mailto:hello@brightnestcleaning.example">hello@brightnestcleaning.example</a></p>
+          <p style="margin-top:1.4rem"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Railton+Road+London+SE24" target="_blank" rel="noopener">Get Directions</a></p>
+        </div>
+        <table class="hours" aria-label="Office hours">
+          <tr><td>Monday – Friday</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Saturday</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="name">BrightNest <em>Cleaning</em></p>
+    <div class="row">
+      <span>© <span id="yr">2026</span> BrightNest Cleaning, London</span>
+      <span>Vetted · Insured · Re-clean guarantee</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+var wb=document.getElementById('wipeBox'), wr=document.getElementById('wipeRange');
+wr.addEventListener('input',function(){wb.style.setProperty('--split',wr.value+'%');});
+document.getElementById('bookForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('fName'),p=document.getElementById('fPhone'),s=document.getElementById('fSvc');
+  if(!n.value.trim()||!p.value.trim()||!s.value){(!n.value.trim()?n:!p.value.trim()?p:s).focus();return;}
+  document.getElementById('bookOk').style.display='block';
+  this.reset(); wr.value=58; wb.style.setProperty('--split','58%');
+});
+</script>
+</body>
+</html>
