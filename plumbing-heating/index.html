@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hartley Heating &amp; Plumbing — Boiler Repairs, Servicing &amp; Emergency Plumbers in Bristol</title>
+<meta name="description" content="Hartley Heating & Plumbing, Bristol. Boiler repairs from £65, servicing £79, new boilers from £1,850 and 24/7 emergency callouts. Fixed prices agreed before we start.">
+<meta property="og:title" content="Hartley Heating & Plumbing — Bristol">
+<meta property="og:description" content="Boilers fixed, homes warm. Fixed-price plumbing and heating across Bristol, 24/7 emergencies.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"Hartley Heating & Plumbing","telephone":"+44 117 496 0234","email":"quotes@hartleyheating.example","address":{"@type":"PostalAddress","streetAddress":"88 Gloucester Road, Bishopston","addressLocality":"Bristol","postalCode":"BS7 8BN","addressCountry":"GB"},"openingHours":["Mo-Fr 08:00-18:00","Sa 09:00-13:00"],"priceRange":"££"}
+</script>
+<style>
+:root{
+  --ground:#F3EFE7; --paper:#FBF9F3; --ink:#1D262E; --ink2:#31404C;
+  --muted:#68727B; --line:#D8D2C2; --copper:#B25B1F; --copper-d:#8F4715;
+  --panel:#1D262E; --panel2:#27333E; --cream:#F7F3EA;
+  --r:2px; --max:1180px;
+  --font-d:"Libre Franklin",Helvetica,Arial,sans-serif; --font-m:"IBM Plex Mono",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-d);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--copper);color:var(--cream)}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.mono{font-family:var(--font-m)}
+.eyebrow{font-family:var(--font-m);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--copper)}
+h1,h2{font-weight:900;line-height:1.03;letter-spacing:-.015em}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--copper);color:#fff;font-weight:800;font-size:.95rem;padding:1rem 1.7rem;border-radius:var(--r);text-decoration:none;border:2px solid var(--copper);transition:background .25s,transform .25s}
+.btn:hover{background:var(--copper-d);transform:translateY(-2px)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--cream)}
+:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+
+/* ---------- emergency strip + header ---------- */
+.strip{background:var(--ink);color:var(--cream);font-family:var(--font-m);font-size:.8rem;letter-spacing:.04em}
+.strip .wrap{display:flex;justify-content:space-between;gap:1rem;padding-top:.5rem;padding-bottom:.5rem;flex-wrap:wrap}
+.strip b{color:#E8A05C}
+.strip a{font-weight:600;color:#fff}
+header.site{position:sticky;top:0;z-index:50;background:rgba(243,239,231,.94);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{text-decoration:none;font-weight:900;font-size:1.3rem;display:flex;align-items:center;gap:.7rem;letter-spacing:-.01em}
+.logo .dial{width:34px;height:34px;flex:none}
+.nav nav{display:flex;gap:1.9rem}
+.nav nav a{text-decoration:none;font-weight:700;font-size:.9rem;padding:.3rem 0;border-bottom:2px solid transparent}
+.nav nav a:hover{border-color:var(--copper)}
+.nav .tel{font-family:var(--font-m);font-weight:600;text-decoration:none;font-size:.95rem}
+@media(max-width:860px){.nav nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{border-bottom:1px solid var(--line);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;padding-top:4.2rem;padding-bottom:4.2rem;align-items:center}
+.hero h1{font-size:clamp(2.9rem,6.4vw,5rem)}
+.hero h1 .hot{color:var(--copper)}
+.hero p.lede{margin:1.3rem 0 2rem;font-size:1.16rem;color:var(--ink2);max-width:36ch}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.gauge-card{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);padding:1.8rem 1.8rem 1.4rem;box-shadow:12px 12px 0 rgba(29,38,46,.14)}
+.gauge-card .gc-head{display:flex;justify-content:space-between;font-family:var(--font-m);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
+.gauge{width:100%;height:auto}
+.needle{transform-origin:150px 168px;animation:sweep 2.6s cubic-bezier(.22,.9,.3,1) .3s both}
+@keyframes sweep{0%{transform:rotate(-80deg)}55%{transform:rotate(44deg)}75%{transform:rotate(30deg)}100%{transform:rotate(36deg)}}
+.gauge-read{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);margin-top:.8rem;padding-top:.9rem}
+.gauge-read b{font-size:2rem;font-weight:900}
+.gauge-read span{font-family:var(--font-m);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr}}
+
+/* ---------- trust strip: spec row ---------- */
+.spec{border-bottom:2px solid var(--ink);background:var(--paper)}
+.spec .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-top:0;padding-bottom:0}
+.spec div{padding:1.3rem 1.2rem;border-left:1px solid var(--line)}
+.spec div:first-child{border-left:none;padding-left:0}
+.spec b{display:block;font-size:1.35rem;font-weight:900;line-height:1.1}
+.spec span{font-family:var(--font-m);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:860px){.spec .wrap{grid-template-columns:1fr 1fr}.spec div{padding-left:1.2rem}.spec div:nth-child(odd){border-left:none;padding-left:0}}
+
+/* ---------- sections ---------- */
+section{padding:5.2rem 0}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:1.2rem 2.5rem;align-items:end;margin-bottom:2.6rem}
+.sec-head h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.sec-head p{color:var(--muted);max-width:44ch;justify-self:end}
+.sec-head .no{font-family:var(--font-m);color:var(--copper);font-weight:600;font-size:.9rem;padding-bottom:.6rem}
+@media(max-width:760px){.sec-head{grid-template-columns:1fr}.sec-head p{justify-self:start}.sec-head .no{padding-bottom:0}}
+
+/* services: spec sheet table */
+table.sheet{width:100%;border-collapse:collapse;background:var(--paper);border:2px solid var(--ink)}
+table.sheet th{font-family:var(--font-m);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-align:left;padding:.8rem 1.1rem;border-bottom:2px solid var(--ink)}
+table.sheet td{padding:1.15rem 1.1rem;border-bottom:1px solid var(--line);vertical-align:top}
+table.sheet tr:last-child td{border-bottom:none}
+table.sheet tr{transition:background .2s}
+table.sheet tbody tr:hover{background:#F1EAD9}
+table.sheet .ref{font-family:var(--font-m);font-size:.8rem;color:var(--copper);font-weight:600;white-space:nowrap}
+table.sheet .job{font-weight:800;font-size:1.08rem}
+table.sheet .det{color:var(--muted);font-size:.93rem}
+table.sheet .cost{font-weight:900;font-size:1.15rem;white-space:nowrap;text-align:right}
+table.sheet .cost small{display:block;font-family:var(--font-m);font-weight:500;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:700px){table.sheet .det,table.sheet .ref{display:none}table.sheet th:nth-child(3){display:none}}
+
+/* work: job log */
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.job{background:var(--ink);color:var(--cream);border-radius:var(--r);padding:1.7rem;display:flex;flex-direction:column;gap:.9rem;transition:transform .3s}
+.job:hover{transform:translateY(-5px)}
+.job:nth-child(2){background:var(--copper)}
+.job:nth-child(3){background:var(--paper);color:var(--ink);border:2px solid var(--ink)}
+.job .tag{font-family:var(--font-m);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;opacity:.75}
+.job h3{font-size:1.45rem;font-weight:900;line-height:1.15}
+.job p{font-size:.95rem;opacity:.85}
+.job .stats{margin-top:auto;display:flex;gap:1.4rem;border-top:1px solid rgba(255,255,255,.25);padding-top:.9rem}
+.job:nth-child(3) .stats{border-color:var(--line)}
+.job .stats b{display:block;font-size:1.15rem}
+.job .stats span{font-family:var(--font-m);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+@media(max-width:900px){.jobs{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--paper);border-block:1px solid var(--line)}
+.rev-wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:14px}
+.rev{border:1px solid var(--line);border-radius:var(--r);padding:1.8rem;background:var(--ground)}
+.rev.lead{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.rev .stars{color:var(--copper);letter-spacing:.18em;font-size:.9rem}
+.rev p{font-size:1.2rem;line-height:1.45;margin:.8rem 0 1rem;font-weight:500}
+.rev.lead p{font-size:1.55rem;font-weight:700}
+.rev footer{font-family:var(--font-m);font-size:.78rem;letter-spacing:.06em;color:var(--muted)}
+.rev.lead footer{color:#B9C2C9}
+.rev-stack{display:grid;gap:14px}
+.sample-note{margin-top:1rem;font-size:.8rem;color:var(--muted);font-family:var(--font-m)}
+@media(max-width:900px){.rev-wrap{grid-template-columns:1fr}}
+
+/* quote form */
+.quote{background:var(--panel);color:var(--cream)}
+.quote .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;align-items:start}
+.quote h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.quote h2 .hot{color:#E8A05C}
+.quote p{color:#B9C2C9;margin-top:1rem;max-width:38ch}
+.quote .dial-mini{display:flex;align-items:center;gap:.9rem;margin-top:2rem;font-family:var(--font-m);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#B9C2C9}
+form{display:grid;grid-template-columns:1fr 1fr;gap:.95rem}
+form .full{grid-column:1/-1}
+label{font-family:var(--font-m);font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#B9C2C9}
+input,select,textarea{width:100%;margin-top:.35rem;background:var(--panel2);border:1px solid #45545F;color:var(--cream);padding:.85rem 1rem;border-radius:var(--r);font:inherit;font-size:.97rem}
+textarea{resize:vertical;min-height:96px}
+input:focus,select:focus,textarea:focus{border-color:#E8A05C;outline:none}
+form .btn{grid-column:1/-1;justify-content:center;margin-top:.3rem}
+.success{display:none;grid-column:1/-1;background:#22392A;border:1px solid #5C7A4A;color:#DDEBCB;padding:1rem 1.2rem;border-radius:var(--r);font-weight:600}
+@media(max-width:900px){.quote .wrap{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+/* visit */
+.visit .cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5rem}
+.visit h3{font-family:var(--font-m);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.9rem;font-weight:600}
+.visit address{font-style:normal;font-size:1.12rem;line-height:1.65}
+.visit .big-tel{font-size:clamp(1.5rem,3vw,2rem);font-weight:900;text-decoration:none;display:inline-block}
+.visit .big-tel:hover{color:var(--copper)}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.55rem 0;border-bottom:1px solid var(--line);font-weight:600;font-size:.97rem}
+.hours td:last-child{text-align:right;font-family:var(--font-m);font-weight:600}
+.areas{list-style:none;display:flex;flex-wrap:wrap;gap:.45rem}
+.areas li{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:.28rem .8rem;font-size:.85rem;font-weight:600}
+@media(max-width:900px){.visit .cols{grid-template-columns:1fr}}
+
+/* footer */
+.site-foot{background:var(--ink);color:var(--cream);padding:3.4rem 0 2rem}
+.site-foot .name{font-size:clamp(2.2rem,6.4vw,4.2rem);font-weight:900;line-height:1;letter-spacing:-.015em}
+.site-foot .name span{color:#E8A05C}
+.site-foot .set{display:flex;align-items:center;gap:.8rem;margin-top:1.2rem;font-family:var(--font-m);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#B9C2C9}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;margin-top:2rem;padding-top:1.3rem;border-top:1px solid #39434C;color:#93A0AA;font-size:.88rem}
+
+/* reveal — the sweep */
+.rv{opacity:0;transform:translateX(-26px);transition:opacity .65s ease,transform .65s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+  .needle{animation:none;transform:rotate(36deg)}
+}
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>24/7 EMERGENCY</b> — no heating or a burst pipe?</span>
+    <span>Call now: <a href="tel:+441174960234">0117 496 0234</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Hartley Heating and Plumbing — home">
+      <svg class="dial" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="#1D262E" stroke-width="3"/><line x1="20" y1="20" x2="29" y2="12" stroke="#B25B1F" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="20" r="3" fill="#1D262E"/></svg>
+      Hartley<span style="color:var(--copper)">&nbsp;Heating</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services &amp; Prices</a><a href="#work">Recent Jobs</a><a href="#reviews">Reviews</a><a href="#visit">Find Us</a>
+    </nav>
+    <a class="tel" href="tel:+441174960234">0117 496 0234</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Heating &amp; Plumbing · Bristol · Est. 2009</p>
+        <h1>Cold house?<br>We turn the heat <span class="hot">back up.</span></h1>
+        <p class="lede">Boiler repairs, servicing and full plumbing across Bristol — with the fixed price agreed before we pick up a spanner. Emergencies answered 24/7.</p>
+        <div class="cta">
+          <a class="btn" href="#quote">Get a Fixed Quote</a>
+          <a class="btn line" href="#services">See Prices</a>
+        </div>
+      </div>
+      <div class="gauge-card" role="img" aria-label="A boiler gauge with the needle settled at 21 degrees — a warm home">
+        <div class="gc-head"><span>Boiler Gauge</span><span>Live Reading</span></div>
+        <svg class="gauge" viewBox="0 0 300 190" aria-hidden="true">
+          <path d="M30 168 A120 120 0 0 1 270 168" fill="none" stroke="#D8D2C2" stroke-width="16"/>
+          <path d="M30 168 A120 120 0 0 1 196 66" fill="none" stroke="#B25B1F" stroke-width="16"/>
+          <g stroke="#1D262E" stroke-width="2">
+            <line x1="30" y1="168" x2="46" y2="168"/><line x1="57" y1="94" x2="69" y2="105"/>
+            <line x1="150" y1="48" x2="150" y2="64"/><line x1="243" y1="94" x2="231" y2="105"/>
+            <line x1="270" y1="168" x2="254" y2="168"/>
+          </g>
+          <g font-family="IBM Plex Mono, monospace" font-size="13" fill="#68727B">
+            <text x="22" y="188">0°</text><text x="88" y="52">10°</text><text x="196" y="52">20°</text><text x="258" y="188">30°</text>
+          </g>
+          <line class="needle" x1="150" y1="168" x2="150" y2="76" stroke="#1D262E" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="150" cy="168" r="11" fill="#1D262E"/>
+          <circle cx="150" cy="168" r="4" fill="#B25B1F"/>
+        </svg>
+        <div class="gauge-read"><span>Your home, set to</span><b>21.0°C</b></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST: spec row -->
+  <div class="spec" aria-label="Good to know">
+    <div class="wrap">
+      <div><b>Fixed prices</b><span>Agreed before we start</span></div>
+      <div><b>24/7 cover</b><span>Emergencies, every day</span></div>
+      <div><b>Same-week</b><span>Boiler servicing slots</span></div>
+      <div><b>12-month</b><span>Workmanship guarantee*</span></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="no">01 / SERVICES</span>
+        <h2>The price list, up front</h2>
+        <p>No hourly meters running, no surprises on the invoice. If a job needs parts, we quote them before fitting anything.</p>
+      </div>
+      <table class="sheet rv">
+        <thead><tr><th scope="col">Ref</th><th scope="col">Job</th><th scope="col">What&apos;s included</th><th scope="col" style="text-align:right">Price</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">HTG-01</td><td class="job">Boiler service</td><td class="det">Full strip, clean, safety checks and efficiency report</td><td class="cost">£79<small>Fixed</small></td></tr>
+          <tr><td class="ref">HTG-02</td><td class="job">Boiler repair</td><td class="det">Diagnosis and first hour of labour; parts quoted before fitting</td><td class="cost">£65<small>Callout + 1st hr</small></td></tr>
+          <tr><td class="ref">HTG-03</td><td class="job">New boiler install</td><td class="det">Combi swap, flush, controls set up and old boiler removed</td><td class="cost">£1,850<small>From</small></td></tr>
+          <tr><td class="ref">PLB-01</td><td class="job">Emergency callout</td><td class="det">Burst pipes, leaks and no-heating callouts, day or night</td><td class="cost">£95<small>24/7 fixed</small></td></tr>
+          <tr><td class="ref">PLB-02</td><td class="job">Leak repair</td><td class="det">Trace, isolate and repair; most leaks fixed on the first visit</td><td class="cost">£55<small>From</small></td></tr>
+          <tr><td class="ref">HTG-04</td><td class="job">Power flush</td><td class="det">Full system clean for cold radiators and noisy boilers</td><td class="cost">£350<small>Up to 8 rads</small></td></tr>
+          <tr><td class="ref">PLB-03</td><td class="job">Radiator install</td><td class="det">Supply-fit or fit-only, balanced and bled before we leave</td><td class="cost">£140<small>Per radiator</small></td></tr>
+          <tr><td class="ref">HTG-05</td><td class="job">Landlord gas safety</td><td class="det">CP12 certificate for landlords, same-day digital copy</td><td class="cost">£60<small>Per property</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- WORK: job log -->
+  <section id="work" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="no">02 / JOB LOG</span>
+        <h2>Off the van this month</h2>
+        <p>Sample job log — the kind of work we do every week, with the time and the fixed price it was done for.</p>
+      </div>
+      <div class="jobs rv">
+        <article class="job">
+          <span class="tag">Job 2417 · Bishopston</span>
+          <h3>Combi boiler swap, same day</h3>
+          <p>Old boiler out at 9am, new combi on the wall and radiators balanced by 4. Heating on before the school run home.</p>
+          <div class="stats"><div><b>1 day</b><span>Start to finish</span></div><div><b>£1,950</b><span>Fixed quote</span></div></div>
+        </article>
+        <article class="job">
+          <span class="tag">Job 2409 · Clifton</span>
+          <h3>Burst pipe, 2am callout</h3>
+          <p>Water isolated within the hour, pipe section replaced and ceiling saved. One fixed emergency fee, no night-rate games.</p>
+          <div class="stats"><div><b>55 min</b><span>To isolate</span></div><div><b>£95</b><span>Fixed fee</span></div></div>
+        </article>
+        <article class="job">
+          <span class="tag">Job 2398 · Bedminster</span>
+          <h3>Power flush, 7 radiators</h3>
+          <p>Cold spots gone, boiler quiet for the first time in years. System treated and re-balanced the same visit.</p>
+          <div class="stats"><div><b>4 hrs</b><span>On site</span></div><div><b>£350</b><span>Fixed quote</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="no">03 / REVIEWS</span>
+        <h2>Warm houses, happy people</h2>
+        <p>What Bristol says after the van pulls away.</p>
+      </div>
+      <div class="rev-wrap rv">
+        <article class="rev lead">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>&ldquo;Boiler died on the coldest night of the year. Quoted on the phone, engineer there next morning, heat back by lunch. The price never moved a penny.&rdquo;</p>
+          <footer>Sample review — Sarah W., Bishopston</footer>
+        </article>
+        <div class="rev-stack">
+          <article class="rev">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>&ldquo;Service booked Monday, done Wednesday. Got a proper report, not just a sticker on the boiler.&rdquo;</p>
+            <footer>Sample review — Tom H., Horfield</footer>
+          </article>
+          <article class="rev">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>&ldquo;Found and fixed a leak two other firms missed. Tidy, honest, and the invoice matched the quote.&rdquo;</p>
+            <footer>Sample review — Priya K., Southville</footer>
+          </article>
+        </div>
+      </div>
+      <p class="sample-note">*Demo site: the guarantee, job log and reviews shown are samples, to be replaced with the business&apos;s real ones before launch.</p>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote" class="quote">
+    <div class="wrap">
+      <div class="rv">
+        <p class="eyebrow" style="color:#E8A05C">04 / Get a Quote</p>
+        <h2>Tell us what&apos;s <span class="hot">gone cold.</span></h2>
+        <p>Send the details and we&apos;ll come back with a fixed quote — usually the same working day. For emergencies, skip the form and call.</p>
+        <div class="dial-mini">
+          <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="#B9C2C9" stroke-width="3"/><line x1="20" y1="20" x2="29" y2="12" stroke="#E8A05C" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="20" r="3" fill="#B9C2C9"/></svg>
+          <span>Fixed quote · No obligation</span>
+        </div>
+      </div>
+      <form id="quoteForm" class="rv" novalidate>
+        <div class="success" id="quoteOk" role="status">Request received — thanks. We&apos;ll ring you back with a fixed quote, usually the same working day.</div>
+        <div><label for="qName">Your name</label><input id="qName" name="name" type="text" autocomplete="name" required placeholder="e.g. Alex Morgan"></div>
+        <div><label for="qPhone">Phone number</label><input id="qPhone" name="phone" type="tel" autocomplete="tel" required placeholder="07…"></div>
+        <div><label for="qSvc">What do you need?</label>
+          <select id="qSvc" name="service" required>
+            <option value="">Choose a service…</option><option>Boiler service — £79</option><option>Boiler repair — from £65</option><option>New boiler — from £1,850</option><option>Emergency — £95 fixed</option><option>Leak / plumbing repair</option><option>Power flush — £350</option><option>Something else</option>
+          </select></div>
+        <div><label for="qPost">Postcode</label><input id="qPost" name="postcode" type="text" autocomplete="postal-code" placeholder="e.g. BS7 8BN"></div>
+        <div class="full"><label for="qMsg">Tell us what&apos;s happening</label><textarea id="qMsg" name="message" placeholder="e.g. Boiler showing an error code, radiators cold upstairs…"></textarea></div>
+        <button class="btn" type="submit">Send — Get My Fixed Quote</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="no">05 / FIND US</span>
+        <h2>Based in Bishopston</h2>
+        <p>One van team covering Bristol — so when we say a time, we make it.</p>
+      </div>
+      <div class="cols rv">
+        <div>
+          <h3>Workshop &amp; Office</h3>
+          <address>88 Gloucester Road<br>Bishopston, Bristol BS7 8BN</address>
+          <a class="big-tel" href="tel:+441174960234">0117 496 0234</a><br>
+          <a href="mailto:quotes@hartleyheating.example">quotes@hartleyheating.example</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <table class="hours">
+            <tr><td>Monday – Friday</td><td>08:00 – 18:00</td></tr>
+            <tr><td>Saturday</td><td>09:00 – 13:00</td></tr>
+            <tr><td>Sunday</td><td>Emergencies only</td></tr>
+            <tr><td>Emergency line</td><td>24 / 7</td></tr>
+          </table>
+        </div>
+        <div>
+          <h3>Areas Covered</h3>
+          <ul class="areas">
+            <li>Bishopston</li><li>Horfield</li><li>Clifton</li><li>Redland</li><li>Bedminster</li><li>Southville</li><li>Filton</li><li>Stoke Bishop</li><li>Fishponds</li><li>Knowle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="name">Hartley <span>Heating</span></p>
+    <div class="set">
+      <svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="#B9C2C9" stroke-width="3"/><line x1="20" y1="20" x2="29" y2="12" stroke="#E8A05C" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="20" r="3" fill="#B9C2C9"/></svg>
+      <span>Needle settled · Homes warm · Bristol</span>
+    </div>
+    <div class="row">
+      <span>© <span id="yr">2026</span> Hartley Heating &amp; Plumbing, Bristol</span>
+      <span>Fixed prices · Card &amp; bank transfer</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+document.getElementById('quoteForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('qName'),p=document.getElementById('qPhone'),s=document.getElementById('qSvc');
+  if(!n.value.trim()||!p.value.trim()||!s.value){(!n.value.trim()?n:!p.value.trim()?p:s).focus();return;}
+  document.getElementById('quoteOk').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
