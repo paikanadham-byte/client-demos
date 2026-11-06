@@ -32,9 +32,9 @@ nav.main a[aria-current]{color:var(--lime)}
 .hphone{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:9px 13px;text-decoration:none;font-family:var(--fm);font-size:.74rem;letter-spacing:.05em;white-space:nowrap;transition:border-color .25s ease,color .25s ease}
 .hphone svg{width:13px;height:13px;fill:var(--lime);flex:none}
 .hphone:hover{border-color:var(--lime);color:var(--lime)}
-.btn{display:inline-flex;align-items:center;gap:9px;background:var(--lime);color:#0A0B09;text-decoration:none;font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:13px 20px;border:1px solid var(--lime);cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--lime);color:#0A0B09;text-decoration:none;font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border:1px solid var(--lime);cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease;white-space:nowrap;-webkit-text-stroke:0;text-stroke:none}
 .btn:hover{background:transparent;color:var(--lime)}
-.btn.out{background:transparent;color:var(--paper);border-color:var(--line)}
+.btn.out{background:transparent;color:var(--paper);border:1px solid rgba(242,240,233,.4);-webkit-text-stroke:0;text-stroke:none}
 .btn.out:hover{border-color:var(--lime);color:var(--lime)}
 .kicker{font-family:var(--fm);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--lime)}
 .disp{font-stretch:122%;font-weight:850;text-transform:uppercase;line-height:.97}
@@ -51,12 +51,12 @@ section.blk{padding:84px 0}
 .blk h2 .out{-webkit-text-stroke-width:1.5px}
 .lede{color:var(--muted);max-width:62ch;margin-top:14px}
 .ledger{margin-top:38px;border-top:1px solid var(--line)}
-.srow{display:grid;grid-template-columns:58px 1fr auto;gap:18px;padding:24px 8px;border-bottom:1px solid var(--line);align-items:start;text-decoration:none;transition:background .25s ease}
+.srow{display:grid;grid-template-columns:52px minmax(180px,.85fr) minmax(0,1.5fr) auto;gap:26px;padding:26px 8px;border-bottom:1px solid var(--line);align-items:start;text-decoration:none;transition:background .25s ease}
 a.srow:hover{background:var(--panel)}
-.srow .num{font-family:var(--fm);color:var(--lime);font-size:.85rem;padding-top:5px}
-.srow h3{font-stretch:118%;font-weight:800;text-transform:uppercase;font-size:1.2rem;letter-spacing:.01em}
-.srow p{color:var(--muted);font-size:.94rem;max-width:60ch;margin-top:4px}
-.chip{font-family:var(--fm);font-size:.6rem;letter-spacing:.18em;color:var(--muted);border:1px solid var(--line);padding:7px 10px;white-space:nowrap;text-transform:uppercase;margin-top:4px}
+.srow .num{font-family:var(--fm);color:var(--lime);font-size:.85rem;padding-top:8px}
+.srow h3{font-stretch:120%;font-weight:850;text-transform:uppercase;font-size:1.45rem;line-height:1.12;letter-spacing:.01em}
+.srow p{color:#B9BBB2;font-size:.95rem;max-width:56ch;padding-top:4px}
+.chip{font-family:var(--fm);font-size:.6rem;letter-spacing:.18em;color:#B9BBB2;border:1px solid rgba(242,240,233,.4);padding:7px 10px;white-space:nowrap;text-transform:uppercase;margin-top:6px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:38px}
 details.faq{border-bottom:1px solid var(--line);padding:18px 4px}
 details.faq summary{font-weight:700;text-transform:uppercase;letter-spacing:.03em;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;font-size:1rem}
@@ -72,7 +72,7 @@ details.faq p{color:var(--muted);margin-top:8px;max-width:65ch}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 footer.site{border-top:1px solid var(--line);background:var(--bg)}
 footer.site .wrap{padding:54px 24px 30px}
-.fword{font-stretch:124%;font-weight:900;font-size:clamp(3rem,11vw,9.5rem);line-height:.92;color:transparent;-webkit-text-stroke:1.5px rgba(242,240,233,.34);text-transform:uppercase;white-space:nowrap}
+.fword{font-stretch:124%;font-weight:900;font-size:11vw;line-height:.92;color:transparent;-webkit-text-stroke:1.5px rgba(242,240,233,.34);text-transform:uppercase;white-space:nowrap;text-align:center;letter-spacing:-.015em;overflow:hidden}
 .fcols{display:flex;gap:44px;flex-wrap:wrap;margin-top:36px;font-size:.92rem}
 .fcols .fl{font-family:var(--fm);font-size:.62rem;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;display:block;margin-bottom:9px}
 .fcols a{color:var(--lime);text-decoration:none}
@@ -81,7 +81,7 @@ footer.site .wrap{padding:54px 24px 30px}
 .js .rv.in{opacity:1;transform:none}
 :focus-visible{outline:2px solid var(--lime);outline-offset:2px}
 @media(max-width:900px){nav.main{display:none}.hphone{display:none}}
-@media(max-width:640px){section.blk{padding:56px 0}.srow{grid-template-columns:38px 1fr}.chip{grid-column:2;justify-self:start}.bigcta{padding:34px 24px}}
+@media(max-width:640px){section.blk{padding:56px 0}.srow{grid-template-columns:38px 1fr;gap:8px 16px}.srow h3,.srow p,.chip{grid-column:2}.chip{justify-self:start;margin-top:2px}.bigcta{padding:34px 24px}.fword{font-size:10.6vw}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobilePhoneStore", "name": "Mughal Mobile Repairing Lab", "telephone": "+923188000267", "address": {"@type": "PostalAddress", "streetAddress": "Shop No. 6, Basement, Hub Commercial Plaza, Bahria Town Phase 8, Rawalpindi", "addressLocality": "Rawalpindi", "addressCountry": "PK"}}</script>
@@ -100,11 +100,11 @@ footer.site .wrap{padding:54px 24px 30px}
 </div></section>
 <section class="blk"><div class="wrap">
 <div class="ledger">
-<div class="srow rv"><span class="num">01</span><div><h3>All Mobile Repairing</h3><p>Complete mobile repairing under one roof — bring the phone in, the lab finds the fault and fixes it properly.</p></div><span class="chip">PRICE IN SHOP</span></div>
-<div class="srow rv"><span class="num">02</span><div><h3>IC Repairing &amp; Repolishing</h3><p>Chip-level IC repairing and repolishing — the deep work most shops send away or refuse, done in the lab.</p></div><span class="chip">PRICE IN SHOP</span></div>
-<div class="srow rv"><span class="num">03</span><div><h3>Hardware Repairs</h3><p>Faulty hardware diagnosed on the bench and repaired with proper tools: rework station, ultrasonic cleaning, precision testing.</p></div><span class="chip">PRICE IN SHOP</span></div>
-<div class="srow rv"><span class="num">04</span><div><h3>Software Repairs</h3><p>Software faults, flashing and system issues sorted — your data and your phone handled with care.</p></div><span class="chip">PRICE IN SHOP</span></div>
-<div class="srow rv"><span class="num">05</span><div><h3>Original Parts</h3><p>Original parts and quality work — no copy parts passed off as the real thing.</p></div><span class="chip">PRICE IN SHOP</span></div>
+<div class="srow rv"><span class="num">01</span><h3>All Mobile Repairing</h3><p>Complete mobile repairing under one roof — bring the phone in, the lab finds the fault and fixes it properly.</p><span class="chip">PRICE IN SHOP</span></div>
+<div class="srow rv"><span class="num">02</span><h3>IC Repairing &amp; Repolishing</h3><p>Chip-level IC repairing and repolishing — the deep work most shops send away or refuse, done in the lab.</p><span class="chip">PRICE IN SHOP</span></div>
+<div class="srow rv"><span class="num">03</span><h3>Hardware Repairs</h3><p>Faulty hardware diagnosed on the bench and repaired with proper tools: rework station, ultrasonic cleaning, precision testing.</p><span class="chip">PRICE IN SHOP</span></div>
+<div class="srow rv"><span class="num">04</span><h3>Software Repairs</h3><p>Software faults, flashing and system issues sorted — your data and your phone handled with care.</p><span class="chip">PRICE IN SHOP</span></div>
+<div class="srow rv"><span class="num">05</span><h3>Original Parts</h3><p>Original parts and quality work — no copy parts passed off as the real thing.</p><span class="chip">PRICE IN SHOP</span></div>
 </div>
 </div></section>
 <section class="blk alt"><div class="wrap">
