@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saber Barber Shop — Barbers on Roundhay Road, Harehills, Leeds</title>
+<meta name="description" content="Saber Barber Shop, 160–162 Roundhay Road, Harehills, Leeds. Professional haircuts at affordable prices, rated 4.7 from 52 Google reviews. Open 7 days — walk in or book your chair.">
+<meta property="og:title" content="Saber Barber Shop — Harehills, Leeds">
+<meta property="og:description" content="Professional service, affordable prices. Rated 4.7★ from 52 Google reviews. Roundhay Road, Harehills — open 7 days.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"Saber Barber Shop","telephone":"+44 7413 564518","address":{"@type":"PostalAddress","streetAddress":"160–162 Roundhay Road, Harehills","addressLocality":"Leeds","postalCode":"LS8 5PL","addressCountry":"GB"},"openingHours":["Mo-Sa 09:30-18:00","Su 09:30-17:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"52"}}
+</script>
+<style>
+/* ===== shared tokens (identical on every page) ===== */
+:root{
+  --ground:#F5EFE4; --ground2:#EFE6D3; --ink:#1B140E; --ink2:#2A2016;
+  --muted:#6E6257; --line:#D9CCB4; --accent:#B3202A; --accent-d:#8F181F;
+  --brass:#C09335; --panel:#1E1712; --cream:#FBF7EE;
+  --r:3px; --max:1180px;
+  --font-d:"Fraunces",Georgia,serif; --font-b:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:var(--cream)}
+a{color:inherit}
+img,svg{display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:var(--font-d);line-height:1.02;font-weight:900}
+.btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);color:var(--cream);font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:1rem 1.7rem;border-radius:var(--r);text-decoration:none;border:2px solid var(--accent);transition:background .25s,transform .25s}
+.btn:hover{background:var(--accent-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+.btn.wa{background:#1FA855;border-color:#1FA855;color:#fff}
+.btn.wa:hover{background:#178A44;border-color:#178A44}
+.btn.wa svg{width:19px;height:19px;fill:currentColor;flex:none}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+section{padding:5.2rem 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:2.6rem;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.1rem,4.4vw,3.3rem);letter-spacing:-.01em;max-width:16ch}
+.sec-head p{color:var(--muted);max-width:38ch}
+.polebar{height:16px;border-radius:8px;border:2px solid var(--ink);background:repeating-linear-gradient(48deg,var(--accent) 0 14px,var(--cream) 14px 28px,var(--ink2) 28px 42px,var(--cream) 42px 56px)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+
+/* ===== shared header ===== */
+header.site-head{position:sticky;top:0;z-index:50;background:rgba(245,239,228,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:72px;flex-wrap:wrap;padding:.5rem 0}
+.logo{font-family:var(--font-d);font-weight:900;font-size:1.45rem;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:.65rem}
+.logo .mark{width:14px;height:34px;border-radius:8px;border:2px solid var(--ink);background:repeating-linear-gradient(48deg,var(--accent) 0 6px,var(--cream) 6px 12px,var(--ink2) 12px 18px,var(--cream) 18px 24px);flex:none}
+.nav nav{display:flex;gap:1.7rem;flex-wrap:wrap}
+.nav nav a{text-decoration:none;font-weight:600;font-size:.92rem;position:relative;padding:.3rem 0}
+.nav nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .3s}
+.nav nav a:hover::after{width:100%}
+.nav nav a[aria-current="page"]{color:var(--accent)}
+.nav nav a[aria-current="page"]::after{width:100%}
+.nav-side{display:flex;align-items:center;gap:1.1rem}
+.nav-side .tel{font-weight:700;text-decoration:none;font-size:.95rem;white-space:nowrap}
+.nav-side .tel:hover{color:var(--accent)}
+.nav-side .btn{padding:.65rem 1.2rem}
+@media(max-width:900px){.nav nav{order:3;width:100%;gap:1.2rem}.nav-side .tel{display:none}}
+
+/* ===== shared footer ===== */
+.site-foot{background:var(--ink);color:var(--cream);padding:3.6rem 0 2.2rem}
+.site-foot .name{font-family:var(--font-d);font-weight:900;font-size:clamp(2.6rem,8vw,5.5rem);line-height:.95;letter-spacing:-.01em}
+.site-foot .name em{color:var(--accent);font-style:italic}
+.site-foot .polebar{border-color:var(--cream);margin-top:1.6rem;max-width:520px}
+.site-foot .fnav{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:2rem}
+.site-foot .fnav a{text-decoration:none;font-weight:600;font-size:.92rem;color:var(--cream)}
+.site-foot .fnav a:hover{color:var(--brass)}
+.site-foot .row{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid #3A2E22;color:#B7A98F;font-size:.9rem}
+
+/* ===== page: home ===== */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1fr 340px;gap:3rem;padding-top:4.5rem;padding-bottom:4.5rem;align-items:center}
+.hero h1{font-size:clamp(3rem,7.2vw,5.6rem);letter-spacing:-.015em}
+.hero h1 em{font-style:italic;font-weight:700;color:var(--accent)}
+.hero p.lede{margin:1.4rem 0 2rem;font-size:1.18rem;color:var(--ink2);max-width:34ch}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.proof{display:flex;gap:1.8rem;margin-top:2.4rem;flex-wrap:wrap}
+.proof div b{font-family:var(--font-d);font-size:1.5rem;display:block;line-height:1}
+.proof div span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.polebox{display:flex;flex-direction:column;align-items:center;gap:1rem}
+.pole{width:120px;height:430px;border-radius:64px;border:3px solid var(--ink);position:relative;overflow:hidden;box-shadow:10px 14px 0 rgba(27,20,14,.12)}
+.pole::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(48deg,var(--accent) 0 26px,var(--cream) 26px 52px,var(--ink2) 52px 78px,var(--cream) 78px 104px);animation:turn 3.2s linear infinite}
+.pole::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(255,255,255,.35) 38%,rgba(255,255,255,0) 60%,rgba(0,0,0,.25));border-radius:64px}
+.polebox:hover .pole::before{animation-duration:9s}
+@keyframes turn{from{background-position:0 0}to{background-position:0 147px}}
+.polecap{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);text-align:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.pole{height:240px;width:92px}.polebox{flex-direction:row;justify-content:flex-start}}
+.marquee{background:var(--ink);color:var(--cream);overflow:hidden;padding:.9rem 0;border-block:3px solid var(--accent)}
+.marquee .track{display:flex;gap:3rem;white-space:nowrap;font-family:var(--font-d);font-weight:700;font-size:1.05rem;animation:slide 26s linear infinite;width:max-content}
+.marquee .track span i{color:var(--accent);font-style:normal;padding-right:3rem}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.svc{border-top:2px solid var(--ink)}
+.svc a.row{display:grid;grid-template-columns:64px 1fr auto;gap:1.4rem;align-items:baseline;padding:1.35rem .4rem;border-bottom:1px solid var(--line);text-decoration:none;transition:background .25s,padding-left .25s}
+.svc a.row:hover{background:var(--ground2);padding-left:1rem}
+.svc .no{font-family:var(--font-d);font-style:italic;color:var(--brass);font-weight:700}
+.svc .name{font-family:var(--font-d);font-size:1.5rem;font-weight:700}
+.svc .desc{color:var(--muted);font-size:.95rem}
+.svc .go{font-family:var(--font-d);font-size:1.5rem;font-weight:900;color:var(--accent)}
+.svc-link{margin-top:1.6rem;font-weight:700}
+.svc-link a{color:var(--accent);text-decoration:none;border-bottom:2px solid var(--accent)}
+.reviews{background:var(--ground2);border-block:1px solid var(--line)}
+.rev-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px}
+.rev{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:1.8rem}
+.rev.big{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.rev .stars{color:var(--brass);letter-spacing:.2em;font-size:.9rem}
+.rev p{font-family:var(--font-d);font-size:1.25rem;line-height:1.35;margin:.8rem 0 1rem;font-weight:500}
+.rev.big p{font-size:1.6rem}
+.rev footer{font-size:.85rem;color:var(--muted);font-weight:600}
+.rev.big footer{color:#CBBFA9}
+.sample-note{margin-top:1rem;font-size:.8rem;color:var(--muted)}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+.cta-band{background:var(--panel);color:var(--cream)}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.cta-band h2 em{color:var(--accent);font-style:italic}
+.cta-band p{color:#CFC4AE;margin-top:.6rem}
+.cta-band .cta{display:flex;gap:1rem;flex-wrap:wrap}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="logo" href="./"><span class="mark" aria-hidden="true"></span>Saber Barber Shop</a>
+    <nav aria-label="Main">
+      <a href="./" aria-current="page">Home</a>
+      <a href="services/">Services</a>
+      <a href="work/">Our Work</a>
+      <a href="about/">About &amp; Reviews</a>
+      <a href="contact/">Contact</a>
+    </nav>
+    <div class="nav-side">
+      <a class="tel" href="tel:+447413564518">07413 564518</a>
+      <a class="btn" href="contact/">Book a Chair</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO: the offer, the proof, the one action -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Roundhay Road · Harehills · Leeds</p>
+        <h1>Sharp cuts.<br><em>Zero</em> fuss.</h1>
+        <p class="lede">Professional haircuts at affordable prices, right on Roundhay Road. Walk in any day of the week, or book your chair before you set off.</p>
+        <div class="cta">
+          <a class="btn" href="contact/">Book a Chair</a>
+          <a class="btn wa" href="https://wa.me/447413564518" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.58 1.74-1.15.27-.58.27-1.07.19-1.18-.08-.1-.23-.16-.48-.29z"/></svg>WhatsApp Us</a>
+        </div>
+        <div class="proof" aria-label="Why Saber">
+          <div><b>4.7★</b><span>Google rating</span></div>
+          <div><b>52</b><span>Google reviews</span></div>
+          <div><b>7 days</b><span>Open every day</span></div>
+        </div>
+      </div>
+      <div class="polebox" aria-hidden="true">
+        <div class="pole"></div>
+        <p class="polecap">The pole never stops.<br>Neither do we.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track" id="mq">
+      <span>Haircuts <i>✦</i></span><span>Skin Fades <i>✦</i></span><span>Beard Trims <i>✦</i></span><span>Hot Towel Shaves <i>✦</i></span><span>Kids Cuts <i>✦</i></span><span>Open 7 Days <i>✦</i></span>
+    </div>
+  </div>
+
+  <!-- SERVICES OVERVIEW -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div><p class="eyebrow">Services</p><h2>Pick your chair time</h2></div>
+        <p>Professional cuts, fades and beard work at prices Harehills regulars call affordable. The full price list is on the board in the shop — no surprises when you sit down.</p>
+      </div>
+      <div class="svc rv">
+        <a class="row" href="services/"><span class="no">01</span><span><span class="name">Haircut</span><br><span class="desc">Consultation, cut and styled finish — the staple, done properly</span></span><span class="go" aria-hidden="true">→</span></a>
+        <a class="row" href="services/"><span class="no">02</span><span><span class="name">Skin Fade</span><br><span class="desc">Zero-blend fade, razor-finished edges</span></span><span class="go" aria-hidden="true">→</span></a>
+        <a class="row" href="services/"><span class="no">03</span><span><span class="name">Beard Trim &amp; Shape</span><br><span class="desc">Shape, line-up and a tidy finish</span></span><span class="go" aria-hidden="true">→</span></a>
+        <a class="row" href="services/"><span class="no">04</span><span><span class="name">Hot Towel Shave</span><br><span class="desc">The traditional cut-throat shave, done the slow way</span></span><span class="go" aria-hidden="true">→</span></a>
+        <a class="row" href="services/"><span class="no">05</span><span><span class="name">Kids Cut</span><br><span class="desc">Patient, quick and no fuss for younger heads</span></span><span class="go" aria-hidden="true">→</span></a>
+      </div>
+      <p class="svc-link rv">What's included and common questions on the <a href="services/">Services page</a>.</p>
+    </div>
+  </section>
+
+  <!-- BEST REVIEWS -->
+  <section class="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div><p class="eyebrow">Reviews</p><h2>Word travels fast</h2></div>
+        <p>Rated 4.7★ from 52 reviews on Google. <a href="about/" style="color:var(--accent);font-weight:700">Read more about us</a>.</p>
+      </div>
+      <div class="rev-grid rv">
+        <article class="rev big"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Have been getting haircut for years at this place. Professional service and affordable prices. Keep up with good job."</p><footer>Real review — from Google</footer></article>
+        <article class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Best fade I've had in Harehills. In the chair quick, out sharp. This is my place now."</p><footer>Sample review — Bilal A., Harehills</footer></article>
+        <article class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Took my lad for his first cut. Patient, quick, and he loved the chair. We both go now."</p><footer>Sample review — Craig D., Gipton</footer></article>
+      </div>
+      <p class="sample-note">Demo site: the large review above is a real Google review of Saber Barber Shop. The other reviews shown are samples, to be replaced with the business's real ones before launch.</p>
+    </div>
+  </section>
+
+  <!-- CLOSING PUSH -->
+  <section class="cta-band">
+    <div class="wrap rv">
+      <div>
+        <h2>Your chair is <em>waiting.</em></h2>
+        <p>160–162 Roundhay Road, Harehills, Leeds — open Monday to Saturday 9:30–18:00, Sunday until 17:00. Walk in, or book ahead and skip the queue.</p>
+      </div>
+      <div class="cta">
+        <a class="btn" href="contact/">Book a Chair</a>
+        <a class="btn wa" href="https://wa.me/447413564518" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.58 1.74-1.15.27-.58.27-1.07.19-1.18-.08-.1-.23-.16-.48-.29z"/></svg>WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="name">Saber <em>Barber Shop</em></p>
+    <div class="polebar" aria-hidden="true"></div>
+    <nav class="fnav" aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="services/">Services</a>
+      <a href="work/">Our Work</a>
+      <a href="about/">About &amp; Reviews</a>
+      <a href="contact/">Contact</a>
+    </nav>
+    <div class="row">
+      <span>© <span id="yr">2026</span> Saber Barber Shop, Leeds</span>
+      <span>Walk-ins welcome · Open 7 days</span>
+      <span>Demo website — built as a first-version preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var mq = document.getElementById('mq'); if(mq){ mq.innerHTML += mq.innerHTML; }
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
