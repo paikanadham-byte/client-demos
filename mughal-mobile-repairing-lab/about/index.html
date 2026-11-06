@@ -32,9 +32,9 @@ nav.main a[aria-current]{color:var(--lime)}
 .hphone{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:9px 13px;text-decoration:none;font-family:var(--fm);font-size:.74rem;letter-spacing:.05em;white-space:nowrap;transition:border-color .25s ease,color .25s ease}
 .hphone svg{width:13px;height:13px;fill:var(--lime);flex:none}
 .hphone:hover{border-color:var(--lime);color:var(--lime)}
-.btn{display:inline-flex;align-items:center;gap:9px;background:var(--lime);color:#0A0B09;text-decoration:none;font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:13px 20px;border:1px solid var(--lime);cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--lime);color:#0A0B09;text-decoration:none;font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border:1px solid var(--lime);cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease;white-space:nowrap;-webkit-text-stroke:0;text-stroke:none}
 .btn:hover{background:transparent;color:var(--lime)}
-.btn.out{background:transparent;color:var(--paper);border-color:var(--line)}
+.btn.out{background:transparent;color:var(--paper);border:1px solid rgba(242,240,233,.4);-webkit-text-stroke:0;text-stroke:none}
 .btn.out:hover{border-color:var(--lime);color:var(--lime)}
 .kicker{font-family:var(--fm);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--lime)}
 .disp{font-stretch:122%;font-weight:850;text-transform:uppercase;line-height:.97}
@@ -53,32 +53,41 @@ section.blk{padding:84px 0}
 .story{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:54px;align-items:start}
 .framebox{position:relative;margin:26px 10px}
 .glow{position:absolute;inset:-10% -8%;background:radial-gradient(closest-side,rgba(198,242,50,.13),rgba(198,242,50,.04) 55%,transparent 76%);pointer-events:none}
-figure.frame{position:relative;border:1px solid var(--line);background:var(--panel);aspect-ratio:4/5;overflow:hidden}
-figure.frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+figure.frame{position:relative;border:1px solid var(--line);background:radial-gradient(120% 90% at 50% 38%,#171A12 0%,var(--panel) 62%);padding:14px}
+figure.frame img{display:block;width:100%;height:auto;object-fit:contain}
 .corner{position:absolute;width:24px;height:24px;z-index:3;pointer-events:none}
 .corner.tl{top:-10px;left:-10px;border-top:2px solid var(--lime);border-left:2px solid var(--lime)}
 .corner.tr{top:-10px;right:-10px;border-top:2px solid var(--lime);border-right:2px solid var(--lime)}
 .corner.bl{bottom:-10px;left:-10px;border-bottom:2px solid var(--lime);border-left:2px solid var(--lime)}
 .corner.br{bottom:-10px;right:-10px;border-bottom:2px solid var(--lime);border-right:2px solid var(--lime)}
-.flabel{position:absolute;font-family:var(--fm);font-size:.58rem;letter-spacing:.24em;color:var(--muted);text-transform:uppercase;z-index:3}
-.flabel.top{top:-26px;left:0;color:var(--lime)}
-.flabel.bot{bottom:-26px;right:0}
+.dia{position:absolute;width:9px;height:9px;background:var(--lime);transform:rotate(45deg);z-index:4;pointer-events:none}
+.dia.tl{top:-5px;left:-5px}
+.dia.tr{top:-5px;right:-5px}
+.dia.bl{bottom:-5px;left:-5px}
+.dia.br{bottom:-5px;right:-5px}
+.flabel{position:absolute;font-family:var(--fm);font-size:.6rem;letter-spacing:.24em;color:var(--paper);text-transform:uppercase;z-index:3}
+.flabel .dia{position:static;display:inline-block;margin-right:9px;vertical-align:1px}
+.flabel.top{top:-28px;left:0;color:var(--lime)}
+.flabel.bot{bottom:-28px;right:0;color:var(--paper)}
 .specs{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin-top:44px}
 .spec{padding:24px 22px;border-right:1px solid var(--line)}
 .spec:last-child{border-right:none}
-.spec b{display:block;font-stretch:122%;font-weight:850;text-transform:uppercase;font-size:1.65rem;line-height:1}
-.spec span{display:block;margin-top:9px;font-family:var(--fm);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.spec b{display:block;font-stretch:122%;font-weight:850;text-transform:uppercase;font-size:1.65rem;line-height:1;color:var(--paper)}
+.spec span{display:block;margin-top:9px;font-family:var(--fm);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:#B9BBB2}
 .ledger{margin-top:38px;border-top:1px solid var(--line)}
 .srow{display:grid;grid-template-columns:58px 1fr;gap:18px;padding:24px 8px;border-bottom:1px solid var(--line);align-items:start}
 .srow .num{font-family:var(--fm);color:var(--lime);font-size:.85rem;padding-top:5px}
 .srow h3{font-stretch:118%;font-weight:800;text-transform:uppercase;font-size:1.2rem;letter-spacing:.01em}
-.srow p{color:var(--muted);font-size:.94rem;max-width:62ch;margin-top:4px}
+.srow p{color:#B9BBB2;font-size:.94rem;max-width:62ch;margin-top:4px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:38px}
-.jcard{background:var(--panel);border:1px solid var(--line);padding:26px;position:relative;transition:border-color .25s ease,transform .25s ease}
+.jcard{background:var(--panel);border:1px solid var(--line);position:relative;overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s ease,transform .25s ease}
 .jcard:hover{border-color:rgba(198,242,50,.55);transform:translateY(-3px)}
-.jcard::before{content:"";position:absolute;top:14px;right:14px;width:8px;height:8px;background:var(--lime);transform:rotate(45deg)}
-.jcard .tag{font-family:var(--fm);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);padding-right:18px}
-.jcard h3{font-stretch:118%;font-weight:800;text-transform:uppercase;font-size:1.28rem;margin:12px 0 8px}
+.jcard::after{content:"";position:absolute;top:194px;right:14px;width:8px;height:8px;background:var(--lime);transform:rotate(45deg);z-index:2}
+.jvis{height:180px;flex:none;background-size:cover;background-repeat:no-repeat;border-bottom:1px solid var(--line);position:relative}
+.jvis .tag{position:absolute;left:12px;bottom:12px;background:rgba(10,11,9,.85);padding:6px 9px}
+.jbody{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.jcard .tag{font-family:var(--fm);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lime)}
+.jcard h3{font-stretch:118%;font-weight:800;text-transform:uppercase;font-size:1.28rem;margin:0 0 8px}
 .jcard p{color:var(--muted);font-size:.94rem}
 .bigcta{border:1px solid var(--line);background:var(--panel);padding:46px 36px;position:relative;overflow:hidden}
 .bigcta h2{font-size:clamp(1.9rem,4.4vw,3.2rem)}
@@ -87,7 +96,7 @@ figure.frame img{display:block;width:100%;height:100%;object-fit:cover;object-po
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 footer.site{border-top:1px solid var(--line);background:var(--bg)}
 footer.site .wrap{padding:54px 24px 30px}
-.fword{font-stretch:124%;font-weight:900;font-size:clamp(3rem,11vw,9.5rem);line-height:.92;color:transparent;-webkit-text-stroke:1.5px rgba(242,240,233,.34);text-transform:uppercase;white-space:nowrap}
+.fword{font-stretch:124%;font-weight:900;font-size:11vw;line-height:.92;color:transparent;-webkit-text-stroke:1.5px rgba(242,240,233,.34);text-transform:uppercase;white-space:nowrap;text-align:center;letter-spacing:-.015em;overflow:hidden}
 .fcols{display:flex;gap:44px;flex-wrap:wrap;margin-top:36px;font-size:.92rem}
 .fcols .fl{font-family:var(--fm);font-size:.62rem;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;display:block;margin-bottom:9px}
 .fcols a{color:var(--lime);text-decoration:none}
@@ -97,7 +106,7 @@ footer.site .wrap{padding:54px 24px 30px}
 :focus-visible{outline:2px solid var(--lime);outline-offset:2px}
 @media(max-width:1020px){.story{grid-template-columns:1fr;gap:64px}.framebox{max-width:480px}}
 @media(max-width:900px){nav.main{display:none}.hphone{display:none}}
-@media(max-width:640px){section.blk{padding:56px 0}.srow{grid-template-columns:38px 1fr}.specs{grid-template-columns:1fr}.spec{border-right:none;border-bottom:1px solid var(--line)}.spec:last-child{border-bottom:none}.bigcta{padding:34px 24px}}
+@media(max-width:640px){section.blk{padding:56px 0}.srow{grid-template-columns:38px 1fr}.specs{grid-template-columns:1fr}.spec{border-right:none;border-bottom:1px solid var(--line)}.spec:last-child{border-bottom:none}.bigcta{padding:34px 24px}.fword{font-size:10.6vw}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobilePhoneStore", "name": "Mughal Mobile Repairing Lab", "telephone": "+923188000267", "address": {"@type": "PostalAddress", "streetAddress": "Shop No. 6, Basement, Hub Commercial Plaza, Bahria Town Phase 8, Rawalpindi", "addressLocality": "Rawalpindi", "addressCountry": "PK"}}</script>
@@ -131,8 +140,9 @@ footer.site .wrap{padding:54px 24px 30px}
 <figure class="frame">
 <img src="../assets/hero-phone.webp" alt="Exploded view of a mobile phone, showing its internal components layer by layer" width="1120" height="2240" loading="lazy">
 <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span><span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+<span class="dia tl" aria-hidden="true"></span><span class="dia tr" aria-hidden="true"></span><span class="dia bl" aria-hidden="true"></span><span class="dia br" aria-hidden="true"></span>
 </figure>
-<span class="flabel top" aria-hidden="true">FIG. 01 — UNIT 001</span>
+<span class="flabel top" aria-hidden="true"><span class="dia" aria-hidden="true"></span>FIG. 01 — UNIT 001</span>
 <span class="flabel bot" aria-hidden="true">INTERNAL COMPONENTS — EXPLODED</span>
 </div>
 </div>
@@ -150,7 +160,7 @@ footer.site .wrap{padding:54px 24px 30px}
 <section class="blk"><div class="wrap">
 <p class="kicker">THE STANDARD</p>
 <h2 class="disp" style="margin-top:14px">The standard, <span class="out">every job.</span></h2>
-<div class="grid"><article class="jcard rv"><div class="tag">IC-level repair — sample job card</div><h3>Dead phone, revived</h3><p>A phone that wouldn&#x27;t power on, traced to a board-level IC fault and repaired in the lab. (Illustrative sample.)</p></article><article class="jcard rv"><div class="tag">Bench diagnosis — sample job card</div><h3>Hardware fault, found</h3><p>Intermittent fault diagnosed on the bench with proper test equipment, then repaired. (Illustrative sample.)</p></article><article class="jcard rv"><div class="tag">Software repair — sample job card</div><h3>Software, sorted</h3><p>A phone stuck after a bad update, recovered and returned working. (Illustrative sample.)</p></article></div>
+<div class="grid"><article class="jcard rv"><div class="jvis" style="background-image:url('../assets/hero-tall.webp');background-position:50% 38%"><span class="tag">IC-level repair — sample job card</span></div><div class="jbody"><h3>Dead phone, revived</h3><p>A phone that wouldn&#x27;t power on, traced to a board-level IC fault and repaired in the lab. (Illustrative sample.)</p></div></article><article class="jcard rv"><div class="jvis" style="background-image:url('../assets/hero-phone.webp');background-position:50% 62%"><span class="tag">Bench diagnosis — sample job card</span></div><div class="jbody"><h3>Hardware fault, found</h3><p>Intermittent fault diagnosed on the bench with proper test equipment, then repaired. (Illustrative sample.)</p></div></article><article class="jcard rv"><div class="jvis" style="background-image:url('../assets/hero-phone.webp');background-position:50% 96%"><span class="tag">Software repair — sample job card</span></div><div class="jbody"><h3>Software, sorted</h3><p>A phone stuck after a bad update, recovered and returned working. (Illustrative sample.)</p></div></article></div>
 </div></section>
 <section class="blk" style="padding-top:0"><div class="wrap"><div class="bigcta rv">
 <h2 class="disp">Come and see <span class="out">for yourself.</span></h2>
