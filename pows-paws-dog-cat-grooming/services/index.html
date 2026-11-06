@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Pows Paws Dog &amp; Cat Grooming, Sheffield S5</title>
+<meta name="description" content="Full grooms, cat grooming, giant breeds and Emmi-Pet teeth cleaning at Pows Paws, Sheffield S5 — two groomers on every dog. Call 07586 347076.">
+<meta property="og:title" content="Services — Pows Paws Dog &amp; Cat Grooming">
+<meta property="og:description" content="Dogs and cats, all breeds and sizes, groomed to the pet — not the clock. Sheffield S5.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#FFF6E9;--paper:#FFFDF7;--ink:#22302A;--deep:#1C2B25;--accent:#F06449;--accent-d:#D94F36;--teal:#0E8388;--butter:#FFC53D;--muted:#6E7568;--line:#F0DFC2;--card:#FFFFFF;--rad:26px;
+--fd:'Fredoka',system-ui,sans-serif;--fb:'Nunito',Helvetica,Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--ground);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.96);border-bottom:2px solid var(--ink)}
+.hbar{display:flex;align-items:center;gap:14px;min-height:68px}
+.logo{font-family:var(--fd);font-weight:700;font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:.45rem;line-height:1}
+.logo .pair{display:inline-flex;align-items:flex-end}
+.logo .pair svg:first-child{width:26px;height:26px;fill:var(--accent)}
+.logo .pair svg:last-child{width:16px;height:16px;fill:var(--teal);margin-left:-4px}
+.logo span{color:var(--accent-d)}
+nav.main{margin-left:auto;display:flex;gap:20px}
+nav.main a{text-decoration:none;font-size:.9rem;font-weight:800;color:var(--muted);padding:.25rem 0}
+nav.main a[aria-current]{color:var(--ink);border-bottom:3px solid var(--butter)}
+.hphone{font-weight:900;font-size:.92rem;text-decoration:none;white-space:nowrap}
+.hphone:hover{color:var(--accent-d)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:900;font-size:.93rem;padding:12px 22px;border-radius:999px;border:2px solid var(--ink);cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}
+.btn:hover{transform:translate(-1px,-2px) rotate(-.5deg);box-shadow:5px 6px 0 var(--ink)}
+.btn.ghost{background:var(--paper);color:var(--ink)}
+.btn.ghost:hover{background:var(--butter)}
+.btn.wa{background:#1FA855;border-color:var(--ink)}
+.btn.wa:hover{background:#25c05f}
+.btn.sm{padding:9px 16px;font-size:.86rem;box-shadow:2px 2px 0 var(--ink)}
+.hcall{display:none;width:42px;height:42px;border:2px solid var(--ink);border-radius:50%;align-items:center;justify-content:center;flex:none;background:var(--butter)}
+.hcall svg{width:19px;height:19px;fill:var(--ink)}
+.kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:900;color:var(--teal)}
+.cta-row{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+section.blk{padding:76px 0}
+.blk.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.blk h2{font-family:var(--fd);font-weight:600;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.08;max-width:24ch;margin-top:10px}
+.blk h2 em{font-style:normal;color:var(--accent-d)}
+.lede{color:var(--muted);max-width:60ch;margin-top:12px;font-weight:600}
+.ledger{margin-top:30px;border-top:2.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:52px 1fr auto;gap:16px;padding:22px 6px;border-bottom:1px solid var(--line);align-items:start}
+.row .num{font-family:var(--fd);font-weight:700;font-size:1.5rem;color:var(--teal)}
+.row h3{font-family:var(--fd);font-weight:600;font-size:1.3rem}
+.row p{color:var(--muted);font-size:.94rem;max-width:62ch;font-weight:600}
+.price{font-weight:900;color:var(--teal);font-size:.82rem;white-space:nowrap;text-align:right;max-width:17ch}
+details.faq{border-bottom:1px solid var(--line);padding:16px 4px}
+details.faq summary{font-family:var(--fd);font-weight:600;cursor:pointer;font-size:1.08rem}
+details.faq p{color:var(--muted);margin-top:8px;max-width:65ch;font-weight:600}
+.bigcta{background:var(--butter);color:var(--ink);border:2px solid var(--ink);border-radius:32px;padding:44px 34px;box-shadow:6px 6px 0 var(--ink)}
+.bigcta h2{margin-top:0}
+.bigcta p{margin:10px 0 22px;max-width:55ch;font-weight:700;color:#4A5546}
+footer.site{background:var(--deep);color:var(--paper)}
+footer.site .wrap{padding:52px 22px 30px}
+.fword{font-family:var(--fd);font-weight:700;font-size:clamp(2.6rem,10vw,7.2rem);line-height:.95;color:var(--butter);text-transform:uppercase}
+.fcols{display:flex;gap:34px;flex-wrap:wrap;margin-top:28px;font-size:.9rem;font-weight:600}
+.fcols a{color:var(--butter);text-decoration:none;font-weight:800}
+.fine{margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,253,247,.18);font-size:.78rem;color:rgba(255,253,247,.55)}
+.pagehead{background:var(--deep);color:var(--paper);position:relative;overflow:hidden}
+.pagehead .wrap{padding:58px 22px 50px;position:relative;z-index:2}
+.pagehead h1{font-family:var(--fd);font-weight:700;font-size:clamp(2.3rem,5.6vw,4rem);line-height:1.04;margin-top:12px}
+.pagehead h1 em{font-style:normal;color:var(--butter)}
+.pagehead p{color:rgba(255,253,247,.82);max-width:58ch;margin-top:12px;font-weight:600}
+.pagehead .bigpair{position:absolute;right:6px;top:14px;display:inline-flex;align-items:flex-end;opacity:.16;z-index:1}
+.pagehead .bigpair svg:first-child{width:170px;height:170px;fill:#fff}
+.pagehead .bigpair svg:last-child{width:96px;height:96px;fill:#fff;margin-left:-18px}
+.js .rv{opacity:0;transform:translateY(18px) scale(.985);transition:opacity .6s ease,transform .6s cubic-bezier(.34,1.4,.64,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:900px){nav.main{display:none}.hphone{display:none}.hcall{display:inline-flex}}
+@media(max-width:640px){section.blk{padding:54px 0}.row{grid-template-columns:38px 1fr}.price{grid-column:2;text-align:left;max-width:none}.bigcta{padding:34px 24px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="paw" viewBox="0 0 100 100"><ellipse cx="50" cy="69" rx="23" ry="18"/><circle cx="20" cy="44" r="10.5"/><circle cx="38" cy="29" r="11.5"/><circle cx="62" cy="29" r="11.5"/><circle cx="80" cy="44" r="10.5"/></symbol><symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol></svg>
+<header class="site"><div class="wrap hbar">
+<a class="logo" href="../"><span class="pair"><svg aria-hidden="true"><use href="#paw"/></svg><svg aria-hidden="true"><use href="#paw"/></svg></span>Pows&nbsp;<span>Paws</span></a>
+<nav class="main" aria-label="Main"><a href="../">Home</a><a href="../services/" aria-current="page">Services</a><a href="../work/">Our Work</a><a href="../about/">About</a><a href="../contact/">Contact</a></nav>
+<a class="hphone" href="tel:+447586347076" style="margin-left:auto">07586 347076</a>
+<a class="hcall" href="tel:+447586347076" aria-label="Call Pows Paws" style="margin-left:auto"><svg aria-hidden="true"><use href="#phone"/></svg></a>
+<a class="btn wa sm" href="https://wa.me/447586347076" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn sm" href="../contact/">Book a Groom</a>
+</div></header>
+<main>
+<section class="pagehead"><div class="wrap">
+<p class="kicker">Services</p>
+<h1>Every pet, <em>properly pampered.</em></h1>
+<p>Two groomers work on every dog, cats are groomed too, and no appointment is ever cut short by the clock. Prices depend on your pet's breed, size and coat — we confirm yours when you book, before we start.</p>
+</div><span class="bigpair"><svg aria-hidden="true"><use href="#paw"/></svg><svg aria-hidden="true"><use href="#paw"/></svg></span></section>
+<section class="blk"><div class="wrap">
+<div class="ledger">
+<div class="row rv"><span class="num">01</span><div><h3>Full Groom — Dogs</h3><p>The works: warm bath, blow-dry, full cut and style, nail trim and ear clean. Two groomers throughout — one to comfort and support your dog, one to groom — so big, wiggly and nervous dogs are all in safe hands.</p></div><span class="price">Price confirmed at booking</span></div>
+<div class="row rv"><span class="num">02</span><div><h3>Bath &amp; Brush</h3><p>The in-between-grooms refresh: bath, blow-dry, a thorough brush-out and a tidy of face, feet and hygiene areas. Ideal for keeping long and doodle coats mat-free.</p></div><span class="price">Price confirmed at booking</span></div>
+<div class="row rv"><span class="num">03</span><div><h3>Cat Grooming</h3><p>Gentle, unhurried grooming for cats: brush-outs and de-matting, hygiene trims, and lion cuts where a coat needs a full reset. Cats are groomed on their own terms, with breaks built in.</p></div><span class="price">Price confirmed at booking</span></div>
+<div class="row rv"><span class="num">04</span><div><h3>Emmi-Pet Teeth Cleaning</h3><p>We're Emmi-Pet trained. The Emmi-Pet brush cleans with ultrasound — completely silent, no vibration and no brushing action — so even sound-sensitive dogs accept it. Great for plaque build-up and dog breath; can be booked on its own or added to a groom.</p></div><span class="price">Price confirmed at booking</span></div>
+<div class="row rv"><span class="num">05</span><div><h3>Giant Breeds &amp; Big Coats</h3><p>All breeds and sizes are genuinely welcome here — Newfoundlands, Bernese Mountain Dogs, giant doodles and double-coated shepherds included. Two groomers make light (and kind) work of the biggest coats.</p></div><span class="price">Price confirmed at booking</span></div>
+<div class="row rv"><span class="num">06</span><div><h3>Nails &amp; Finishing Touches</h3><p>Quick visits for nail trims, paw tidies and ear cleans — or add them onto any groom. A good first visit for puppies and nervous pets, too.</p></div><span class="price">Price confirmed at booking</span></div>
+</div>
+</div></section>
+<section class="blk alt"><div class="wrap">
+<p class="kicker">Questions</p>
+<h2>Before you <em>book.</em></h2>
+<div style="margin-top:26px">
+<details class="faq rv"><summary>Why two groomers on every dog?</summary><p>One groomer supports and comforts your dog while the other grooms. It's calmer for the pet, safer around scissors and clippers, and much kinder for big, elderly or nervous dogs who shouldn't have to stand unsupported.</p></details>
+<details class="faq rv"><summary>Do you really groom cats?</summary><p>Yes — cats are a proper part of Pows Paws, not an afterthought. Brush-outs, mat removal, hygiene trims and lion cuts, all done gently and at the cat's pace.</p></details>
+<details class="faq rv"><summary>How long will the groom take?</summary><p>As long as your pet needs. Our rule is “groom to the dog, not the clock” — we don't rush pets through fixed slots. We'll give you a rough guide when you book and message you when your pet is ready to collect.</p></details>
+<details class="faq rv"><summary>What is Emmi-Pet teeth cleaning?</summary><p>Emmi-Pet is an ultrasonic toothbrush we're trained to use. It cleans without sound, vibration or brushing movement, which makes it ideal for dogs who hate having their teeth done. It helps with plaque and bad breath as part of regular sessions.</p></details>
+<details class="faq rv"><summary>How much does it cost?</summary><p>It depends on your pet's breed, size and coat condition, so rather than publish a misleading price list, we confirm your exact price when you book — call or WhatsApp with your pet's breed and we'll quote before you commit to anything.</p></details>
+<details class="faq rv"><summary>My pet is nervous. Is that a problem?</summary><p>Not here. Unhurried appointments and a second pair of hands are exactly what nervous pets need. Tell us when you book and we'll plan a gentler session, with breaks whenever your pet asks for one.</p></details>
+</div>
+</div></section>
+</main>
+<section class="blk" style="padding-top:0"><div class="wrap"><div class="bigcta rv">
+<h2>Tell us about your pet.</h2><p>Dog or cat, tiny or giant — message us the breed and we'll quote and book you in.</p>
+<div class="cta-row">
+<a class="btn" href="tel:+447586347076">Call 07586 347076</a>
+<a class="btn wa" href="https://wa.me/447586347076" target="_blank" rel="noopener">WhatsApp Us</a>
+<a class="btn ghost" href="../contact/">Book a Groom</a>
+</div></div></div></section>
+<footer class="site"><div class="wrap">
+<div class="fword" aria-hidden="true">Pows Paws</div>
+<div class="fcols">
+<div>Find us<br>Sheffield S5 — full address<br>confirmed when you book</div>
+<div>Call / WhatsApp<br><a href="tel:+447586347076">07586 347076</a></div>
+<div>Follow along<br>Facebook · Instagram · TikTok</div>
+</div>
+<div class="fine">Pows Paws Dog &amp; Cat Grooming · Sheffield S5 · Demo website built for review — details from the business's public listings.</div>
+</div></footer>
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
