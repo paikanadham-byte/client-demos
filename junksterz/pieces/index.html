@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lineup — Pieces by Junksterz, Cincinnati</title>
+<meta name="description" content="The Junksterz lineup: one-of-one reworked pieces — Carhartt rework sets, Bengals and Chiefs game-day dresses and tracksuits. Prices as posted. Claim yours by phone: (513) 289-5257.">
+<meta property="og:title" content="Junksterz — The Lineup">
+<meta property="og:description" content="One-of-one reworked pieces from Cincinnati. When it's gone, it's gone. Order by phone: (513) 289-5257.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#131110; --ground2:#1B1916; --panel:#211E1A; --ink:#F4EEE2; --muted:#A79C8A;
+  --line:#38332C; --accent:#FF5A00; --accent-ink:#17110A; --tan:#A97C50;
+  --fd:"Anton",Impact,sans-serif; --fb:"Archivo",Helvetica,Arial,sans-serif; --fm:"IBM Plex Mono",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--accent);color:var(--accent-ink)}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.mono{font-family:var(--fm);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+.out{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.out-o{color:transparent;-webkit-text-stroke:2px var(--accent)}
+h1,h2,h3{font-family:var(--fd);font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+header{position:sticky;top:0;z-index:60;background:rgba(19,17,16,.96);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo{font-family:var(--fd);font-size:1.45rem;letter-spacing:.04em;text-decoration:none;text-transform:uppercase;display:flex;align-items:center;gap:.55rem}
+.logo i{width:11px;height:11px;background:var(--accent);display:inline-block;transform:rotate(45deg);flex:none}
+.nav nav{display:flex;gap:1.9rem}
+.nav nav a{text-decoration:none;font-family:var(--fm);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:.3rem 0;border-bottom:2px solid transparent}
+.nav nav a:hover{color:var(--ink)}
+.nav nav a[aria-current]{color:var(--ink);border-bottom-color:var(--accent)}
+.head-cta{display:flex;align-items:center;gap:1.1rem}
+.head-num{font-family:var(--fm);font-size:.8rem;letter-spacing:.08em;text-decoration:none;color:var(--ink)}
+.head-num:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;padding:.85rem 1.5rem;border:2px solid var(--accent);text-decoration:none;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ground)}
+.btn.sm{padding:.55rem 1.05rem;font-size:.78rem}
+@media(max-width:900px){.nav nav{display:none}.head-num{display:none}}
+.tag{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);color:var(--accent-ink);font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:.5rem 1rem .5rem .8rem;transform:rotate(-2.5deg)}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ground);flex:none}
+.stamp{display:inline-block;border:3px solid var(--accent);color:var(--accent);font-family:var(--fd);text-transform:uppercase;letter-spacing:.06em;padding:.28rem .7rem;transform:rotate(-7deg);font-size:1rem;background:rgba(19,17,16,.55)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.page-hero{padding:4.4rem 0 3.4rem;border-bottom:1px solid var(--line)}
+.page-hero h1{font-size:clamp(3.2rem,9vw,7.6rem);margin:1.2rem 0 1.2rem}
+.page-hero p{color:var(--muted);font-size:1.12rem;max-width:56ch}
+.page-hero p b{color:var(--ink)}
+/* lineup rows — catalogue plates, alternating offsets */
+.lineup{padding:4.6rem 0}
+.row-piece{display:grid;grid-template-columns:110px 1fr 1fr;gap:2.2rem;padding:2.8rem 0;border-bottom:2px dashed var(--line);align-items:center}
+.row-piece:first-child{padding-top:0}
+.row-piece .idx{font-family:var(--fd);font-size:4.2rem;color:transparent;-webkit-text-stroke:2px var(--accent);line-height:1}
+.face{height:280px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:1.1rem;border:1px solid var(--line);background:var(--ground2)}
+.face .word{font-family:var(--fd);font-size:clamp(2.4rem,4.4vw,4rem);text-transform:uppercase;line-height:.9;color:transparent;-webkit-text-stroke:2px rgba(244,238,226,.75)}
+.face .stamp{position:absolute;top:1rem;right:1rem}
+.face-tan{background:var(--tan)}.face-tan .word{-webkit-text-stroke-color:rgba(23,17,10,.8)}
+.face-o{background:var(--accent)}.face-o .word{-webkit-text-stroke-color:rgba(23,17,10,.85)}
+.detail h2{font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:.6rem}
+.detail p{color:var(--muted);max-width:44ch}
+.detail .specs{font-family:var(--fm);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:.9rem 0 1.2rem;line-height:2}
+.detail .buy{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.price{font-family:var(--fm);font-weight:600;color:var(--accent);font-size:1.25rem}
+.price small{display:block;color:var(--muted);font-weight:400;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:900px){.row-piece{grid-template-columns:1fr;gap:1.2rem}.row-piece .idx{font-size:2.6rem}.face{height:210px}}
+.note{border:1px solid var(--line);background:var(--ground2);padding:2.2rem;margin:0 0 4.6rem}
+.note h2{font-size:1.8rem;margin-bottom:.6rem}
+.note p{color:var(--muted);max-width:62ch}
+.closing{padding:0 0 5.6rem}
+.closing h2{font-size:clamp(2.6rem,7vw,6rem)}
+.closing p{color:var(--muted);font-size:1.1rem;max-width:46ch;margin:1.2rem 0 2rem}
+footer{border-top:1px solid var(--line);background:var(--ground2);padding:3.6rem 0 2.2rem}
+.foot-word{font-family:var(--fd);font-size:clamp(3rem,11vw,10rem);line-height:.85;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px #2C2822}
+.foot-grid{display:flex;justify-content:space-between;gap:2.5rem;flex-wrap:wrap;margin-top:2.6rem}
+footer .mono{color:var(--accent);display:block;margin-bottom:.8rem}
+footer a{text-decoration:none}footer a:hover{color:var(--accent)}
+footer p,footer li{color:var(--muted);font-size:.95rem}
+footer ul{list-style:none}footer li{margin:.35rem 0}
+.foot-base{margin-top:2.6rem;padding-top:1.4rem;border-top:2px dashed var(--line);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:var(--fm);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../"><i></i>Junksterz</a>
+    <nav aria-label="Main">
+      <a href="../">Home</a>
+      <a href="./" aria-current="page">Pieces</a>
+      <a href="../custom-orders/">Custom Orders</a>
+      <a href="../about/">About</a>
+      <a href="../order/">Order</a>
+    </nav>
+    <div class="head-cta">
+      <a class="head-num" href="tel:+15132895257">(513) 289-5257</a>
+      <a class="btn sm" href="tel:+15132895257">Order by Phone</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="wrap">
+    <span class="tag">The lineup</span>
+    <h1>One of one.<br><span class="out">All of it.</span></h1>
+    <p>Every piece below started life as the real thing — an authentic work jacket, a team hoodie, denim with history — and was cut down and rebuilt by Junksterz. <b>Prices are shown as posted on the pieces.</b> There is exactly one of each, so the lineup changes every time somebody calls.</p>
+  </div>
+</div>
+
+<div class="lineup">
+  <div class="wrap">
+
+    <article class="row-piece rv">
+      <span class="idx">01</span>
+      <div class="face face-tan">
+        <span class="stamp">1 of 1</span>
+        <span class="word">Carhartt</span>
+      </div>
+      <div class="detail">
+        <h2>Carhartt Rework Set</h2>
+        <p>The signature rebuild: workwear canvas cropped and re-sewn into a three-piece set. The jacket your grandfather wore to work, rebuilt for a night out.</p>
+        <p class="specs">Cropped hoodie · Overall mini skirt · Leg warmers<br>Source: authentic Carhartt workwear</p>
+        <div class="buy">
+          <span class="price">$250<small>As posted</small></span>
+          <a class="btn sm" href="tel:+15132895257">Claim it — Call / Text</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="row-piece rv">
+      <span class="idx">02</span>
+      <div class="face">
+        <span class="stamp">1 of 1</span>
+        <span class="word">Bengals</span>
+      </div>
+      <div class="detail">
+        <h2>Bengals Hoodie Dress</h2>
+        <p>A Cincinnati game-day dress built from team gear, carrying Burrow 9. Made in the city it reps — this is the one the comments go looking for.</p>
+        <p class="specs">Hoodie dress · Cincinnati Bengals · Burrow 9<br>Customized clothes fit for any occasion</p>
+        <div class="buy">
+          <span class="price">$120<small>As posted</small></span>
+          <a class="btn sm" href="tel:+15132895257">Claim it — Call / Text</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="row-piece rv">
+      <span class="idx">03</span>
+      <div class="face">
+        <span class="stamp">1 of 1</span>
+        <span class="word">Bengals</span>
+      </div>
+      <div class="detail">
+        <h2>Bengals Tracksuit Set</h2>
+        <p>A full custom tracksuit in Bengals colors with Higgins 5 — top and bottom rebuilt as a matched set. Game day, head to toe, one of one.</p>
+        <p class="specs">Two-piece tracksuit · Cincinnati Bengals · Higgins 5<br>Source: authentic team gear</p>
+        <div class="buy">
+          <span class="price">Ask<small>Call for price</small></span>
+          <a class="btn sm" href="tel:+15132895257">Claim it — Call / Text</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="row-piece rv">
+      <span class="idx">04</span>
+      <div class="face face-o">
+        <span class="stamp" style="border-color:var(--accent-ink);color:var(--accent-ink)">1 of 1</span>
+        <span class="word">Chiefs</span>
+      </div>
+      <div class="detail">
+        <h2>Chiefs Hoodie Dress</h2>
+        <p>Mahomes 15, rebuilt as a hoodie dress. Proof the rework isn&rsquo;t a one-team trick — your colors, your player, your piece.</p>
+        <p class="specs">Hoodie dress · Kansas City Chiefs · Mahomes 15<br>Want your team? See Custom Orders</p>
+        <div class="buy">
+          <span class="price">Ask<small>Call for price</small></span>
+          <a class="btn sm" href="tel:+15132895257">Claim it — Call / Text</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="note rv">
+    <span class="mono" style="color:var(--accent)">Before you ask</span>
+    <h2 style="margin-top:.6rem">Why there&rsquo;s no &ldquo;add to cart&rdquo;</h2>
+    <p>A cart needs stock. Junksterz has the opposite of stock — single pieces, cut from single garments. When a piece is claimed on the phone, it comes off the rack and off this page. If the piece you want just went, that&rsquo;s what <a href="../custom-orders/" style="color:var(--accent);font-weight:700">custom orders</a> are for: yours gets built from scratch.</p>
+  </div>
+</div>
+
+<div class="closing">
+  <div class="wrap rv">
+    <h2>See one <span class="out-o">you want?</span></h2>
+    <p>Don&rsquo;t leave a comment and hope. Call or text and it&rsquo;s yours — or it&rsquo;s somebody else&rsquo;s.</p>
+    <a class="btn" href="tel:+15132895257">Call / Text (513) 289-5257</a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-word" aria-hidden="true">Junksterz</div>
+    <div class="foot-grid">
+      <div>
+        <span class="mono">Order</span>
+        <ul>
+          <li><a href="tel:+15132895257">(513) 289-5257</a> — call or text</li>
+          <li><a href="mailto:junksterzexclusiverework@gmail.com">junksterzexclusiverework@gmail.com</a></li>
+          <li><a href="../order/">Order request form</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="mono">Shop</span>
+        <ul>
+          <li><a href="./">The lineup</a></li>
+          <li><a href="../custom-orders/">Custom orders</a></li>
+          <li><a href="../about/">The rework story</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="mono">The deal</span>
+        <p>Exclusive rework of your favorite colors,<br>materials or brands. Cincinnati, Ohio.<br>Every piece one of one.</p>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Junksterz SHOP LLC — Cincinnati, Ohio</span>
+      <span>1 of 1 · No restocks</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
