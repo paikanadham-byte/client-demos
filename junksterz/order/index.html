@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order — Claim Your Piece | Junksterz, Cincinnati</title>
+<meta name="description" content="Order from Junksterz: call or text (513) 289-5257, email junksterzexclusiverework@gmail.com, or send an order request. One-of-one reworked clothing, Cincinnati, Ohio.">
+<meta property="og:title" content="Junksterz — Order">
+<meta property="og:description" content="Claim your one-of-one piece. Call or text (513) 289-5257.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#131110; --ground2:#1B1916; --panel:#211E1A; --ink:#F4EEE2; --muted:#A79C8A;
+  --line:#38332C; --accent:#FF5A00; --accent-ink:#17110A; --tan:#A97C50;
+  --fd:"Anton",Impact,sans-serif; --fb:"Archivo",Helvetica,Arial,sans-serif; --fm:"IBM Plex Mono",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--accent);color:var(--accent-ink)}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.mono{font-family:var(--fm);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+.out{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.out-o{color:transparent;-webkit-text-stroke:2px var(--accent)}
+h1,h2,h3{font-family:var(--fd);font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+header{position:sticky;top:0;z-index:60;background:rgba(19,17,16,.96);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo{font-family:var(--fd);font-size:1.45rem;letter-spacing:.04em;text-decoration:none;text-transform:uppercase;display:flex;align-items:center;gap:.55rem}
+.logo i{width:11px;height:11px;background:var(--accent);display:inline-block;transform:rotate(45deg);flex:none}
+.nav nav{display:flex;gap:1.9rem}
+.nav nav a{text-decoration:none;font-family:var(--fm);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:.3rem 0;border-bottom:2px solid transparent}
+.nav nav a:hover{color:var(--ink)}
+.nav nav a[aria-current]{color:var(--ink);border-bottom-color:var(--accent)}
+.head-cta{display:flex;align-items:center;gap:1.1rem}
+.head-num{font-family:var(--fm);font-size:.8rem;letter-spacing:.08em;text-decoration:none;color:var(--ink)}
+.head-num:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;padding:.85rem 1.5rem;border:2px solid var(--accent);text-decoration:none;transition:transform .25s,background .25s,color .25s;cursor:pointer;font-family:var(--fb)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ground)}
+.btn.sm{padding:.55rem 1.05rem;font-size:.78rem}
+@media(max-width:900px){.nav nav{display:none}.head-num{display:none}}
+.tag{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);color:var(--accent-ink);font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:.5rem 1rem .5rem .8rem;transform:rotate(-2.5deg)}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ground);flex:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.page-hero{padding:4.4rem 0 3rem}
+.page-hero h1{font-size:clamp(3.2rem,9vw,7.8rem);margin:1.2rem 0 1.2rem}
+.page-hero p{color:var(--muted);font-size:1.12rem;max-width:52ch}
+/* big number block */
+.bignum{display:block;text-decoration:none;border:1px solid var(--line);background:var(--ground2);padding:2.6rem 2.2rem;margin-bottom:4.4rem;transition:border-color .3s}
+.bignum:hover{border-color:var(--accent)}
+.bignum .mono{color:var(--accent)}
+.bignum .num{font-family:var(--fd);font-size:clamp(2.4rem,7.5vw,6.2rem);line-height:1;display:block;margin-top:.8rem}
+.bignum .num span{color:var(--accent)}
+.bignum p{color:var(--muted);margin-top:.8rem}
+/* split: channels + form */
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.4rem;padding-bottom:5.4rem;align-items:start}
+@media(max-width:880px){.split{grid-template-columns:1fr}}
+.channels h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:1.4rem}
+.chan{border-top:2px dashed var(--line);padding:1.3rem 0}
+.chan:last-of-type{border-bottom:2px dashed var(--line)}
+.chan .mono{color:var(--accent);display:block;margin-bottom:.4rem}
+.chan a{font-weight:700;font-size:1.08rem;text-decoration:none;word-break:break-all}
+.chan a:hover{color:var(--accent)}
+.chan p{color:var(--muted);font-size:.95rem;margin-top:.3rem}
+.channels .note{color:var(--muted);margin-top:1.6rem;font-size:.98rem}
+.channels .note b{color:var(--ink)}
+/* form */
+.formbox{border:1px solid var(--line);background:var(--panel);padding:2.4rem 2.2rem}
+.formbox h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:.5rem}
+.formbox>p{color:var(--muted);margin-bottom:1.8rem}
+.field{margin-bottom:1.3rem}
+.field label{font-family:var(--fm);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:.5rem}
+.field input,.field textarea,.field select{width:100%;background:var(--ground);border:1px solid var(--line);color:var(--ink);font-family:var(--fb);font-size:1rem;padding:.85rem 1rem;border-radius:0;appearance:none}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.field textarea{min-height:110px;resize:vertical}
+.formbox .btn{width:100%;justify-content:center}
+.success{display:none;border:2px solid var(--accent);padding:1.6rem;margin-top:1.4rem}
+.success.show{display:block}
+.success h3{color:var(--accent);font-size:1.4rem;margin-bottom:.4rem}
+.success p{color:var(--muted)}
+.success p b{color:var(--ink)}
+footer{border-top:1px solid var(--line);background:var(--ground2);padding:3.6rem 0 2.2rem}
+.foot-word{font-family:var(--fd);font-size:clamp(3rem,11vw,10rem);line-height:.85;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px #2C2822}
+.foot-grid{display:flex;justify-content:space-between;gap:2.5rem;flex-wrap:wrap;margin-top:2.6rem}
+footer .mono{color:var(--accent);display:block;margin-bottom:.8rem}
+footer a{text-decoration:none}footer a:hover{color:var(--accent)}
+footer p,footer li{color:var(--muted);font-size:.95rem}
+footer ul{list-style:none}footer li{margin:.35rem 0}
+.foot-base{margin-top:2.6rem;padding-top:1.4rem;border-top:2px dashed var(--line);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:var(--fm);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../"><i></i>Junksterz</a>
+    <nav aria-label="Main">
+      <a href="../">Home</a>
+      <a href="../pieces/">Pieces</a>
+      <a href="../custom-orders/">Custom Orders</a>
+      <a href="../about/">About</a>
+      <a href="./" aria-current="page">Order</a>
+    </nav>
+    <div class="head-cta">
+      <a class="head-num" href="tel:+15132895257">(513) 289-5257</a>
+      <a class="btn sm" href="tel:+15132895257">Order by Phone</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="wrap">
+    <span class="tag">Order</span>
+    <h1>Claim<br><span class="out">your piece.</span></h1>
+    <p>There&rsquo;s no storefront and no checkout — because there&rsquo;s no stockroom. Junksterz sells piece by piece, person to person, out of Cincinnati, Ohio. Here&rsquo;s every way to do it.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <a class="bignum rv" href="tel:+15132895257">
+    <span class="mono">Fastest — call or text</span>
+    <span class="num">(513) <span>289-5257</span></span>
+    <p>Tap the number. Say which piece you want — or describe the custom you&rsquo;re dreaming of. First call gets the piece.</p>
+  </a>
+</div>
+
+<div class="wrap split">
+  <div class="channels rv">
+    <h2>Every way <span class="out-o">in</span></h2>
+    <div class="chan">
+      <span class="mono">Email</span>
+      <a href="mailto:junksterzexclusiverework@gmail.com">junksterzexclusiverework@gmail.com</a>
+      <p>Good for custom ideas — describe the garment, the team, the colors. Attach the vision.</p>
+    </div>
+    <div class="chan">
+      <span class="mono">The form</span>
+      <a href="#request">Order request, right here</a>
+      <p>Four fields, thirty seconds. Best if you&rsquo;d rather write it down than talk it out.</p>
+    </div>
+    <div class="chan">
+      <span class="mono">Location</span>
+      <a href="../about/">Cincinnati, Ohio</a>
+      <p>No public storefront — Junksterz is an online-and-phone brand. Cincinnati is home; the pieces travel.</p>
+    </div>
+    <p class="note">You found Junksterz on Facebook, most likely under a post with a hundred <b>&ldquo;how do I order?&rdquo;</b> comments. This page is the shortcut they were all asking for.</p>
+  </div>
+
+  <div class="formbox rv" id="request">
+    <span class="mono" style="color:var(--accent)">Order request</span>
+    <h2 style="margin-top:.6rem">Write it <span class="out-o">down</span></h2>
+    <p>A piece from the lineup, or a custom idea — put it here and Junksterz picks it up from there.</p>
+    <form id="orderForm" novalidate>
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-phone">Your phone (for the reply)</label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+      </div>
+      <div class="field">
+        <label for="f-piece">What are you after?</label>
+        <select id="f-piece" name="piece" required>
+          <option value="">Pick one…</option>
+          <option>Carhartt Rework Set — $250 as posted</option>
+          <option>Bengals Hoodie Dress — $120 as posted</option>
+          <option>Bengals Tracksuit Set — ask for price</option>
+          <option>Chiefs Hoodie Dress — ask for price</option>
+          <option>A custom rework — my piece / my idea</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-notes">Size &amp; anything else</label>
+        <textarea id="f-notes" name="notes" placeholder="Your size, your team, your colors — or the garment you want rebuilt."></textarea>
+      </div>
+      <button class="btn" type="submit">Send the Request</button>
+    </form>
+    <div class="success" id="formSuccess" role="status">
+      <h3>Request noted.</h3>
+      <p>For the fastest claim, text the same details to <b>(513) 289-5257</b> — pieces are one of one, and the phone always wins a tie.</p>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-word" aria-hidden="true">Junksterz</div>
+    <div class="foot-grid">
+      <div>
+        <span class="mono">Order</span>
+        <ul>
+          <li><a href="tel:+15132895257">(513) 289-5257</a> — call or text</li>
+          <li><a href="mailto:junksterzexclusiverework@gmail.com">junksterzexclusiverework@gmail.com</a></li>
+          <li><a href="./">Order request form</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="mono">Shop</span>
+        <ul>
+          <li><a href="../pieces/">The lineup</a></li>
+          <li><a href="../custom-orders/">Custom orders</a></li>
+          <li><a href="../about/">The rework story</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="mono">The deal</span>
+        <p>Exclusive rework of your favorite colors,<br>materials or brands. Cincinnati, Ohio.<br>Every piece one of one.</p>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Junksterz SHOP LLC — Cincinnati, Ohio</span>
+      <span>1 of 1 · No restocks</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+document.getElementById('orderForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var name=document.getElementById('f-name'),phone=document.getElementById('f-phone'),piece=document.getElementById('f-piece');
+  if(!name.value.trim()){name.focus();return}
+  if(!phone.value.trim()){phone.focus();return}
+  if(!piece.value){piece.focus();return}
+  document.getElementById('formSuccess').classList.add('show');
+  document.getElementById('formSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+  this.reset();
+});
+</script>
+</body>
+</html>
